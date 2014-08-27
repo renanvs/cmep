@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FC10A0D4-FFF6-4BBD-B8AC-4B7BB49AE8F7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CMEP</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>56556448-CDCD-4189-B960-1BC1D2E5DF1D</key>
+		<string>ssh://github.com/renanvs/cmep.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CMEP.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>56556448-CDCD-4189-B960-1BC1D2E5DF1D</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/renanvs/cmep.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>56556448-CDCD-4189-B960-1BC1D2E5DF1D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>56556448-CDCD-4189-B960-1BC1D2E5DF1D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>cmep</string>
+		</dict>
+	</array>
+</dict>
+</plist>
