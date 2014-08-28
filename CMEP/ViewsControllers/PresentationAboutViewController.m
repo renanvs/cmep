@@ -1,24 +1,18 @@
 //
-//  PresentationViewController.m
+//  PresentationAboutViewController.m
 //  CMEP
 //
-//  Created by renanvs on 8/27/14.
+//  Created by renanvs on 8/28/14.
 //  Copyright (c) 2014 renanvs. All rights reserved.
 //
 
-#import "PresentationViewController.h"
-#import "MenuViewController.h"
+#import "PresentationAboutViewController.h"
 
-@implementation PresentationViewController
+@interface PresentationAboutViewController ()
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+@end
+
+@implementation PresentationAboutViewController
 
 - (void)viewDidLoad
 {
@@ -28,7 +22,7 @@
 }
 
 -(void)setupWebView{
-    NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"presentation" ofType:@"html" inDirectory:@"WebPages"];
+    NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"presentation_about" ofType:@"html" inDirectory:@"WebPages"];
     NSString *htmlSource = [NSString stringWithContentsOfFile:htmlFile encoding:NSUTF8StringEncoding error:nil];
     [presentationWebView setBackgroundColor:[UIColor clearColor]];
     
@@ -38,8 +32,9 @@
     
     presentationWebView.opaque = NO;
     presentationWebView.dataDetectorTypes = ~UIDataDetectorTypePhoneNumber;
+    
     //[presentationWebView loadHTMLString:htmlSource baseURL:nil];
-    NSURL *url = [NSURL URLWithString:@"http://localhost:8080/presentation.html"];
+    NSURL *url = [NSURL URLWithString:@"http://localhost:8080/presentation_about.html"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [presentationWebView loadRequest:request];
 }
@@ -50,10 +45,6 @@
 
 - (IBAction)showMenu:(id)sender {
     [self.viewDeckController openLeftView];
-}
-
-- (IBAction)aboutAbecs:(id)sender {
-    
 }
 
 @end

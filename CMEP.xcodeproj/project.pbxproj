@@ -10,14 +10,22 @@
 		4E908AEEACDF49E28B3408C4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F04A8D4A74A74AFA84025C06 /* libPods.a */; };
 		72817A6E19AE52F700446FD9 /* PresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72817A6D19AE52F700446FD9 /* PresentationViewController.m */; };
 		72817A7019AE5CE100446FD9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72817A6F19AE5CE100446FD9 /* QuartzCore.framework */; };
-		72817A7419AE60DA00446FD9 /* SideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72817A7219AE60DA00446FD9 /* SideViewController.m */; };
-		72817A7519AE60DA00446FD9 /* SideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72817A7319AE60DA00446FD9 /* SideViewController.xib */; };
-		72817A7919AE60EA00446FD9 /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72817A7719AE60EA00446FD9 /* CenterViewController.m */; };
-		72817A7A19AE60EA00446FD9 /* CenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72817A7819AE60EA00446FD9 /* CenterViewController.xib */; };
 		72817A8519AE6A1500446FD9 /* Defines.m in Sources */ = {isa = PBXBuildFile; fileRef = 72817A8019AE6A1500446FD9 /* Defines.m */; };
 		72817A8619AE6A1500446FD9 /* Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 72817A8219AE6A1500446FD9 /* Extensions.m */; };
 		72817A8719AE6A1500446FD9 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 72817A8419AE6A1500446FD9 /* Utils.m */; };
 		729E851F19AE6E000057DF1C /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 729E851E19AE6E000057DF1C /* HomeTableViewCell.m */; };
+		729E852419AF72910057DF1C /* WebPages in Resources */ = {isa = PBXBuildFile; fileRef = 729E852319AF72910057DF1C /* WebPages */; };
+		729E852719AF782E0057DF1C /* CMEPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 729E852619AF782E0057DF1C /* CMEPUtils.m */; };
+		729E852A19AF89AB0057DF1C /* PresentationAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 729E852919AF89AB0057DF1C /* PresentationAboutViewController.m */; };
+		729E852D19AFA7B20057DF1C /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 729E852C19AFA7B20057DF1C /* ScheduleViewController.m */; };
+		729E853119AFB0910057DF1C /* ScheduleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 729E853019AFB0910057DF1C /* ScheduleModel.m */; };
+		729E853419AFB0BA0057DF1C /* ScheduleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 729E853319AFB0BA0057DF1C /* ScheduleCell.m */; };
+		729E853719AFB5760057DF1C /* ScheduleBallonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 729E853619AFB5760057DF1C /* ScheduleBallonView.m */; };
+		729E853919AFB5890057DF1C /* ScheduleBallonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 729E853819AFB5890057DF1C /* ScheduleBallonView.xib */; };
+		729E853D19AFB9820057DF1C /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 729E853A19AFB9820057DF1C /* arrow.png */; };
+		729E853E19AFB9820057DF1C /* base_ballon.png in Resources */ = {isa = PBXBuildFile; fileRef = 729E853B19AFB9820057DF1C /* base_ballon.png */; };
+		729E853F19AFB9820057DF1C /* top_ballon.png in Resources */ = {isa = PBXBuildFile; fileRef = 729E853C19AFB9820057DF1C /* top_ballon.png */; };
+		729E854319AFC80A0057DF1C /* FakeModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 729E854219AFC80A0057DF1C /* FakeModelManager.m */; };
 		72B176E019AE277700F549C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72B176DF19AE277700F549C5 /* Foundation.framework */; };
 		72B176E219AE277700F549C5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72B176E119AE277700F549C5 /* CoreGraphics.framework */; };
 		72B176E419AE277700F549C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72B176E319AE277700F549C5 /* UIKit.framework */; };
@@ -72,12 +80,6 @@
 		72817A6C19AE52F700446FD9 /* PresentationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PresentationViewController.h; path = CMEP/ViewsControllers/PresentationViewController.h; sourceTree = "<group>"; };
 		72817A6D19AE52F700446FD9 /* PresentationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PresentationViewController.m; path = CMEP/ViewsControllers/PresentationViewController.m; sourceTree = "<group>"; };
 		72817A6F19AE5CE100446FD9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		72817A7119AE60DA00446FD9 /* SideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SideViewController.h; path = "../../Downloads/ViewDeck-master 2/FoursExample/FoursExample/SideViewController.h"; sourceTree = "<group>"; };
-		72817A7219AE60DA00446FD9 /* SideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SideViewController.m; path = "../../Downloads/ViewDeck-master 2/FoursExample/FoursExample/SideViewController.m"; sourceTree = "<group>"; };
-		72817A7319AE60DA00446FD9 /* SideViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SideViewController.xib; path = "../../Downloads/ViewDeck-master 2/FoursExample/FoursExample/SideViewController.xib"; sourceTree = "<group>"; };
-		72817A7619AE60EA00446FD9 /* CenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CenterViewController.h; path = "../../Downloads/ViewDeck-master 2/FoursExample/FoursExample/CenterViewController.h"; sourceTree = "<group>"; };
-		72817A7719AE60EA00446FD9 /* CenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CenterViewController.m; path = "../../Downloads/ViewDeck-master 2/FoursExample/FoursExample/CenterViewController.m"; sourceTree = "<group>"; };
-		72817A7819AE60EA00446FD9 /* CenterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CenterViewController.xib; path = "../../Downloads/ViewDeck-master 2/FoursExample/FoursExample/CenterViewController.xib"; sourceTree = "<group>"; };
 		72817A7F19AE6A1500446FD9 /* Defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
 		72817A8019AE6A1500446FD9 /* Defines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Defines.m; sourceTree = "<group>"; };
 		72817A8119AE6A1500446FD9 /* Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Extensions.h; sourceTree = "<group>"; };
@@ -86,6 +88,25 @@
 		72817A8419AE6A1500446FD9 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		729E851D19AE6E000057DF1C /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeTableViewCell.h; path = CMEP/Views/HomeTableViewCell.h; sourceTree = "<group>"; };
 		729E851E19AE6E000057DF1C /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeTableViewCell.m; path = CMEP/Views/HomeTableViewCell.m; sourceTree = "<group>"; };
+		729E852319AF72910057DF1C /* WebPages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = WebPages; path = CMEP/WebPages; sourceTree = "<group>"; };
+		729E852519AF782E0057DF1C /* CMEPUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMEPUtils.h; sourceTree = "<group>"; };
+		729E852619AF782E0057DF1C /* CMEPUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMEPUtils.m; sourceTree = "<group>"; };
+		729E852819AF89AB0057DF1C /* PresentationAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PresentationAboutViewController.h; path = CMEP/ViewsControllers/PresentationAboutViewController.h; sourceTree = "<group>"; };
+		729E852919AF89AB0057DF1C /* PresentationAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PresentationAboutViewController.m; path = CMEP/ViewsControllers/PresentationAboutViewController.m; sourceTree = "<group>"; };
+		729E852B19AFA7B20057DF1C /* ScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScheduleViewController.h; path = CMEP/ViewsControllers/ScheduleViewController.h; sourceTree = "<group>"; };
+		729E852C19AFA7B20057DF1C /* ScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScheduleViewController.m; path = CMEP/ViewsControllers/ScheduleViewController.m; sourceTree = "<group>"; };
+		729E852F19AFB0910057DF1C /* ScheduleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScheduleModel.h; path = CMEP/Models/ScheduleModel.h; sourceTree = "<group>"; };
+		729E853019AFB0910057DF1C /* ScheduleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScheduleModel.m; path = CMEP/Models/ScheduleModel.m; sourceTree = "<group>"; };
+		729E853219AFB0BA0057DF1C /* ScheduleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScheduleCell.h; path = CMEP/Views/ScheduleCell.h; sourceTree = "<group>"; };
+		729E853319AFB0BA0057DF1C /* ScheduleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScheduleCell.m; path = CMEP/Views/ScheduleCell.m; sourceTree = "<group>"; };
+		729E853519AFB5760057DF1C /* ScheduleBallonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScheduleBallonView.h; path = CMEP/Views/ScheduleBallonView.h; sourceTree = "<group>"; };
+		729E853619AFB5760057DF1C /* ScheduleBallonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScheduleBallonView.m; path = CMEP/Views/ScheduleBallonView.m; sourceTree = "<group>"; };
+		729E853819AFB5890057DF1C /* ScheduleBallonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ScheduleBallonView.xib; path = CMEP/Views/ScheduleBallonView.xib; sourceTree = "<group>"; };
+		729E853A19AFB9820057DF1C /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		729E853B19AFB9820057DF1C /* base_ballon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = base_ballon.png; sourceTree = "<group>"; };
+		729E853C19AFB9820057DF1C /* top_ballon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = top_ballon.png; sourceTree = "<group>"; };
+		729E854119AFC80A0057DF1C /* FakeModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FakeModelManager.h; path = CMEP/Manager/FakeModelManager.h; sourceTree = "<group>"; };
+		729E854219AFC80A0057DF1C /* FakeModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FakeModelManager.m; path = CMEP/Manager/FakeModelManager.m; sourceTree = "<group>"; };
 		72B176DC19AE277700F549C5 /* CMEP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CMEP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72B176DF19AE277700F549C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		72B176E119AE277700F549C5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -173,6 +194,8 @@
 				72817A8219AE6A1500446FD9 /* Extensions.m */,
 				72817A8319AE6A1500446FD9 /* Utils.h */,
 				72817A8419AE6A1500446FD9 /* Utils.m */,
+				729E852519AF782E0057DF1C /* CMEPUtils.h */,
+				729E852619AF782E0057DF1C /* CMEPUtils.m */,
 			);
 			name = Utils;
 			path = CMEP/Utils;
@@ -183,13 +206,39 @@
 			children = (
 				729E851D19AE6E000057DF1C /* HomeTableViewCell.h */,
 				729E851E19AE6E000057DF1C /* HomeTableViewCell.m */,
+				729E853219AFB0BA0057DF1C /* ScheduleCell.h */,
+				729E853319AFB0BA0057DF1C /* ScheduleCell.m */,
+				729E853519AFB5760057DF1C /* ScheduleBallonView.h */,
+				729E853619AFB5760057DF1C /* ScheduleBallonView.m */,
+				729E853819AFB5890057DF1C /* ScheduleBallonView.xib */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		729E852E19AFB06A0057DF1C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				729E852F19AFB0910057DF1C /* ScheduleModel.h */,
+				729E853019AFB0910057DF1C /* ScheduleModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		729E854019AFC7AD0057DF1C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				729E854119AFC80A0057DF1C /* FakeModelManager.h */,
+				729E854219AFC80A0057DF1C /* FakeModelManager.m */,
+			);
+			name = Managers;
 			sourceTree = "<group>";
 		};
 		72B176D319AE277700F549C5 = {
 			isa = PBXGroup;
 			children = (
+				729E854019AFC7AD0057DF1C /* Managers */,
+				729E852E19AFB06A0057DF1C /* Models */,
+				729E852319AF72910057DF1C /* WebPages */,
 				72817A8819AE6B1200446FD9 /* Views */,
 				72817A7E19AE6A1500446FD9 /* Utils */,
 				72B1772919AE467D00F549C5 /* Images */,
@@ -294,18 +343,16 @@
 		72B1772219AE417700F549C5 /* ViewsControllers */ = {
 			isa = PBXGroup;
 			children = (
-				72817A7119AE60DA00446FD9 /* SideViewController.h */,
-				72817A7219AE60DA00446FD9 /* SideViewController.m */,
-				72817A7319AE60DA00446FD9 /* SideViewController.xib */,
-				72817A7619AE60EA00446FD9 /* CenterViewController.h */,
-				72817A7719AE60EA00446FD9 /* CenterViewController.m */,
-				72817A7819AE60EA00446FD9 /* CenterViewController.xib */,
 				72B1772319AE41A500F549C5 /* HomeViewController.h */,
 				72B1772419AE41A500F549C5 /* HomeViewController.m */,
 				72B1772619AE426F00F549C5 /* MenuViewController.h */,
 				72B1772719AE426F00F549C5 /* MenuViewController.m */,
 				72817A6C19AE52F700446FD9 /* PresentationViewController.h */,
 				72817A6D19AE52F700446FD9 /* PresentationViewController.m */,
+				729E852819AF89AB0057DF1C /* PresentationAboutViewController.h */,
+				729E852919AF89AB0057DF1C /* PresentationAboutViewController.m */,
+				729E852B19AFA7B20057DF1C /* ScheduleViewController.h */,
+				729E852C19AFA7B20057DF1C /* ScheduleViewController.m */,
 			);
 			name = ViewsControllers;
 			sourceTree = "<group>";
@@ -313,6 +360,9 @@
 		72B1772919AE467D00F549C5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				729E853A19AFB9820057DF1C /* arrow.png */,
+				729E853B19AFB9820057DF1C /* base_ballon.png */,
+				729E853C19AFB9820057DF1C /* top_ballon.png */,
 				72B1772A19AE467D00F549C5 /* bg_menu@2x.png */,
 				72B1772B19AE467D00F549C5 /* bg_topo_home@2x.png */,
 				72B1772C19AE467D00F549C5 /* bg_topo_pag_conteudo@2x.png */,
@@ -417,6 +467,8 @@
 				72B1774019AE467D00F549C5 /* icon_avaliacao@2x.png in Resources */,
 				72B1774419AE467D00F549C5 /* icon_palestrantes@2x.png in Resources */,
 				72B1774D19AE467D00F549C5 /* sombra@2x.png in Resources */,
+				729E853F19AFB9820057DF1C /* top_ballon.png in Resources */,
+				729E853D19AFB9820057DF1C /* arrow.png in Resources */,
 				72B1773D19AE467D00F549C5 /* bg_topo_home@2x.png in Resources */,
 				72B1773C19AE467D00F549C5 /* bg_menu@2x.png in Resources */,
 				72B1774319AE467D00F549C5 /* icon_networking@2x.png in Resources */,
@@ -427,17 +479,18 @@
 				72B1774A19AE467D00F549C5 /* logo_cmep@2x.png in Resources */,
 				72B1774219AE467D00F549C5 /* icon_menu_white@2x.png in Resources */,
 				72B1774C19AE467D00F549C5 /* seta_menu@2x.png in Resources */,
-				72817A7519AE60DA00446FD9 /* SideViewController.xib in Resources */,
 				72B1774519AE467D00F549C5 /* icon_programacao@2x.png in Resources */,
 				72B176FB19AE277700F549C5 /* Images.xcassets in Resources */,
+				729E853919AFB5890057DF1C /* ScheduleBallonView.xib in Resources */,
 				72B1774819AE467D00F549C5 /* logo_abecs_apresentacao@2x.png in Resources */,
-				72817A7A19AE60EA00446FD9 /* CenterViewController.xib in Resources */,
 				72B176F319AE277700F549C5 /* Main_iPhone.storyboard in Resources */,
 				72B1774719AE467D00F549C5 /* logo_abecs@2x.png in Resources */,
 				72B1773F19AE467D00F549C5 /* btn_verde@2x.png in Resources */,
 				72B1774B19AE467D00F549C5 /* logo_cmep_pag_apresentacao@2x.png in Resources */,
+				729E853E19AFB9820057DF1C /* base_ballon.png in Resources */,
 				72B1774119AE467D00F549C5 /* icon_menu@2x.png in Resources */,
 				72B176EA19AE277700F549C5 /* InfoPlist.strings in Resources */,
+				729E852419AF72910057DF1C /* WebPages in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,21 +542,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				729E853719AFB5760057DF1C /* ScheduleBallonView.m in Sources */,
 				72B1771F19AE406E00F549C5 /* IISideController.m in Sources */,
 				72B176F919AE277700F549C5 /* ViewController.m in Sources */,
 				729E851F19AE6E000057DF1C /* HomeTableViewCell.m in Sources */,
+				729E854319AFC80A0057DF1C /* FakeModelManager.m in Sources */,
 				72B1772019AE406E00F549C5 /* IIViewDeckController.m in Sources */,
 				72817A8719AE6A1500446FD9 /* Utils.m in Sources */,
+				729E852A19AF89AB0057DF1C /* PresentationAboutViewController.m in Sources */,
 				72817A8619AE6A1500446FD9 /* Extensions.m in Sources */,
 				72B1772819AE426F00F549C5 /* MenuViewController.m in Sources */,
-				72817A7919AE60EA00446FD9 /* CenterViewController.m in Sources */,
+				729E853419AFB0BA0057DF1C /* ScheduleCell.m in Sources */,
+				729E853119AFB0910057DF1C /* ScheduleModel.m in Sources */,
 				72B176F019AE277700F549C5 /* AppDelegate.m in Sources */,
 				72817A8519AE6A1500446FD9 /* Defines.m in Sources */,
-				72817A7419AE60DA00446FD9 /* SideViewController.m in Sources */,
 				72B176EC19AE277700F549C5 /* main.m in Sources */,
+				729E852719AF782E0057DF1C /* CMEPUtils.m in Sources */,
 				72B1772519AE41A500F549C5 /* HomeViewController.m in Sources */,
 				72B1772119AE406E00F549C5 /* IIWrapController.m in Sources */,
 				72817A6E19AE52F700446FD9 /* PresentationViewController.m in Sources */,
+				729E852D19AFA7B20057DF1C /* ScheduleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

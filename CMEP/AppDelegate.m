@@ -10,9 +10,6 @@
 #import "HomeViewController.h"
 #import "MenuViewController.h"
 
-#import "SideViewController.h"
-#import "CenterViewController.h"
-
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -26,6 +23,7 @@
     
     IIViewDeckController *deckController = [[IIViewDeckController alloc] initWithCenterViewController:navController leftViewController:menuvc];
     deckController.leftSize = 110;
+    deckController.centerhiddenInteractivity = IIViewDeckCenterHiddenNotUserInteractiveWithTapToClose;
     deckController.panningMode = IIViewDeckFullViewPanning;
     
     self.window.rootViewController = deckController;

@@ -21,4 +21,8 @@
     #import "Utils.h"
     #import "Defines.h"
     #import "Extensions.h"
+    #import "CMEPUtils.h"
+
+    //Managers
+    #import "FakeModelManager.h"
 #endif

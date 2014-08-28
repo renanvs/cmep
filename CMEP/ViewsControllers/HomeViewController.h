@@ -14,5 +14,6 @@
 }
 
 - (IBAction)openMenu:(id)sender;
+- (IBAction)showSponsors:(id)sender;
 
 @end

@@ -8,23 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-typedef enum {
-    MenuOptionPresentation,
-    MenuOptionSchedule,
-    MenuOptionInformation,
-    MenuOptionSponsor,
-    MenuOptionMap,
-    MenuOptionSpeakers,
-    MenuOptionNetworking,
-    MenuOptionRating,
-    MenuOptionConfiguration
-    
-} MenuOption;
-
 @interface MenuViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>{
     __weak IBOutlet UITableView *menuTableView;
     NSArray *menuOptions;
-    CGFloat cellHeight;
 }
 
 @end

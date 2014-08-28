@@ -28,40 +28,20 @@
 {
     [super viewDidLoad];
     [[self navigationController] setNavigationBarHidden:YES];
-    
     [self addOptionItens];
-    // Do any additional setup after loading the view.
 }
 
 -(void)addOptionItens{
-    NSDictionary *programDic = @{@"title":@"PROGRAMAÇÃO", @"subtitle":@"fique por dentro de tudo o que vai acontecer" ,@"imageName":@"icon_programacao"};
-    NSDictionary *speakerDic = @{@"title":@"PALESTRANTES", @"subtitle":@"veja mais informações sobre os palestrantes" ,@"imageName":@"icon_palestrantes"};
-    NSDictionary *networkDic = @{@"title":@"NETWORKING", @"subtitle":@"troque contatos profissionais" ,@"imageName":@"icon_networking"};
-    NSDictionary *ratingDic =  @{@"title":@"AVALIAÇÃO DO EVENTO", @"subtitle":@"avalie nosso evento" ,@"imageName":@"icon_avaliacao"};
+    NSDictionary *programDic = @{@"title":@"PROGRAMAÇÃO", @"subtitle":@"fique por dentro de tudo o que vai acontecer" ,@"imageName":@"icon_programacao", @"type": [NSNumber numberWithInt:MenuOptionPresentation]};
+    NSDictionary *speakerDic = @{@"title":@"PALESTRANTES", @"subtitle":@"veja mais informações sobre os palestrantes" ,@"imageName":@"icon_palestrantes", @"type": [NSNumber numberWithInt:MenuOptionSpeakers]};
+    NSDictionary *networkDic = @{@"title":@"NETWORKING", @"subtitle":@"troque contatos profissionais" ,@"imageName":@"icon_networking", @"type": [NSNumber numberWithInt:MenuOptionNetworking]};
+    NSDictionary *ratingDic =  @{@"title":@"AVALIAÇÃO DO EVENTO", @"subtitle":@"avalie nosso evento" ,@"imageName":@"icon_avaliacao", @"type": [NSNumber numberWithInt:MenuOptionRating]};
     
     menuItens = [[NSArray alloc] initWithObjects:programDic, speakerDic, networkDic, ratingDic, nil];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 - (IBAction)openMenu:(id)sender {
     [self.viewDeckController openLeftView];
-    //[self.viewDeckController openRightView];
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -85,6 +65,40 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return menuItens.count;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    MenuOption opt =  (MenuOption)[[[menuItens objectAtIndex:indexPath.row] objectForKey:@"type"] intValue];
+    [self showControllerByMenuOption:opt];
+}
+
+-(void)showControllerByMenuOption:(MenuOption)optionType{
+    UIViewController *desireController = [CMEPUtils getControllerByType:optionType];
+    [self pushCenterController:desireController];
+}
+
+-(void)pushCenterController:(UIViewController*)desireController{
+    
+    if (!desireController) {
+        NSLog(@"warning: Controller está vazior");
+        return;
+    }
+    
+    UINavigationController *navController = (UINavigationController*)self.viewDeckController.centerController;
+    
+    if ([desireController isKindOfClass:[navController.visibleViewController class]]) {
+        [self.viewDeckController closeOpenView];
+        return;
+    }
+    
+    [self.viewDeckController closeOpenViewAnimated:YES completion:^(IIViewDeckController *controller, BOOL success) {
+        [navController pushViewController:desireController animated:YES];
+    }];
+}
+
+-(void)showSponsors:(id)sender{
+    [CMEPUtils getControllerByType:MenuOptionSponsor];
+    [self.navigationController pushViewController:nil animated:YES];
 }
 
 @end

@@ -8,6 +8,7 @@
 
 #import "MenuViewController.h"
 #import "PresentationViewController.h"
+#import "HomeViewController.h"
 
 @interface MenuViewController ()
 
@@ -27,7 +28,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    cellHeight = 42;
     [[self navigationController] setNavigationBarHidden:YES];
     [self addMenuItens];
     // Do any additional setup after loading the view.
@@ -59,23 +59,6 @@
     
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *cellMenuIdentifier = @"cellMenuIdentifier";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellMenuIdentifier forIndexPath:indexPath];
@@ -95,24 +78,54 @@
     return menuOptions.count;
 }
 
-//static NSArray *heights = @[@"dsf",@"sdfsdf"];
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSArray *sheights = @[@42,@40];
-    cellHeight = cellHeight + (indexPath.row*1.5);
-    return cellHeight;
+    NSArray *sheights = @[@47,@49,@48,@48,@48,@49,@48,@46,@57,];
+    return [[sheights objectAtIndex:indexPath.row] floatValue];
 }
 
-- (IBAction)closeMenu:(id)sender {
-    [self.viewDeckController closeOpenView];
-}
-
-- (IBAction)showPresentation:(id)sender {
-    [self.viewDeckController closeOpenViewAnimated:YES completion:^(IIViewDeckController *controller, BOOL success) {
-        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
-        PresentationViewController *pvc = [sb instantiateViewControllerWithIdentifier:@"PresentationViewController"];
-        self.viewDeckController.centerController = pvc;;
-    }];
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    MenuOption opt =  (MenuOption)[[[menuOptions objectAtIndex:indexPath.row] objectForKey:@"type"] intValue];
     
+    UIViewController *desireController = [CMEPUtils getControllerByType:opt];
+    [self pushCenterController:desireController];
+}
+
+-(void)pushCenterController:(UIViewController*)desireController{
+    
+    if (!desireController) {
+        NSLog(@"warning: Controller está vazior");
+        return;
+    }
+    
+    UINavigationController *navController = (UINavigationController*)self.viewDeckController.centerController;
+    
+    if ([desireController isKindOfClass:[navController.visibleViewController class]]) {
+        [self.viewDeckController closeOpenView];
+        return;
+    }
+    
+    [self.viewDeckController closeOpenViewAnimated:YES completion:^(IIViewDeckController *controller, BOOL success) {
+        
+        BOOL removeAllAndAdd = NO;
+        for (UIViewController *vc in navController.viewControllers) {
+            if ([desireController isKindOfClass:[vc class]]) {
+                removeAllAndAdd = YES;
+            }
+        }
+        
+        if (removeAllAndAdd) {
+            NSMutableArray *listViewsControllers = [[NSMutableArray alloc] initWithArray:navController.viewControllers];
+            for (UIViewController *vc in navController.viewControllers) {
+                if (![vc isKindOfClass:[HomeViewController class]]) {
+                    [listViewsControllers removeObject:vc];
+                }
+            }
+            
+            navController.viewControllers = listViewsControllers;
+        }
+        
+        [navController pushViewController:desireController animated:YES];
+    }];
 }
 
 @end
