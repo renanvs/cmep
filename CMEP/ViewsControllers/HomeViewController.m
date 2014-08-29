@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import "HomeTableViewCell.h"
+#import "MZFormSheetController.h"
 
 @interface HomeViewController ()
 
@@ -32,7 +33,7 @@
 }
 
 -(void)addOptionItens{
-    NSDictionary *programDic = @{@"title":@"PROGRAMAÇÃO", @"subtitle":@"fique por dentro de tudo o que vai acontecer" ,@"imageName":@"icon_programacao", @"type": [NSNumber numberWithInt:MenuOptionPresentation]};
+    NSDictionary *programDic = @{@"title":@"PROGRAMAÇÃO", @"subtitle":@"fique por dentro de tudo o que vai acontecer" ,@"imageName":@"icon_programacao", @"type": [NSNumber numberWithInt:MenuOptionSchedule]};
     NSDictionary *speakerDic = @{@"title":@"PALESTRANTES", @"subtitle":@"veja mais informações sobre os palestrantes" ,@"imageName":@"icon_palestrantes", @"type": [NSNumber numberWithInt:MenuOptionSpeakers]};
     NSDictionary *networkDic = @{@"title":@"NETWORKING", @"subtitle":@"troque contatos profissionais" ,@"imageName":@"icon_networking", @"type": [NSNumber numberWithInt:MenuOptionNetworking]};
     NSDictionary *ratingDic =  @{@"title":@"AVALIAÇÃO DO EVENTO", @"subtitle":@"avalie nosso evento" ,@"imageName":@"icon_avaliacao", @"type": [NSNumber numberWithInt:MenuOptionRating]};
@@ -97,8 +98,13 @@
 }
 
 -(void)showSponsors:(id)sender{
-    [CMEPUtils getControllerByType:MenuOptionSponsor];
-    [self.navigationController pushViewController:nil animated:YES];
+    UIViewController *svc = [CMEPUtils getControllerByType:MenuOptionSponsor];
+    CGSize viewSize = self.view.frame.size;
+    MZFormSheetController *mzc = [[MZFormSheetController alloc] initWithSize:viewSize viewController:svc];
+    mzc.shouldCenterVertically = YES;
+    mzc.transitionStyle = MZFormSheetTransitionStyleSlideFromLeft;
+    [mzc presentAnimated:YES completionHandler:nil];
+    //[self.navigationController pushViewController:nil animated:YES];
 }
 
 @end

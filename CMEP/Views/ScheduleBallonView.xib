@@ -28,27 +28,11 @@
                     <autoresizingMask key="autoresizingMask" heightSizable="YES"/>
                     <color key="backgroundColor" red="0.91588824728260865" green="0.91588824728260865" blue="0.91588824728260865" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Palestra e Debate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gVC-FB-aYk">
-                    <rect key="frame" x="24" y="0.0" width="170" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Palestra e DebatePalestra e DebatePalestra e DebatePalestra e DebatePalestra e DebatePalestra e Debate" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3Jb-0w-ZcT">
-                    <rect key="frame" x="24" y="19" width="170" height="34"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="backgroundView" destination="tmk-DJ-sWq" id="GBp-da-5Kb"/>
                 <outlet property="baseImage" destination="A2O-Ga-IwA" id="Ddp-7S-vyo"/>
-                <outlet property="subtitleLabel" destination="3Jb-0w-ZcT" id="7dU-9R-0Kf"/>
-                <outlet property="titleLabel" destination="gVC-FB-aYk" id="NlZ-9p-xrD"/>
             </connections>
         </view>
     </objects>

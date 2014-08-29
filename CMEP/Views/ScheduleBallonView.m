@@ -7,6 +7,7 @@
 //
 
 #import "ScheduleBallonView.h"
+#import "BallonTextContainer.h"
 
 @implementation ScheduleBallonView
 
@@ -27,17 +28,30 @@
     // Drawing code
 }
 */
-
+static float gapY =10;
 -(void)setScheduleModel:(ScheduleModel*)model{
-    if (model.titles.count == 1) {
-        titleLabel.text = [model.titles lastObject];
-        subtitleLabel.text = [model.subtitles lastObject];
-    }else{
+//    if (model.titles.count == 1) {
+//        titleLabel.text = [model.titles lastObject];
+//        subtitleLabel.text = [model.subtitles lastObject];
+//    }else{
         CGFloat ballonHeight = self.frame.size.height;
         CGRect ballonRect = self.frame;
         ballonRect.size.height = ballonHeight * model.titles.count;
         self.frame = ballonRect;
-    }
+        
+        for (int i=0; i < model.titles.count; i++) {
+            BallonTextContainer *ballonTextContainer = [Utils loadNibForName:@"BallonTextContainer"];
+            ballonTextContainer.titleLabel.text = [model.titles objectAtIndex:i];
+            ballonTextContainer.subtitleLabel.text = [model.subtitles objectAtIndex:i];
+            
+            CGRect rectTextContainer = ballonTextContainer.frame;
+            rectTextContainer.origin.y = gapY + (rectTextContainer.size.height * i);
+            ballonTextContainer.frame = rectTextContainer;
+            [self addSubview:ballonTextContainer];
+        }
+        
+        
+   // }
 }
 
 @end

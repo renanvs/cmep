@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		4E908AEEACDF49E28B3408C4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F04A8D4A74A74AFA84025C06 /* libPods.a */; };
+		7208119619B0C5C6009D91E1 /* SponsorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7208119519B0C5C6009D91E1 /* SponsorViewController.m */; };
+		720811AD19B0C6ED009D91E1 /* MZAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 7208119C19B0C6ED009D91E1 /* MZAppearance.m */; };
+		720811AE19B0C6ED009D91E1 /* NSInvocation+Copy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7208119E19B0C6ED009D91E1 /* NSInvocation+Copy.m */; };
+		720811AF19B0C6ED009D91E1 /* MZFormSheetBackgroundWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 720811A019B0C6ED009D91E1 /* MZFormSheetBackgroundWindow.m */; };
+		720811B019B0C6ED009D91E1 /* MZFormSheetBackgroundWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 720811A219B0C6ED009D91E1 /* MZFormSheetBackgroundWindowViewController.m */; };
+		720811B119B0C6ED009D91E1 /* MZFormSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 720811A419B0C6ED009D91E1 /* MZFormSheetController.m */; };
+		720811B219B0C6ED009D91E1 /* MZFormSheetSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 720811A619B0C6ED009D91E1 /* MZFormSheetSegue.m */; };
+		720811B319B0C6ED009D91E1 /* MZTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 720811A819B0C6ED009D91E1 /* MZTransition.m */; };
+		720811B419B0C6ED009D91E1 /* UIImage+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = 720811AA19B0C6ED009D91E1 /* UIImage+Additional.m */; };
+		720811B519B0C6ED009D91E1 /* UIViewController+TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 720811AC19B0C6ED009D91E1 /* UIViewController+TargetViewController.m */; };
+		720811B819B0CB5A009D91E1 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 720811B719B0CB5A009D91E1 /* MapViewController.m */; };
+		720811BA19B0D6A2009D91E1 /* Files in Resources */ = {isa = PBXBuildFile; fileRef = 720811B919B0D6A2009D91E1 /* Files */; };
+		725F27EC19B09CE6005FE5BD /* ScheduleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 725F27EB19B09CE6005FE5BD /* ScheduleCell.xib */; };
 		72817A6E19AE52F700446FD9 /* PresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72817A6D19AE52F700446FD9 /* PresentationViewController.m */; };
 		72817A7019AE5CE100446FD9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72817A6F19AE5CE100446FD9 /* QuartzCore.framework */; };
 		72817A8519AE6A1500446FD9 /* Defines.m in Sources */ = {isa = PBXBuildFile; fileRef = 72817A8019AE6A1500446FD9 /* Defines.m */; };
@@ -64,6 +77,10 @@
 		72B1774B19AE467D00F549C5 /* logo_cmep_pag_apresentacao@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 72B1773919AE467D00F549C5 /* logo_cmep_pag_apresentacao@2x.png */; };
 		72B1774C19AE467D00F549C5 /* seta_menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 72B1773A19AE467D00F549C5 /* seta_menu@2x.png */; };
 		72B1774D19AE467D00F549C5 /* sombra@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 72B1773B19AE467D00F549C5 /* sombra@2x.png */; };
+		72BEE26219B0A2780075AE36 /* BallonTextContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72BEE26119B0A2780075AE36 /* BallonTextContainer.xib */; };
+		72BEE26519B0A30D0075AE36 /* BallonTextContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BEE26419B0A30D0075AE36 /* BallonTextContainer.m */; };
+		72BEE26819B0B0E70075AE36 /* InformationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BEE26719B0B0E70075AE36 /* InformationsViewController.m */; };
+		72BEE26B19B0B21F0075AE36 /* InformationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BEE26A19B0B21F0075AE36 /* InformationTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +94,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7208119419B0C5C6009D91E1 /* SponsorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SponsorViewController.h; path = CMEP/ViewsControllers/SponsorViewController.h; sourceTree = "<group>"; };
+		7208119519B0C5C6009D91E1 /* SponsorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SponsorViewController.m; path = CMEP/ViewsControllers/SponsorViewController.m; sourceTree = "<group>"; };
+		7208119B19B0C6ED009D91E1 /* MZAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZAppearance.h; sourceTree = "<group>"; };
+		7208119C19B0C6ED009D91E1 /* MZAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZAppearance.m; sourceTree = "<group>"; };
+		7208119D19B0C6ED009D91E1 /* NSInvocation+Copy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+Copy.h"; sourceTree = "<group>"; };
+		7208119E19B0C6ED009D91E1 /* NSInvocation+Copy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+Copy.m"; sourceTree = "<group>"; };
+		7208119F19B0C6ED009D91E1 /* MZFormSheetBackgroundWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZFormSheetBackgroundWindow.h; sourceTree = "<group>"; };
+		720811A019B0C6ED009D91E1 /* MZFormSheetBackgroundWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZFormSheetBackgroundWindow.m; sourceTree = "<group>"; };
+		720811A119B0C6ED009D91E1 /* MZFormSheetBackgroundWindowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZFormSheetBackgroundWindowViewController.h; sourceTree = "<group>"; };
+		720811A219B0C6ED009D91E1 /* MZFormSheetBackgroundWindowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZFormSheetBackgroundWindowViewController.m; sourceTree = "<group>"; };
+		720811A319B0C6ED009D91E1 /* MZFormSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZFormSheetController.h; sourceTree = "<group>"; };
+		720811A419B0C6ED009D91E1 /* MZFormSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZFormSheetController.m; sourceTree = "<group>"; };
+		720811A519B0C6ED009D91E1 /* MZFormSheetSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZFormSheetSegue.h; sourceTree = "<group>"; };
+		720811A619B0C6ED009D91E1 /* MZFormSheetSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZFormSheetSegue.m; sourceTree = "<group>"; };
+		720811A719B0C6ED009D91E1 /* MZTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZTransition.h; sourceTree = "<group>"; };
+		720811A819B0C6ED009D91E1 /* MZTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZTransition.m; sourceTree = "<group>"; };
+		720811A919B0C6ED009D91E1 /* UIImage+Additional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Additional.h"; sourceTree = "<group>"; };
+		720811AA19B0C6ED009D91E1 /* UIImage+Additional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Additional.m"; sourceTree = "<group>"; };
+		720811AB19B0C6ED009D91E1 /* UIViewController+TargetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TargetViewController.h"; sourceTree = "<group>"; };
+		720811AC19B0C6ED009D91E1 /* UIViewController+TargetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TargetViewController.m"; sourceTree = "<group>"; };
+		720811B619B0CB5A009D91E1 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = CMEP/ViewsControllers/MapViewController.h; sourceTree = "<group>"; };
+		720811B719B0CB5A009D91E1 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = CMEP/ViewsControllers/MapViewController.m; sourceTree = "<group>"; };
+		720811B919B0D6A2009D91E1 /* Files */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Files; path = CMEP/Files; sourceTree = "<group>"; };
+		725F27EB19B09CE6005FE5BD /* ScheduleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ScheduleCell.xib; path = CMEP/Views/ScheduleCell.xib; sourceTree = "<group>"; };
 		72817A6C19AE52F700446FD9 /* PresentationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PresentationViewController.h; path = CMEP/ViewsControllers/PresentationViewController.h; sourceTree = "<group>"; };
 		72817A6D19AE52F700446FD9 /* PresentationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PresentationViewController.m; path = CMEP/ViewsControllers/PresentationViewController.m; sourceTree = "<group>"; };
 		72817A6F19AE5CE100446FD9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -155,6 +196,13 @@
 		72B1773919AE467D00F549C5 /* logo_cmep_pag_apresentacao@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo_cmep_pag_apresentacao@2x.png"; sourceTree = "<group>"; };
 		72B1773A19AE467D00F549C5 /* seta_menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "seta_menu@2x.png"; sourceTree = "<group>"; };
 		72B1773B19AE467D00F549C5 /* sombra@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sombra@2x.png"; sourceTree = "<group>"; };
+		72BEE26119B0A2780075AE36 /* BallonTextContainer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BallonTextContainer.xib; path = CMEP/Views/BallonTextContainer.xib; sourceTree = "<group>"; };
+		72BEE26319B0A30D0075AE36 /* BallonTextContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BallonTextContainer.h; path = CMEP/Views/BallonTextContainer.h; sourceTree = "<group>"; };
+		72BEE26419B0A30D0075AE36 /* BallonTextContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BallonTextContainer.m; path = CMEP/Views/BallonTextContainer.m; sourceTree = "<group>"; };
+		72BEE26619B0B0E70075AE36 /* InformationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InformationsViewController.h; path = CMEP/ViewsControllers/InformationsViewController.h; sourceTree = "<group>"; };
+		72BEE26719B0B0E70075AE36 /* InformationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InformationsViewController.m; path = CMEP/ViewsControllers/InformationsViewController.m; sourceTree = "<group>"; };
+		72BEE26919B0B21F0075AE36 /* InformationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InformationTableViewCell.h; path = CMEP/Views/InformationTableViewCell.h; sourceTree = "<group>"; };
+		72BEE26A19B0B21F0075AE36 /* InformationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InformationTableViewCell.m; path = CMEP/Views/InformationTableViewCell.m; sourceTree = "<group>"; };
 		BCD35203496A47D9B7EEE6EA /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F04A8D4A74A74AFA84025C06 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -185,6 +233,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7208119919B0C6ED009D91E1 /* MZFormSheetController */ = {
+			isa = PBXGroup;
+			children = (
+				7208119A19B0C6ED009D91E1 /* Additional */,
+				7208119F19B0C6ED009D91E1 /* MZFormSheetBackgroundWindow.h */,
+				720811A019B0C6ED009D91E1 /* MZFormSheetBackgroundWindow.m */,
+				720811A119B0C6ED009D91E1 /* MZFormSheetBackgroundWindowViewController.h */,
+				720811A219B0C6ED009D91E1 /* MZFormSheetBackgroundWindowViewController.m */,
+				720811A319B0C6ED009D91E1 /* MZFormSheetController.h */,
+				720811A419B0C6ED009D91E1 /* MZFormSheetController.m */,
+				720811A519B0C6ED009D91E1 /* MZFormSheetSegue.h */,
+				720811A619B0C6ED009D91E1 /* MZFormSheetSegue.m */,
+				720811A719B0C6ED009D91E1 /* MZTransition.h */,
+				720811A819B0C6ED009D91E1 /* MZTransition.m */,
+				720811A919B0C6ED009D91E1 /* UIImage+Additional.h */,
+				720811AA19B0C6ED009D91E1 /* UIImage+Additional.m */,
+				720811AB19B0C6ED009D91E1 /* UIViewController+TargetViewController.h */,
+				720811AC19B0C6ED009D91E1 /* UIViewController+TargetViewController.m */,
+			);
+			path = MZFormSheetController;
+			sourceTree = "<group>";
+		};
+		7208119A19B0C6ED009D91E1 /* Additional */ = {
+			isa = PBXGroup;
+			children = (
+				7208119B19B0C6ED009D91E1 /* MZAppearance.h */,
+				7208119C19B0C6ED009D91E1 /* MZAppearance.m */,
+				7208119D19B0C6ED009D91E1 /* NSInvocation+Copy.h */,
+				7208119E19B0C6ED009D91E1 /* NSInvocation+Copy.m */,
+			);
+			path = Additional;
+			sourceTree = "<group>";
+		};
 		72817A7E19AE6A1500446FD9 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,9 +289,15 @@
 				729E851E19AE6E000057DF1C /* HomeTableViewCell.m */,
 				729E853219AFB0BA0057DF1C /* ScheduleCell.h */,
 				729E853319AFB0BA0057DF1C /* ScheduleCell.m */,
+				725F27EB19B09CE6005FE5BD /* ScheduleCell.xib */,
 				729E853519AFB5760057DF1C /* ScheduleBallonView.h */,
 				729E853619AFB5760057DF1C /* ScheduleBallonView.m */,
 				729E853819AFB5890057DF1C /* ScheduleBallonView.xib */,
+				72BEE26119B0A2780075AE36 /* BallonTextContainer.xib */,
+				72BEE26319B0A30D0075AE36 /* BallonTextContainer.h */,
+				72BEE26419B0A30D0075AE36 /* BallonTextContainer.m */,
+				72BEE26919B0B21F0075AE36 /* InformationTableViewCell.h */,
+				72BEE26A19B0B21F0075AE36 /* InformationTableViewCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -238,6 +325,7 @@
 			children = (
 				729E854019AFC7AD0057DF1C /* Managers */,
 				729E852E19AFB06A0057DF1C /* Models */,
+				720811B919B0D6A2009D91E1 /* Files */,
 				729E852319AF72910057DF1C /* WebPages */,
 				72817A8819AE6B1200446FD9 /* Views */,
 				72817A7E19AE6A1500446FD9 /* Utils */,
@@ -321,6 +409,7 @@
 		72B1771719AE406E00F549C5 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				7208119919B0C6ED009D91E1 /* MZFormSheetController */,
 				72B1771819AE406E00F549C5 /* ViewDeck */,
 			);
 			name = External;
@@ -353,6 +442,12 @@
 				729E852919AF89AB0057DF1C /* PresentationAboutViewController.m */,
 				729E852B19AFA7B20057DF1C /* ScheduleViewController.h */,
 				729E852C19AFA7B20057DF1C /* ScheduleViewController.m */,
+				72BEE26619B0B0E70075AE36 /* InformationsViewController.h */,
+				72BEE26719B0B0E70075AE36 /* InformationsViewController.m */,
+				7208119419B0C5C6009D91E1 /* SponsorViewController.h */,
+				7208119519B0C5C6009D91E1 /* SponsorViewController.m */,
+				720811B619B0CB5A009D91E1 /* MapViewController.h */,
+				720811B719B0CB5A009D91E1 /* MapViewController.m */,
 			);
 			name = ViewsControllers;
 			sourceTree = "<group>";
@@ -467,6 +562,7 @@
 				72B1774019AE467D00F549C5 /* icon_avaliacao@2x.png in Resources */,
 				72B1774419AE467D00F549C5 /* icon_palestrantes@2x.png in Resources */,
 				72B1774D19AE467D00F549C5 /* sombra@2x.png in Resources */,
+				72BEE26219B0A2780075AE36 /* BallonTextContainer.xib in Resources */,
 				729E853F19AFB9820057DF1C /* top_ballon.png in Resources */,
 				729E853D19AFB9820057DF1C /* arrow.png in Resources */,
 				72B1773D19AE467D00F549C5 /* bg_topo_home@2x.png in Resources */,
@@ -475,9 +571,11 @@
 				72B1773E19AE467D00F549C5 /* bg_topo_pag_conteudo@2x.png in Resources */,
 				72B1774919AE467D00F549C5 /* logo_abecs_pag_conteudo@2x.png in Resources */,
 				72B1774619AE467D00F549C5 /* icon_voltar@2x.png in Resources */,
+				720811BA19B0D6A2009D91E1 /* Files in Resources */,
 				72B176F619AE277700F549C5 /* Main_iPad.storyboard in Resources */,
 				72B1774A19AE467D00F549C5 /* logo_cmep@2x.png in Resources */,
 				72B1774219AE467D00F549C5 /* icon_menu_white@2x.png in Resources */,
+				725F27EC19B09CE6005FE5BD /* ScheduleCell.xib in Resources */,
 				72B1774C19AE467D00F549C5 /* seta_menu@2x.png in Resources */,
 				72B1774519AE467D00F549C5 /* icon_programacao@2x.png in Resources */,
 				72B176FB19AE277700F549C5 /* Images.xcassets in Resources */,
@@ -543,17 +641,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				729E853719AFB5760057DF1C /* ScheduleBallonView.m in Sources */,
+				720811B019B0C6ED009D91E1 /* MZFormSheetBackgroundWindowViewController.m in Sources */,
+				720811B119B0C6ED009D91E1 /* MZFormSheetController.m in Sources */,
+				72BEE26819B0B0E70075AE36 /* InformationsViewController.m in Sources */,
 				72B1771F19AE406E00F549C5 /* IISideController.m in Sources */,
 				72B176F919AE277700F549C5 /* ViewController.m in Sources */,
+				720811B319B0C6ED009D91E1 /* MZTransition.m in Sources */,
 				729E851F19AE6E000057DF1C /* HomeTableViewCell.m in Sources */,
+				7208119619B0C5C6009D91E1 /* SponsorViewController.m in Sources */,
 				729E854319AFC80A0057DF1C /* FakeModelManager.m in Sources */,
 				72B1772019AE406E00F549C5 /* IIViewDeckController.m in Sources */,
+				72BEE26519B0A30D0075AE36 /* BallonTextContainer.m in Sources */,
 				72817A8719AE6A1500446FD9 /* Utils.m in Sources */,
 				729E852A19AF89AB0057DF1C /* PresentationAboutViewController.m in Sources */,
 				72817A8619AE6A1500446FD9 /* Extensions.m in Sources */,
+				720811B819B0CB5A009D91E1 /* MapViewController.m in Sources */,
 				72B1772819AE426F00F549C5 /* MenuViewController.m in Sources */,
+				720811AD19B0C6ED009D91E1 /* MZAppearance.m in Sources */,
 				729E853419AFB0BA0057DF1C /* ScheduleCell.m in Sources */,
+				720811AE19B0C6ED009D91E1 /* NSInvocation+Copy.m in Sources */,
+				720811B519B0C6ED009D91E1 /* UIViewController+TargetViewController.m in Sources */,
 				729E853119AFB0910057DF1C /* ScheduleModel.m in Sources */,
+				720811B419B0C6ED009D91E1 /* UIImage+Additional.m in Sources */,
+				720811AF19B0C6ED009D91E1 /* MZFormSheetBackgroundWindow.m in Sources */,
+				720811B219B0C6ED009D91E1 /* MZFormSheetSegue.m in Sources */,
 				72B176F019AE277700F549C5 /* AppDelegate.m in Sources */,
 				72817A8519AE6A1500446FD9 /* Defines.m in Sources */,
 				72B176EC19AE277700F549C5 /* main.m in Sources */,
@@ -561,6 +672,7 @@
 				72B1772519AE41A500F549C5 /* HomeViewController.m in Sources */,
 				72B1772119AE406E00F549C5 /* IIWrapController.m in Sources */,
 				72817A6E19AE52F700446FD9 /* PresentationViewController.m in Sources */,
+				72BEE26B19B0B21F0075AE36 /* InformationTableViewCell.m in Sources */,
 				729E852D19AFA7B20057DF1C /* ScheduleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

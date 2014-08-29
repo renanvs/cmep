@@ -10,6 +10,6 @@
 
 @implementation ScheduleModel
 
-@synthesize type, titles, subtitles, start, end;
+@synthesize type, titles, subtitles, start, end, dayIndex;
 
 @end

@@ -7,14 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ScheduleCell.h"
 
 @interface ScheduleViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>{
     __weak IBOutlet UITableView *scheduleTableView;
     __weak IBOutlet UILabel *dayLabel;
     __weak IBOutlet UILabel *monthYearLabel;
     __weak IBOutlet UILabel *weekLabel;
-    NSArray *scheduleList;
-    NSMutableArray *cellHeights;
+    NSArray *scheduleListDay0;
+    NSArray *scheduleListDay1;
+    NSArray *currentScheduleList;
+    ScheduleCell *cellSample;
+    int currentDayIndex;
 }
 
 - (IBAction)goToNextPossibleDay:(id)sender;

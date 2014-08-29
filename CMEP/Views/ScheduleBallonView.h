@@ -12,8 +12,6 @@
 @interface ScheduleBallonView : UIView{
     __weak IBOutlet UIImageView *baseImage;
     __weak IBOutlet UIView *backgroundView;
-    __weak IBOutlet UILabel *titleLabel;
-    __weak IBOutlet UILabel *subtitleLabel;
 }
 
 -(void)setScheduleModel:(ScheduleModel*)model;

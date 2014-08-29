@@ -20,6 +20,7 @@ typedef enum {
     NSArray *subtitles;
     NSString *start;
     NSString *end;
+    int dayIndex;
 }
 
 @property (nonatomic) ScheduleType type;
@@ -27,5 +28,6 @@ typedef enum {
 @property (nonatomic) NSArray *subtitles;
 @property (nonatomic) NSString *start;
 @property (nonatomic) NSString *end;
+@property (nonatomic) int dayIndex;
 
 @end

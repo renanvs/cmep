@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ScheduleModel.h"
+#import "ScheduleBallonView.h"
 
 @interface ScheduleCell : UITableViewCell{
 
@@ -17,9 +18,10 @@
     __weak IBOutlet UIView *ballonContainer;
     
     ScheduleModel *scheduleModel;
+    ScheduleBallonView *scheduleBallonView;
 }
 
--(float)getCellHeight;
+-(float)getCellHeightWithScheduleModel:(ScheduleModel*)model;
 
 -(void)setScheduleModel:(ScheduleModel*)model;
 

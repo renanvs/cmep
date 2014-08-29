@@ -20,6 +20,14 @@
     return self;
 }
 
+-(id)initWithCoder:(NSCoder *)aDecoder{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self setAlpha:0];
+    }
+    return self;
+}
+
 - (void)awakeFromNib
 {
     // Initialization code
@@ -28,13 +36,18 @@
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {
     [super setSelected:selected animated:animated];
-
+    [self setSelectionStyle:UITableViewCellSelectionStyleNone];
+    [self setAlpha:0.6];
     // Configure the view for the selected state
 }
 
--(float)getCellHeight{
+-(float)getCellHeightWithScheduleModel:(ScheduleModel*)model{
     CGRect cellFrame = self.frame;
-    cellFrame.size.height = cellFrame.size.height * scheduleModel.titles.count;
+    CGFloat height = cellFrame.size.height;
+    if (model.titles.count > 1) {
+        height = cellFrame.size.height + (29 * model.titles.count);
+    }
+    cellFrame.size.height = height;
     return cellFrame.size.height;
 }
 
@@ -48,9 +61,9 @@
 }
 
 -(void)createBallonWithModel:(ScheduleModel*)model{
-    ScheduleBallonView *sbv = [Utils loadNibForName:@"ScheduleBallonView"];
-    [sbv setScheduleModel:model];
-    [ballonContainer addSubview:sbv];
+    scheduleBallonView = [Utils loadNibForName:@"ScheduleBallonView"];
+    [scheduleBallonView setScheduleModel:model];
+    [ballonContainer addSubview:scheduleBallonView];
 }
 
 -(NSString*)getImageNameByScheduleType:(ScheduleType)type{

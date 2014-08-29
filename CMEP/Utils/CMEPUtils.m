@@ -21,11 +21,11 @@
     }else if (menuOption == MenuOptionSchedule) {
         desireController = [sb instantiateViewControllerWithIdentifier:@"ScheduleViewController"];
     }else if (menuOption == MenuOptionInformation) {
-        desireController = [sb instantiateViewControllerWithIdentifier:@""];
+        desireController = [sb instantiateViewControllerWithIdentifier:@"InformationsViewController"];
     }else if (menuOption == MenuOptionSponsor) {
-        desireController = [sb instantiateViewControllerWithIdentifier:@""];
+        desireController = [sb instantiateViewControllerWithIdentifier:@"SponsorViewController"];
     }else if (menuOption == MenuOptionMap) {
-        desireController = [sb instantiateViewControllerWithIdentifier:@""];
+        desireController = [sb instantiateViewControllerWithIdentifier:@"MapViewController"];
     }else if (menuOption == MenuOptionSpeakers) {
         desireController = [sb instantiateViewControllerWithIdentifier:@""];
     }else if (menuOption == MenuOptionNetworking) {
