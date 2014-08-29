@@ -38,10 +38,10 @@
     
     presentationWebView.opaque = NO;
     presentationWebView.dataDetectorTypes = ~UIDataDetectorTypePhoneNumber;
-    //[presentationWebView loadHTMLString:htmlSource baseURL:nil];
+    [presentationWebView loadHTMLString:htmlSource baseURL:nil];
     NSURL *url = [NSURL URLWithString:@"http://localhost:8080/presentation.html"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    [presentationWebView loadRequest:request];
+    //[presentationWebView loadRequest:request];
 }
 
 - (IBAction)back:(id)sender {

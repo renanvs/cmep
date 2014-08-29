@@ -29,6 +29,7 @@
 {
     [super viewDidLoad];
     scheduleList = [[NSArray alloc] initWithArray:[[FakeModelManager sharedInstance] fakeScheduleModelList]];
+    cellHeights = [[NSMutableArray alloc] init];
     // Do any additional setup after loading the view.
 }
 
@@ -50,6 +51,8 @@
     
     ScheduleCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
+    [cellHeights addObject:[NSNumber numberWithFloat:[cell getCellHeight]]];
+    
     if (!cell) {
         cell = [Utils loadNibForName:cellIdentifier];
     }
@@ -63,11 +66,10 @@
     return scheduleList.count;
 }
 
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    ScheduleCell *currentCell = (ScheduleCell*)[tableView cellForRowAtIndexPath:indexPath];
-    CGFloat cellHeight = [currentCell getCellHeight];
-    return cellHeight;
-}
+//-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+//    CGFloat cellHeight = [[cellHeights objectAtIndex:indexPath.row] floatValue];
+//    return cellHeight;
+//}
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     //todo: clarear celular

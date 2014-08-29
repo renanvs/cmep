@@ -14,6 +14,7 @@
     __weak IBOutlet UILabel *monthYearLabel;
     __weak IBOutlet UILabel *weekLabel;
     NSArray *scheduleList;
+    NSMutableArray *cellHeights;
 }
 
 - (IBAction)goToNextPossibleDay:(id)sender;
