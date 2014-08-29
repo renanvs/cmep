@@ -10,7 +10,7 @@
 #import "Schedulemodel.h"
 
 @implementation FakeModelManager
-@synthesize fakeScheduleModelList0, fakeScheduleModelList1, fakeInformationList;
+@synthesize fakeScheduleModelList0, fakeScheduleModelList1, fakeInformationList, fakeSpeakersList;
 SynthensizeSingleTon(FakeModelManager);
 
 -(id)init{
@@ -18,6 +18,7 @@ SynthensizeSingleTon(FakeModelManager);
     if (self){
         [self createFakeModel];
         [self createFakeInformation];
+        [self createFakeSpeakers];
     }
     return self;
 }
@@ -179,6 +180,25 @@ SynthensizeSingleTon(FakeModelManager);
     [dic4 setObject:@"20/09/2014 -10h31" forKey:@"time"];
     
     fakeInformationList = [[NSArray alloc] initWithObjects:dic0, dic1, dic2, dic3, dic4, nil];
+}
+
+-(void)createFakeSpeakers{
+    NSMutableDictionary *dic0 = [[NSMutableDictionary alloc] init];
+    [dic0 setObject:@"Name0" forKey:@"name"];
+    [dic0 setObject:@"Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex " forKey:@"description"];
+    [dic0 setObject:@"sampleSpeakerImage0" forKey:@"image"];
+    
+    NSMutableDictionary *dic1 = [[NSMutableDictionary alloc] init];
+    [dic1 setObject:@"Name1" forKey:@"name"];
+    [dic1 setObject:@"Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex " forKey:@"description"];
+    [dic1 setObject:@"sampleSpeakerImage1" forKey:@"image"];
+    
+    NSMutableDictionary *dic2 = [[NSMutableDictionary alloc] init];
+    [dic2 setObject:@"Name2" forKey:@"name"];
+    [dic2 setObject:@"Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex " forKey:@"description"];
+    [dic2 setObject:@"sampleSpeakerImage2" forKey:@"image"];
+    
+    fakeSpeakersList = [[NSArray alloc] initWithObjects:dic0, dic1, dic2, nil];
 }
 
 @end

@@ -16,8 +16,6 @@
     
     if (menuOption == MenuOptionPresentation) {
         desireController = [sb instantiateViewControllerWithIdentifier:@"PresentationViewController"];
-    }else if (menuOption == MenuOptionPresentation) {
-        desireController = [sb instantiateViewControllerWithIdentifier:@""];
     }else if (menuOption == MenuOptionSchedule) {
         desireController = [sb instantiateViewControllerWithIdentifier:@"ScheduleViewController"];
     }else if (menuOption == MenuOptionInformation) {
@@ -27,7 +25,7 @@
     }else if (menuOption == MenuOptionMap) {
         desireController = [sb instantiateViewControllerWithIdentifier:@"MapViewController"];
     }else if (menuOption == MenuOptionSpeakers) {
-        desireController = [sb instantiateViewControllerWithIdentifier:@""];
+        desireController = [sb instantiateViewControllerWithIdentifier:@"SpeakersViewController"];
     }else if (menuOption == MenuOptionNetworking) {
         desireController = [sb instantiateViewControllerWithIdentifier:@""];
     }else if (menuOption == MenuOptionRating) {

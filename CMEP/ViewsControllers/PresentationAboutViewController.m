@@ -34,9 +34,7 @@
     presentationWebView.dataDetectorTypes = ~UIDataDetectorTypePhoneNumber;
     
     [presentationWebView loadHTMLString:htmlSource baseURL:nil];
-    NSURL *url = [NSURL URLWithString:@"http://localhost:8080/presentation_about.html"];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    //[presentationWebView loadRequest:request];
+
 }
 
 - (IBAction)back:(id)sender {

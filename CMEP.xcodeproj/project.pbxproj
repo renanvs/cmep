@@ -21,6 +21,8 @@
 		720811B819B0CB5A009D91E1 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 720811B719B0CB5A009D91E1 /* MapViewController.m */; };
 		720811BA19B0D6A2009D91E1 /* Files in Resources */ = {isa = PBXBuildFile; fileRef = 720811B919B0D6A2009D91E1 /* Files */; };
 		725F27EC19B09CE6005FE5BD /* ScheduleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 725F27EB19B09CE6005FE5BD /* ScheduleCell.xib */; };
+		726140BF19B0F9D50062C486 /* SpeakersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726140BE19B0F9D50062C486 /* SpeakersViewController.m */; };
+		726140C219B0FCC90062C486 /* SpeakersCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 726140C119B0FCC90062C486 /* SpeakersCell.m */; };
 		72817A6E19AE52F700446FD9 /* PresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72817A6D19AE52F700446FD9 /* PresentationViewController.m */; };
 		72817A7019AE5CE100446FD9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72817A6F19AE5CE100446FD9 /* QuartzCore.framework */; };
 		72817A8519AE6A1500446FD9 /* Defines.m in Sources */ = {isa = PBXBuildFile; fileRef = 72817A8019AE6A1500446FD9 /* Defines.m */; };
@@ -81,6 +83,9 @@
 		72BEE26519B0A30D0075AE36 /* BallonTextContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BEE26419B0A30D0075AE36 /* BallonTextContainer.m */; };
 		72BEE26819B0B0E70075AE36 /* InformationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BEE26719B0B0E70075AE36 /* InformationsViewController.m */; };
 		72BEE26B19B0B21F0075AE36 /* InformationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BEE26A19B0B21F0075AE36 /* InformationTableViewCell.m */; };
+		72E2453E19B10389003A7282 /* sampleSpeakerImage0.png in Resources */ = {isa = PBXBuildFile; fileRef = 72E2453B19B10389003A7282 /* sampleSpeakerImage0.png */; };
+		72E2453F19B10389003A7282 /* sampleSpeakerImage1.png in Resources */ = {isa = PBXBuildFile; fileRef = 72E2453C19B10389003A7282 /* sampleSpeakerImage1.png */; };
+		72E2454019B10389003A7282 /* sampleSpeakerImage2.png in Resources */ = {isa = PBXBuildFile; fileRef = 72E2453D19B10389003A7282 /* sampleSpeakerImage2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +123,10 @@
 		720811B719B0CB5A009D91E1 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = CMEP/ViewsControllers/MapViewController.m; sourceTree = "<group>"; };
 		720811B919B0D6A2009D91E1 /* Files */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Files; path = CMEP/Files; sourceTree = "<group>"; };
 		725F27EB19B09CE6005FE5BD /* ScheduleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ScheduleCell.xib; path = CMEP/Views/ScheduleCell.xib; sourceTree = "<group>"; };
+		726140BD19B0F9D50062C486 /* SpeakersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpeakersViewController.h; path = CMEP/ViewsControllers/SpeakersViewController.h; sourceTree = "<group>"; };
+		726140BE19B0F9D50062C486 /* SpeakersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpeakersViewController.m; path = CMEP/ViewsControllers/SpeakersViewController.m; sourceTree = "<group>"; };
+		726140C019B0FCC90062C486 /* SpeakersCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpeakersCell.h; path = CMEP/Views/SpeakersCell.h; sourceTree = "<group>"; };
+		726140C119B0FCC90062C486 /* SpeakersCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpeakersCell.m; path = CMEP/Views/SpeakersCell.m; sourceTree = "<group>"; };
 		72817A6C19AE52F700446FD9 /* PresentationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PresentationViewController.h; path = CMEP/ViewsControllers/PresentationViewController.h; sourceTree = "<group>"; };
 		72817A6D19AE52F700446FD9 /* PresentationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PresentationViewController.m; path = CMEP/ViewsControllers/PresentationViewController.m; sourceTree = "<group>"; };
 		72817A6F19AE5CE100446FD9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -203,6 +212,9 @@
 		72BEE26719B0B0E70075AE36 /* InformationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InformationsViewController.m; path = CMEP/ViewsControllers/InformationsViewController.m; sourceTree = "<group>"; };
 		72BEE26919B0B21F0075AE36 /* InformationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InformationTableViewCell.h; path = CMEP/Views/InformationTableViewCell.h; sourceTree = "<group>"; };
 		72BEE26A19B0B21F0075AE36 /* InformationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InformationTableViewCell.m; path = CMEP/Views/InformationTableViewCell.m; sourceTree = "<group>"; };
+		72E2453B19B10389003A7282 /* sampleSpeakerImage0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sampleSpeakerImage0.png; sourceTree = "<group>"; };
+		72E2453C19B10389003A7282 /* sampleSpeakerImage1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sampleSpeakerImage1.png; sourceTree = "<group>"; };
+		72E2453D19B10389003A7282 /* sampleSpeakerImage2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sampleSpeakerImage2.png; sourceTree = "<group>"; };
 		BCD35203496A47D9B7EEE6EA /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F04A8D4A74A74AFA84025C06 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -298,6 +310,8 @@
 				72BEE26419B0A30D0075AE36 /* BallonTextContainer.m */,
 				72BEE26919B0B21F0075AE36 /* InformationTableViewCell.h */,
 				72BEE26A19B0B21F0075AE36 /* InformationTableViewCell.m */,
+				726140C019B0FCC90062C486 /* SpeakersCell.h */,
+				726140C119B0FCC90062C486 /* SpeakersCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -448,6 +462,8 @@
 				7208119519B0C5C6009D91E1 /* SponsorViewController.m */,
 				720811B619B0CB5A009D91E1 /* MapViewController.h */,
 				720811B719B0CB5A009D91E1 /* MapViewController.m */,
+				726140BD19B0F9D50062C486 /* SpeakersViewController.h */,
+				726140BE19B0F9D50062C486 /* SpeakersViewController.m */,
 			);
 			name = ViewsControllers;
 			sourceTree = "<group>";
@@ -455,6 +471,7 @@
 		72B1772919AE467D00F549C5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				72E2453A19B10389003A7282 /* samples */,
 				729E853A19AFB9820057DF1C /* arrow.png */,
 				729E853B19AFB9820057DF1C /* base_ballon.png */,
 				729E853C19AFB9820057DF1C /* top_ballon.png */,
@@ -479,6 +496,16 @@
 			);
 			name = Images;
 			path = CMEP/Images;
+			sourceTree = "<group>";
+		};
+		72E2453A19B10389003A7282 /* samples */ = {
+			isa = PBXGroup;
+			children = (
+				72E2453B19B10389003A7282 /* sampleSpeakerImage0.png */,
+				72E2453C19B10389003A7282 /* sampleSpeakerImage1.png */,
+				72E2453D19B10389003A7282 /* sampleSpeakerImage2.png */,
+			);
+			path = samples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -569,6 +596,8 @@
 				72B1773C19AE467D00F549C5 /* bg_menu@2x.png in Resources */,
 				72B1774319AE467D00F549C5 /* icon_networking@2x.png in Resources */,
 				72B1773E19AE467D00F549C5 /* bg_topo_pag_conteudo@2x.png in Resources */,
+				72E2453E19B10389003A7282 /* sampleSpeakerImage0.png in Resources */,
+				72E2453F19B10389003A7282 /* sampleSpeakerImage1.png in Resources */,
 				72B1774919AE467D00F549C5 /* logo_abecs_pag_conteudo@2x.png in Resources */,
 				72B1774619AE467D00F549C5 /* icon_voltar@2x.png in Resources */,
 				720811BA19B0D6A2009D91E1 /* Files in Resources */,
@@ -582,6 +611,7 @@
 				729E853919AFB5890057DF1C /* ScheduleBallonView.xib in Resources */,
 				72B1774819AE467D00F549C5 /* logo_abecs_apresentacao@2x.png in Resources */,
 				72B176F319AE277700F549C5 /* Main_iPhone.storyboard in Resources */,
+				72E2454019B10389003A7282 /* sampleSpeakerImage2.png in Resources */,
 				72B1774719AE467D00F549C5 /* logo_abecs@2x.png in Resources */,
 				72B1773F19AE467D00F549C5 /* btn_verde@2x.png in Resources */,
 				72B1774B19AE467D00F549C5 /* logo_cmep_pag_apresentacao@2x.png in Resources */,
@@ -648,6 +678,7 @@
 				72B176F919AE277700F549C5 /* ViewController.m in Sources */,
 				720811B319B0C6ED009D91E1 /* MZTransition.m in Sources */,
 				729E851F19AE6E000057DF1C /* HomeTableViewCell.m in Sources */,
+				726140BF19B0F9D50062C486 /* SpeakersViewController.m in Sources */,
 				7208119619B0C5C6009D91E1 /* SponsorViewController.m in Sources */,
 				729E854319AFC80A0057DF1C /* FakeModelManager.m in Sources */,
 				72B1772019AE406E00F549C5 /* IIViewDeckController.m in Sources */,
@@ -674,6 +705,7 @@
 				72817A6E19AE52F700446FD9 /* PresentationViewController.m in Sources */,
 				72BEE26B19B0B21F0075AE36 /* InformationTableViewCell.m in Sources */,
 				729E852D19AFA7B20057DF1C /* ScheduleViewController.m in Sources */,
+				726140C219B0FCC90062C486 /* SpeakersCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
