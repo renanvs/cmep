@@ -23,6 +23,14 @@
     return self;
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    self.viewDeckController.panningMode = IIViewDeckNoPanning;
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    self.viewDeckController.panningMode = IIViewDeckFullViewPanning;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

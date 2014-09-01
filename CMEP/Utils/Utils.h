@@ -45,6 +45,8 @@ return shared##classname; \
 
 + (Utils *) sharedInstance;
 
++(void)showFonts;
+
 -(NSString*)getSafeLiteralString:(NSString*)text;
 
 +(CGRect) screenBoundsOnCurrentOrientation;

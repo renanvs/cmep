@@ -38,3 +38,22 @@
 }
 
 @end
+
+
+@implementation UILabel (cmep)
+
+-(void)setCMEPFont{
+    NSString *fontName = @"HomizioNova";
+    CGFloat fontSize = self.font.pointSize;
+    self.font = [UIFont fontWithName:fontName size:fontSize];
+}
+
+@end
+
+@implementation UIButton (cmep)
+
+-(void)setCMEPFont{
+    [[self titleLabel]setCMEPFont];
+}
+
+@end

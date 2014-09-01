@@ -33,6 +33,18 @@ static id _instance;
     return NO;
 }
 
++(void)showFonts{
+    for (NSString* family in [UIFont familyNames])
+    {
+        NSLog(@"%@", family);
+        
+        for (NSString* name in [UIFont fontNamesForFamilyName: family])
+        {
+            NSLog(@"  %@", name);
+        }
+    }
+}
+
 #pragma mark - NSString auxiliar
 
 //retorna uma NSString minuscula e sem acento

@@ -26,3 +26,16 @@ typedef enum {
 +(UIViewController*)getControllerByType:(MenuOption)menuOption;
 
 @end
+
+@interface UILabel (cmep)
+
+-(void)setCMEPFont;
+
+@end
+
+
+@interface UIButton (cmep)
+
+-(void)setCMEPFont;
+
+@end

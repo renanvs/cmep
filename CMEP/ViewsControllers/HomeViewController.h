@@ -10,6 +10,7 @@
 
 @interface HomeViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>{
     __weak IBOutlet UITableView *menuTableView;
+    __weak IBOutlet UIButton *sponsorButton;
     NSArray *menuItens;
 }
 

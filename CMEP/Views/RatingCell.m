@@ -48,7 +48,7 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     if (currentController) {
-        currentController.viewDeckController.panningMode = IIViewDeckNoPanning;
+        //currentController.viewDeckController.panningMode = IIViewDeckNoPanning;
     }
     
     UITouch *touch = [touches anyObject];
@@ -82,7 +82,7 @@
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
     if (currentController) {
-        currentController.viewDeckController.panningMode = IIViewDeckFullViewPanning;
+        //currentController.viewDeckController.panningMode = IIViewDeckFullViewPanning;
     }
     
     UITouch *touch = [touches anyObject];
@@ -123,14 +123,15 @@
     [self clearStars];
     
     for (UIImageView *starImage in starsContainer.subviews) {
-        if (position < (starImage.frame.origin.x + (starImage.frame.size.width/2)) &&
-            position > (starImage.frame.origin.x)) {
-            starImage.image = [UIImage imageNamed:@"starmiddle"];
-            starImage.accessibilityIdentifier = @"starmiddle";
-            //return;
-        }
+//        if (position < (starImage.frame.origin.x + (starImage.frame.size.width/2)) &&
+//            position > (starImage.frame.origin.x)) {
+//            starImage.image = [UIImage imageNamed:@"starmiddle"];
+//            starImage.accessibilityIdentifier = @"starmiddle";
+//            //return;
+//        }
         
-        if (position >= (starImage.frame.origin.x + (starImage.frame.size.width/2))) {
+        if (position > starImage.frame.origin.x ||
+            position >= (starImage.frame.origin.x + starImage.frame.size.width)) {
             starImage.image = [UIImage imageNamed:@"starfull"];
             starImage.accessibilityIdentifier = @"starfull";
         }
@@ -150,9 +151,9 @@
             _ratingValue = _ratingValue + 0;
         }
         
-        if ([starImage.accessibilityIdentifier isEqualToString:@"starmiddle"]) {
-            _ratingValue = _ratingValue + 0.5;
-        }
+//        if ([starImage.accessibilityIdentifier isEqualToString:@"starmiddle"]) {
+//            _ratingValue = _ratingValue + 0.5;
+//        }
         
         if ([starImage.accessibilityIdentifier isEqualToString:@"starfull"]) {
             _ratingValue = _ratingValue + 1.0;

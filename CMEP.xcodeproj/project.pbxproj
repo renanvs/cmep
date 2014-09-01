@@ -20,6 +20,10 @@
 		720811B519B0C6ED009D91E1 /* UIViewController+TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 720811AC19B0C6ED009D91E1 /* UIViewController+TargetViewController.m */; };
 		720811B819B0CB5A009D91E1 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 720811B719B0CB5A009D91E1 /* MapViewController.m */; };
 		720811BA19B0D6A2009D91E1 /* Files in Resources */ = {isa = PBXBuildFile; fileRef = 720811B919B0D6A2009D91E1 /* Files */; };
+		722794AF19B4F266001F1AB5 /* italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 722794A719B4F266001F1AB5 /* italic.otf */; };
+		722794B119B4F267001F1AB5 /* light_italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 722794A919B4F266001F1AB5 /* light_italic.otf */; };
+		722794B319B4F267001F1AB5 /* light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 722794AB19B4F266001F1AB5 /* light.otf */; };
+		722794B519B4F267001F1AB5 /* regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 722794AD19B4F266001F1AB5 /* regular.otf */; };
 		724E130319B4A938001CEBCB /* RatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724E130219B4A938001CEBCB /* RatingViewController.m */; };
 		724E130619B4A9F1001CEBCB /* RatingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 724E130519B4A9F1001CEBCB /* RatingCell.m */; };
 		724E130A19B4B192001CEBCB /* starempty.png in Resources */ = {isa = PBXBuildFile; fileRef = 724E130719B4B192001CEBCB /* starempty.png */; };
@@ -127,6 +131,10 @@
 		720811B619B0CB5A009D91E1 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = CMEP/ViewsControllers/MapViewController.h; sourceTree = "<group>"; };
 		720811B719B0CB5A009D91E1 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = CMEP/ViewsControllers/MapViewController.m; sourceTree = "<group>"; };
 		720811B919B0D6A2009D91E1 /* Files */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Files; path = CMEP/Files; sourceTree = "<group>"; };
+		722794A719B4F266001F1AB5 /* italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = italic.otf; sourceTree = "<group>"; };
+		722794A919B4F266001F1AB5 /* light_italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = light_italic.otf; sourceTree = "<group>"; };
+		722794AB19B4F266001F1AB5 /* light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = light.otf; sourceTree = "<group>"; };
+		722794AD19B4F266001F1AB5 /* regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = regular.otf; sourceTree = "<group>"; };
 		724E130119B4A938001CEBCB /* RatingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RatingViewController.h; path = CMEP/ViewsControllers/RatingViewController.h; sourceTree = "<group>"; };
 		724E130219B4A938001CEBCB /* RatingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RatingViewController.m; path = CMEP/ViewsControllers/RatingViewController.m; sourceTree = "<group>"; };
 		724E130419B4A9F1001CEBCB /* RatingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RatingCell.h; path = CMEP/Views/RatingCell.h; sourceTree = "<group>"; };
@@ -290,6 +298,18 @@
 			path = Additional;
 			sourceTree = "<group>";
 		};
+		722794A619B4F266001F1AB5 /* Fontes */ = {
+			isa = PBXGroup;
+			children = (
+				722794A719B4F266001F1AB5 /* italic.otf */,
+				722794A919B4F266001F1AB5 /* light_italic.otf */,
+				722794AB19B4F266001F1AB5 /* light.otf */,
+				722794AD19B4F266001F1AB5 /* regular.otf */,
+			);
+			name = Fontes;
+			path = CMEP/Fontes;
+			sourceTree = "<group>";
+		};
 		72817A7E19AE6A1500446FD9 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -352,6 +372,7 @@
 			isa = PBXGroup;
 			children = (
 				729E854019AFC7AD0057DF1C /* Managers */,
+				722794A619B4F266001F1AB5 /* Fontes */,
 				729E852E19AFB06A0057DF1C /* Models */,
 				720811B919B0D6A2009D91E1 /* Files */,
 				729E852319AF72910057DF1C /* WebPages */,
@@ -623,10 +644,13 @@
 				72B1774619AE467D00F549C5 /* icon_voltar@2x.png in Resources */,
 				720811BA19B0D6A2009D91E1 /* Files in Resources */,
 				72B176F619AE277700F549C5 /* Main_iPad.storyboard in Resources */,
+				722794AF19B4F266001F1AB5 /* italic.otf in Resources */,
+				722794B319B4F267001F1AB5 /* light.otf in Resources */,
 				72B1774A19AE467D00F549C5 /* logo_cmep@2x.png in Resources */,
 				72B1774219AE467D00F549C5 /* icon_menu_white@2x.png in Resources */,
 				725F27EC19B09CE6005FE5BD /* ScheduleCell.xib in Resources */,
 				72B1774C19AE467D00F549C5 /* seta_menu@2x.png in Resources */,
+				722794B119B4F267001F1AB5 /* light_italic.otf in Resources */,
 				72B1774519AE467D00F549C5 /* icon_programacao@2x.png in Resources */,
 				72B176FB19AE277700F549C5 /* Images.xcassets in Resources */,
 				729E853919AFB5890057DF1C /* ScheduleBallonView.xib in Resources */,
@@ -639,6 +663,7 @@
 				72B1774B19AE467D00F549C5 /* logo_cmep_pag_apresentacao@2x.png in Resources */,
 				729E853E19AFB9820057DF1C /* base_ballon.png in Resources */,
 				72B1774119AE467D00F549C5 /* icon_menu@2x.png in Resources */,
+				722794B519B4F267001F1AB5 /* regular.otf in Resources */,
 				72B176EA19AE277700F549C5 /* InfoPlist.strings in Resources */,
 				729E852419AF72910057DF1C /* WebPages in Resources */,
 			);
@@ -869,7 +894,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CMEP/CMEP-Prefix.pch";
 				INFOPLIST_FILE = "CMEP/CMEP-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "D84D08E9-7A14-42FB-B644-4F5E3B7F0AB2";
 				WRAPPER_EXTENSION = app;
@@ -886,7 +911,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CMEP/CMEP-Prefix.pch";
 				INFOPLIST_FILE = "CMEP/CMEP-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "D84D08E9-7A14-42FB-B644-4F5E3B7F0AB2";
 				WRAPPER_EXTENSION = app;

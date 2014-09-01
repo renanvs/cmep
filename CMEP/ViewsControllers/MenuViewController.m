@@ -31,8 +31,10 @@
     [super viewDidLoad];
     [[self navigationController] setNavigationBarHidden:YES];
     [self addMenuItens];
+    //[self addFonts];
     // Do any additional setup after loading the view.
 }
+
 
 -(void)addMenuItens{
     NSMutableArray *menuOptionsTemp = [[NSMutableArray alloc] init];

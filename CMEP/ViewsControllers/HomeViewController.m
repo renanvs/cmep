@@ -29,7 +29,12 @@
 {
     [super viewDidLoad];
     [[self navigationController] setNavigationBarHidden:YES];
+    [self setupLayout];
     [self addOptionItens];
+}
+
+-(void)setupLayout{
+    [sponsorButton setCMEPFont];
 }
 
 -(void)addOptionItens{
