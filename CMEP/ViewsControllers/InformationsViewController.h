@@ -11,10 +11,7 @@
 @interface InformationsViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>{
     __weak IBOutlet UITableView *informationTableView;
     NSArray *informationList;
+    __weak IBOutlet UIView *topbarContainer;
 }
-
-- (IBAction)back:(id)sender;
-- (IBAction)showMenu:(id)sender;
-
 
 @end

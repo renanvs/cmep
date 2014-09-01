@@ -25,4 +25,7 @@
 
     //Managers
     #import "FakeModelManager.h"
+
+    //Views
+    #import "TopbarView.h"
 #endif

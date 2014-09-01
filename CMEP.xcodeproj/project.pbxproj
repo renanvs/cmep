@@ -92,6 +92,8 @@
 		72BEE26519B0A30D0075AE36 /* BallonTextContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BEE26419B0A30D0075AE36 /* BallonTextContainer.m */; };
 		72BEE26819B0B0E70075AE36 /* InformationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BEE26719B0B0E70075AE36 /* InformationsViewController.m */; };
 		72BEE26B19B0B21F0075AE36 /* InformationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BEE26A19B0B21F0075AE36 /* InformationTableViewCell.m */; };
+		72D56D3819B5204200878551 /* TopbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 72D56D3719B5204200878551 /* TopbarView.m */; };
+		72D56D3A19B5206600878551 /* TopbarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72D56D3919B5206600878551 /* TopbarView.xib */; };
 		72E2453E19B10389003A7282 /* sampleSpeakerImage0.png in Resources */ = {isa = PBXBuildFile; fileRef = 72E2453B19B10389003A7282 /* sampleSpeakerImage0.png */; };
 		72E2453F19B10389003A7282 /* sampleSpeakerImage1.png in Resources */ = {isa = PBXBuildFile; fileRef = 72E2453C19B10389003A7282 /* sampleSpeakerImage1.png */; };
 		72E2454019B10389003A7282 /* sampleSpeakerImage2.png in Resources */ = {isa = PBXBuildFile; fileRef = 72E2453D19B10389003A7282 /* sampleSpeakerImage2.png */; };
@@ -232,6 +234,9 @@
 		72BEE26719B0B0E70075AE36 /* InformationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InformationsViewController.m; path = CMEP/ViewsControllers/InformationsViewController.m; sourceTree = "<group>"; };
 		72BEE26919B0B21F0075AE36 /* InformationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InformationTableViewCell.h; path = CMEP/Views/InformationTableViewCell.h; sourceTree = "<group>"; };
 		72BEE26A19B0B21F0075AE36 /* InformationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InformationTableViewCell.m; path = CMEP/Views/InformationTableViewCell.m; sourceTree = "<group>"; };
+		72D56D3619B5204200878551 /* TopbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopbarView.h; path = CMEP/Views/TopbarView.h; sourceTree = "<group>"; };
+		72D56D3719B5204200878551 /* TopbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TopbarView.m; path = CMEP/Views/TopbarView.m; sourceTree = "<group>"; };
+		72D56D3919B5206600878551 /* TopbarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TopbarView.xib; path = CMEP/Views/TopbarView.xib; sourceTree = "<group>"; };
 		72E2453B19B10389003A7282 /* sampleSpeakerImage0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sampleSpeakerImage0.png; sourceTree = "<group>"; };
 		72E2453C19B10389003A7282 /* sampleSpeakerImage1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sampleSpeakerImage1.png; sourceTree = "<group>"; };
 		72E2453D19B10389003A7282 /* sampleSpeakerImage2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sampleSpeakerImage2.png; sourceTree = "<group>"; };
@@ -346,6 +351,9 @@
 				726140C119B0FCC90062C486 /* SpeakersCell.m */,
 				724E130419B4A9F1001CEBCB /* RatingCell.h */,
 				724E130519B4A9F1001CEBCB /* RatingCell.m */,
+				72D56D3619B5204200878551 /* TopbarView.h */,
+				72D56D3719B5204200878551 /* TopbarView.m */,
+				72D56D3919B5206600878551 /* TopbarView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -664,6 +672,7 @@
 				729E853E19AFB9820057DF1C /* base_ballon.png in Resources */,
 				72B1774119AE467D00F549C5 /* icon_menu@2x.png in Resources */,
 				722794B519B4F267001F1AB5 /* regular.otf in Resources */,
+				72D56D3A19B5206600878551 /* TopbarView.xib in Resources */,
 				72B176EA19AE277700F549C5 /* InfoPlist.strings in Resources */,
 				729E852419AF72910057DF1C /* WebPages in Resources */,
 			);
@@ -754,6 +763,7 @@
 				72817A6E19AE52F700446FD9 /* PresentationViewController.m in Sources */,
 				72BEE26B19B0B21F0075AE36 /* InformationTableViewCell.m in Sources */,
 				729E852D19AFA7B20057DF1C /* ScheduleViewController.m in Sources */,
+				72D56D3819B5204200878551 /* TopbarView.m in Sources */,
 				726140C219B0FCC90062C486 /* SpeakersCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

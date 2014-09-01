@@ -75,6 +75,7 @@
     UILabel *label = (UILabel*)[cell viewWithTag:2];
     
     label.text = [[menuOptions objectAtIndex:indexPath.row] objectForKey:@"name"];
+    [label setCMEPFont];
     
     return cell;
 }

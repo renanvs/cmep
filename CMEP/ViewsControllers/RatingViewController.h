@@ -12,10 +12,9 @@
 @interface RatingViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, RatingCellDelegate>{
     __weak IBOutlet UITableView *ratingTableView;
     NSArray *ratingList;
+    __weak IBOutlet UIView *topbarContainer;
 }
 
-- (IBAction)back:(id)sender;
-- (IBAction)showMenu:(id)sender;
 - (IBAction)sendRating:(id)sender;
 
 @end

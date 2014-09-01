@@ -24,6 +24,8 @@
 {
     [super viewDidLoad];
     [self setupWebView];
+    TopbarView *topbar = [Utils loadNibForName:@"TopbarView"];
+    [topbarContainer addSubview:topbar];
     // Do any additional setup after loading the view.
 }
 
@@ -44,16 +46,12 @@
     //[presentationWebView loadRequest:request];
 }
 
-- (IBAction)back:(id)sender {
+-(void)topbarViewBackPressed{
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (IBAction)showMenu:(id)sender {
+-(void)topbarViewMenuPressed{
     [self.viewDeckController openLeftView];
-}
-
-- (IBAction)aboutAbecs:(id)sender {
-    
 }
 
 @end

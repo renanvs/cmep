@@ -8,12 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PresentationViewController : UIViewController{
+@interface PresentationViewController : UIViewController<TopbarViewDelegate>{
     
     __weak IBOutlet UIWebView *presentationWebView;
+    __weak IBOutlet UIView *topbarContainer;
 }
-- (IBAction)back:(id)sender;
-- (IBAction)showMenu:(id)sender;
-- (IBAction)aboutAbecs:(id)sender;
 
 @end

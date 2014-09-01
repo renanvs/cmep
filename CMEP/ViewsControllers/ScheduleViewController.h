@@ -19,10 +19,9 @@
     NSArray *currentScheduleList;
     ScheduleCell *cellSample;
     int currentDayIndex;
+    __weak IBOutlet UIView *topbarContainer;
 }
 
 - (IBAction)goToNextPossibleDay:(id)sender;
-- (IBAction)back:(id)sender;
-- (IBAction)showMenu:(id)sender;
 
 @end

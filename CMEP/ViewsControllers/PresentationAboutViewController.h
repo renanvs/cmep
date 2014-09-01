@@ -11,7 +11,7 @@
 @interface PresentationAboutViewController : UIViewController{
     
     __weak IBOutlet UIWebView *presentationWebView;
+    __weak IBOutlet UIView *topbarContainer;
 }
-- (IBAction)back:(id)sender;
 
 @end
