@@ -9,6 +9,7 @@
 #import "MenuViewController.h"
 #import "PresentationViewController.h"
 #import "HomeViewController.h"
+#import "MZFormSheetController.h"
 
 @interface MenuViewController ()
 
@@ -67,6 +68,8 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellMenuIdentifier];
     }
     
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
     UILabel *label = (UILabel*)[cell viewWithTag:2];
     
     label.text = [[menuOptions objectAtIndex:indexPath.row] objectForKey:@"name"];
@@ -86,8 +89,21 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     MenuOption opt =  (MenuOption)[[[menuOptions objectAtIndex:indexPath.row] objectForKey:@"type"] intValue];
     
-    UIViewController *desireController = [CMEPUtils getControllerByType:opt];
-    [self pushCenterController:desireController];
+    if (opt == MenuOptionSponsor) {
+        [self.viewDeckController closeOpenViewAnimated:YES completion:^(IIViewDeckController *controller, BOOL success) {
+            UIViewController *svc = [CMEPUtils getControllerByType:MenuOptionSponsor];
+            CGSize viewSize = self.view.frame.size;
+            MZFormSheetController *mzc = [[MZFormSheetController alloc] initWithSize:viewSize viewController:svc];
+            mzc.shouldCenterVertically = YES;
+            mzc.transitionStyle = MZFormSheetTransitionStyleSlideFromLeft;
+            [mzc presentAnimated:YES completionHandler:nil];
+        }];
+    }else if (opt == MenuOptionNetworking || opt == MenuOptionConfiguration) {
+         [[[UIAlertView alloc] initWithTitle:@"ATENÇÃO" message:@"Em desenvolvimento" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil]show];
+    }else{
+        UIViewController *desireController = [CMEPUtils getControllerByType:opt];
+        [self pushCenterController:desireController];
+    }
 }
 
 -(void)pushCenterController:(UIViewController*)desireController{

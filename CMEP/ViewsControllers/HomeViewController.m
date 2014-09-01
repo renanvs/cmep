@@ -70,6 +70,10 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     MenuOption opt =  (MenuOption)[[[menuItens objectAtIndex:indexPath.row] objectForKey:@"type"] intValue];
+    if (opt == MenuOptionNetworking) {
+        [[[UIAlertView alloc] initWithTitle:@"ATENÇÃO" message:@"Em desenvolvimento" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil]show];
+        return;
+    }
     [self showControllerByMenuOption:opt];
 }
 

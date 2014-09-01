@@ -62,7 +62,7 @@
 		72B1770C19AE277700F549C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 72B1770A19AE277700F549C5 /* InfoPlist.strings */; };
 		72B1770E19AE277700F549C5 /* CMEPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B1770D19AE277700F549C5 /* CMEPTests.m */; };
 		72B1771F19AE406E00F549C5 /* IISideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B1771A19AE406E00F549C5 /* IISideController.m */; };
-		72B1772019AE406E00F549C5 /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B1771C19AE406E00F549C5 /* IIViewDeckController.m */; };
+		72B1772019AE406E00F549C5 /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B1771C19AE406E00F549C5 /* IIViewDeckController.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		72B1772119AE406E00F549C5 /* IIWrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B1771E19AE406E00F549C5 /* IIWrapController.m */; };
 		72B1772519AE41A500F549C5 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B1772419AE41A500F549C5 /* HomeViewController.m */; };
 		72B1772819AE426F00F549C5 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B1772719AE426F00F549C5 /* MenuViewController.m */; };
@@ -865,11 +865,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: MACWINGO ltda (99PGLV2Z48)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CMEP/CMEP-Prefix.pch";
 				INFOPLIST_FILE = "CMEP/CMEP-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D84D08E9-7A14-42FB-B644-4F5E3B7F0AB2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -880,11 +882,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: MACWINGO ltda (99PGLV2Z48)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CMEP/CMEP-Prefix.pch";
 				INFOPLIST_FILE = "CMEP/CMEP-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D84D08E9-7A14-42FB-B644-4F5E3B7F0AB2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

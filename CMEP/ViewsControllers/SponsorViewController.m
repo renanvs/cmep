@@ -30,6 +30,10 @@
     // Do any additional setup after loading the view.
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    [[[UIAlertView alloc] initWithTitle:@"ATENÇÃO" message:@"Em desenvolvimento" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil]show];
+}
+
 -(void)viewWillAppear:(BOOL)animated{
     [self.view setBackgroundColor:[UIColor clearColor]];
 }

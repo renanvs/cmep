@@ -23,6 +23,10 @@
     return self;
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    [[[UIAlertView alloc] initWithTitle:@"ATENÇÃO" message:@"Em desenvolvimento" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil]show];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
