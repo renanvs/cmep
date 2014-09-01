@@ -3,6 +3,22 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "-[RatingCell setStarStatus:]:RatingCell.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "starImage.accessibilityIdentifier">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__43-[MenuViewController pushCenterController:]_block_invoke:MenuViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "navController.viewControllers">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[MenuViewController pushCenterController:]:MenuViewController.m">
          <PersistentStrings>
             <PersistentString
@@ -12,14 +28,6 @@
       </ContextState>
       <ContextState
          contextName = "-[MenuViewController tableView:didSelectRowAtIndexPath:]:MenuViewController.m">
-      </ContextState>
-      <ContextState
-         contextName = "__43-[MenuViewController pushCenterController:]_block_invoke:MenuViewController.m">
-         <PersistentStrings>
-            <PersistentString
-               value = "navController.viewControllers">
-            </PersistentString>
-         </PersistentStrings>
       </ContextState>
    </ContextStates>
 </VariablesViewState>

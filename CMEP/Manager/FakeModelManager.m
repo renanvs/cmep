@@ -10,7 +10,7 @@
 #import "Schedulemodel.h"
 
 @implementation FakeModelManager
-@synthesize fakeScheduleModelList0, fakeScheduleModelList1, fakeInformationList, fakeSpeakersList;
+@synthesize fakeScheduleModelList0, fakeScheduleModelList1, fakeInformationList, fakeSpeakersList, fakeRatingList;
 SynthensizeSingleTon(FakeModelManager);
 
 -(id)init{
@@ -19,6 +19,7 @@ SynthensizeSingleTon(FakeModelManager);
         [self createFakeModel];
         [self createFakeInformation];
         [self createFakeSpeakers];
+        [self createFakeRating];
     }
     return self;
 }
@@ -199,6 +200,22 @@ SynthensizeSingleTon(FakeModelManager);
     [dic2 setObject:@"sampleSpeakerImage2" forKey:@"image"];
     
     fakeSpeakersList = [[NSArray alloc] initWithObjects:dic0, dic1, dic2, nil];
+}
+
+-(void)createFakeRating{
+    NSMutableDictionary *dic0 = [[NSMutableDictionary alloc] init];
+    [dic0 setObject:@"Tilte0" forKey:@"title"];
+    [dic0 setObject:@"Lorem ipsum dolor sit er elit lamet, consectetaur cilli" forKey:@"description"];
+    
+    NSMutableDictionary *dic1 = [[NSMutableDictionary alloc] init];
+    [dic1 setObject:@"Tilte1" forKey:@"title"];
+    [dic1 setObject:@"Lorem ipsum dolor sit er elit lamet, consectetaur cilli" forKey:@"description"];
+    
+    NSMutableDictionary *dic2 = [[NSMutableDictionary alloc] init];
+    [dic2 setObject:@"Tilte2" forKey:@"title"];
+    [dic2 setObject:@"Lorem ipsum dolor sit er elit lamet, consectetaur cilli" forKey:@"description"];
+    
+    fakeRatingList = [[NSArray alloc] initWithObjects:dic0, dic1, dic2, nil];
 }
 
 @end

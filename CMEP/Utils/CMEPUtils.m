@@ -29,7 +29,7 @@
     }else if (menuOption == MenuOptionNetworking) {
         desireController = [sb instantiateViewControllerWithIdentifier:@""];
     }else if (menuOption == MenuOptionRating) {
-        desireController = [sb instantiateViewControllerWithIdentifier:@""];
+        desireController = [sb instantiateViewControllerWithIdentifier:@"RatingViewController"];
     }else if (menuOption == MenuOptionConfiguration) {
         desireController = [sb instantiateViewControllerWithIdentifier:@""];
     }

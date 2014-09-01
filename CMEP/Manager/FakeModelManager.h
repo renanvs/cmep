@@ -13,12 +13,14 @@
     NSArray *fakeScheduleModelList1;
     NSArray *fakeInformationList;
     NSArray *fakeSpeakersList;
+    NSArray *fakeRatingList;
 }
 
 @property (nonatomic) NSArray *fakeScheduleModelList0;
 @property (nonatomic) NSArray *fakeScheduleModelList1;
 @property (nonatomic) NSArray *fakeInformationList;
 @property (nonatomic) NSArray *fakeSpeakersList;
+@property (nonatomic) NSArray *fakeRatingList;
 
 +(id)sharedInstance;
 
