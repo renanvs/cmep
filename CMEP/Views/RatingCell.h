@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol RatingCellDelegate <NSObject>
+
+@optional
+-(void)ratingCellRating:(float)ratingValue WithDictionary:(NSDictionary*)dictionary;
+
+@end
+
 @interface RatingCell : UITableViewCell{
     __weak IBOutlet UILabel *titleLabel;
     __weak IBOutlet UILabel *descriptionLabel;
@@ -22,11 +29,14 @@
     CGFloat endPoint;
     float ratingValue;
     UIViewController *currentController;
+    NSDictionary *currentDictionary;
+    id<RatingCellDelegate> delegate;
 }
 
 -(void)setRatingDictionary:(NSDictionary*)dic;
 -(void)setCurrentController:(UIViewController*)controller;
 
 @property (nonatomic) float ratingValue;
+@property (nonatomic) id<RatingCellDelegate> delegate;
 
 @end

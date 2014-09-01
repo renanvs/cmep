@@ -9,7 +9,7 @@
 #import "RatingCell.h"
 
 @implementation RatingCell
-@synthesize ratingValue;
+@synthesize ratingValue, delegate;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -28,11 +28,12 @@
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {
     [super setSelected:selected animated:animated];
-
+    [self setSelectionStyle:UITableViewCellSelectionStyleNone];
     // Configure the view for the selected state
 }
 
 -(void)setRatingDictionary:(NSDictionary*)dic{
+    currentDictionary = dic;
     titleLabel.text = [dic objectForKey:@"title"];
     descriptionLabel.text = [dic objectForKey:@"description"];
     
@@ -68,11 +69,9 @@
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
     UITouch *touch = [touches anyObject];
     CGPoint drawPoint = [touch locationInView:starsContainer];
-    NSLog(@"out_moving");
     if (drawPoint.x < 0 || drawPoint.y < 0) {
         return;
     }
-    NSLog(@"moving");
     [self setStarStatus:drawPoint.x];
     CGRect writingEndPoint = CGRectMake(390, 800, 30, 30);
     if (CGRectContainsPoint(writingEndPoint, drawPoint))
@@ -138,7 +137,10 @@
     }
     
     ratingValue = [self getRatingValue];
-    NSLog(@"rating; %f", ratingValue);
+    
+    if ([delegate respondsToSelector:@selector(ratingCellRating:WithDictionary:)]) {
+        [delegate ratingCellRating:ratingValue WithDictionary:currentDictionary];
+    }
 }
 
 -(float)getRatingValue{

@@ -205,14 +205,17 @@ SynthensizeSingleTon(FakeModelManager);
 -(void)createFakeRating{
     NSMutableDictionary *dic0 = [[NSMutableDictionary alloc] init];
     [dic0 setObject:@"Tilte0" forKey:@"title"];
+    [dic0 setObject:@"event" forKey:@"type"];
     [dic0 setObject:@"Lorem ipsum dolor sit er elit lamet, consectetaur cilli" forKey:@"description"];
     
     NSMutableDictionary *dic1 = [[NSMutableDictionary alloc] init];
     [dic1 setObject:@"Tilte1" forKey:@"title"];
+    [dic1 setObject:@"lecture" forKey:@"type"];
     [dic1 setObject:@"Lorem ipsum dolor sit er elit lamet, consectetaur cilli" forKey:@"description"];
     
     NSMutableDictionary *dic2 = [[NSMutableDictionary alloc] init];
     [dic2 setObject:@"Tilte2" forKey:@"title"];
+    [dic2 setObject:@"app" forKey:@"type"];
     [dic2 setObject:@"Lorem ipsum dolor sit er elit lamet, consectetaur cilli" forKey:@"description"];
     
     fakeRatingList = [[NSArray alloc] initWithObjects:dic0, dic1, dic2, nil];

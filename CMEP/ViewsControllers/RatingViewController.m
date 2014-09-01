@@ -7,7 +7,6 @@
 //
 
 #import "RatingViewController.h"
-#import "RatingCell.h"
 
 @interface RatingViewController ()
 
@@ -53,6 +52,7 @@
         cell = (RatingCell*)[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
+    cell.delegate = self;
     [cell setCurrentController:self];
     NSDictionary *infoDic = [ratingList objectAtIndex:indexPath.row];
     [cell setRatingDictionary:infoDic];
@@ -64,7 +64,11 @@
     return ratingList.count;
 }
 
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+-(void)ratingCellRating:(float)ratingValue WithDictionary:(NSDictionary *)dictionary{
+    NSLog(@"Rating value: %f", ratingValue);
+}
+
+- (IBAction)sendRating:(id)sender{
     
 }
 

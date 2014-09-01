@@ -7,13 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RatingCell.h"
 
-@interface RatingViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>{
+@interface RatingViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, RatingCellDelegate>{
     __weak IBOutlet UITableView *ratingTableView;
     NSArray *ratingList;
 }
 
 - (IBAction)back:(id)sender;
 - (IBAction)showMenu:(id)sender;
+- (IBAction)sendRating:(id)sender;
 
 @end
