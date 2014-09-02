@@ -41,20 +41,20 @@
     
     NSDictionary *presentation = @{@"name":@"APRESENTAÇÃO", @"type": [NSNumber numberWithInt:MenuOptionPresentation]};
     [menuOptionsTemp addObject:presentation];
-    NSDictionary *schedule = @{@"name":@"PROGRAMAÇÃO DO EVENTO", @"type": [NSNumber numberWithInt:MenuOptionSchedule]};
-    [menuOptionsTemp addObject:schedule];
+    NSDictionary *rating = @{@"name":@"AVALIAÇÃO \nDO EVENTO", @"type": [NSNumber numberWithInt:MenuOptionRating]};
+    [menuOptionsTemp addObject:rating];
     NSDictionary *information = @{@"name":@"INFORMAÇÕES ÚTEIS", @"type": [NSNumber numberWithInt:MenuOptionInformation]};
     [menuOptionsTemp addObject:information];
-    NSDictionary *sponsor = @{@"name":@"PATROCINADORES", @"type": [NSNumber numberWithInt:MenuOptionSponsor]};
-    [menuOptionsTemp addObject:sponsor];
     NSDictionary *map = @{@"name":@"MAPA DO EVENTO", @"type": [NSNumber numberWithInt:MenuOptionMap]};
     [menuOptionsTemp addObject:map];
-    NSDictionary *speakers = @{@"name":@"PALESTRANTES", @"type": [NSNumber numberWithInt:MenuOptionSpeakers]};
-    [menuOptionsTemp addObject:speakers];
     NSDictionary *networking = @{@"name":@"NETWORKING", @"type": [NSNumber numberWithInt:MenuOptionNetworking]};
     [menuOptionsTemp addObject:networking];
-    NSDictionary *rating = @{@"name":@"AVALIAÇÃO DO EVENTO", @"type": [NSNumber numberWithInt:MenuOptionRating]};
-    [menuOptionsTemp addObject:rating];
+    NSDictionary *speakers = @{@"name":@"PALESTRANTES", @"type": [NSNumber numberWithInt:MenuOptionSpeakers]};
+    [menuOptionsTemp addObject:speakers];
+    NSDictionary *sponsor = @{@"name":@"PATROCINADORES", @"type": [NSNumber numberWithInt:MenuOptionSponsor]};
+    [menuOptionsTemp addObject:sponsor];
+    NSDictionary *schedule = @{@"name":@"PROGRAMAÇÃO \nDO EVENTO", @"type": [NSNumber numberWithInt:MenuOptionSchedule]};
+    [menuOptionsTemp addObject:schedule];
     NSDictionary *configuration = @{@"name":@"CONFIGURAÇÃO", @"type": [NSNumber numberWithInt:MenuOptionConfiguration]};
     [menuOptionsTemp addObject:configuration];
     
@@ -85,8 +85,17 @@
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSArray *sheights = @[@47,@49,@48,@48,@48,@49,@48,@46,@57,];
-    return [[sheights objectAtIndex:indexPath.row] floatValue];
+    //NSArray *sheights = @[@50,@50,@50,@50,@50,@50,@50,@50,@50];
+    MenuOption option = [[[menuOptions objectAtIndex:indexPath.row] objectForKey:@"type"] intValue];
+    if (option == MenuOptionSponsor) {
+        return 47;
+    }else if (option == MenuOptionSchedule) {
+        return 60;
+    }else{
+        return 50;
+    }
+    
+    //return [[sheights objectAtIndex:indexPath.row] floatValue];
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
