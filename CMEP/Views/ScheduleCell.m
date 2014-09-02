@@ -94,6 +94,11 @@
     [ballonContainer addSubview:scheduleBallonView];
 }
 
+-(void)clean{
+    [scheduleBallonView removeFromSuperview];
+    scheduleBallonView = nil;
+}
+
 -(NSString*)getImageNameByScheduleType:(ScheduleType)type{
     if (type == ScheduleTypeStart) {
         return @"icon_start";

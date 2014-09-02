@@ -50,21 +50,21 @@
     ScheduleModel *scheduleModel =  [currentScheduleList objectAtIndex:indexPath.row];
     
     ScheduleCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
-    
+    [cell clean];
 //    if (!cell) {
 //        cell = [Utils loadNibForName:cellIdentifier];
 //    }
     
-//    if (indexPath.row == 0) {
-//        CGRect columnRect = cell.columnView.frame;
-//        columnRect.origin.y = 0;
-//        columnRect.size.height = cell.frame.size.height;
-//        cell.columnView.frame = columnRect;
-//        columnRect = cell.columnView.frame;
-//        columnRect.origin.y = columnRect.origin.y + 10;
-//        //columnRect.size.height = columnRect.size.height - 10;
-//        cell.columnView.frame = columnRect;
-//    }
+    if (indexPath.row == 0) {
+        CGRect columnRect = cell.columnView.frame;
+        columnRect.origin.y = 0;
+        columnRect.size.height = cell.frame.size.height;
+        cell.columnView.frame = columnRect;
+        columnRect = cell.columnView.frame;
+        columnRect.origin.y = columnRect.origin.y + 10;
+        //columnRect.size.height = columnRect.size.height - 10;
+        cell.columnView.frame = columnRect;
+    }
     
     [cell setScheduleModel:scheduleModel];
     NSLog(@"scheduleModel: %@", scheduleModel.titles);

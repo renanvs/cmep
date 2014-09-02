@@ -33,4 +33,6 @@
 
 +(float)getCellHeightWithScheduleModel:(ScheduleModel*)model;
 
+-(void)clean;
+
 @end
