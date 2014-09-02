@@ -9,9 +9,10 @@
 #import <Foundation/Foundation.h>
 
 typedef enum {
-    ScheduleTypeA,
-    ScheduleTypeB,
-    ScheduleTypeC,
+    ScheduleTypeStart,
+    ScheduleTypeCoffee,
+    ScheduleTypeLecture,
+    ScheduleTypeCoquetel,
 } ScheduleType;
 
 @interface ScheduleModel : NSObject{

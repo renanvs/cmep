@@ -23,7 +23,7 @@
 -(id)initWithCoder:(NSCoder *)aDecoder{
     self = [super initWithCoder:aDecoder];
     if (self) {
-        [self setAlpha:0];
+        
     }
     return self;
 }
@@ -37,7 +37,17 @@
 {
     [super setSelected:selected animated:animated];
     [self setSelectionStyle:UITableViewCellSelectionStyleNone];
-    [self setAlpha:0.6];
+    [self setAlpha:0.7];
+    if (!selected) {
+        typeImageView.frame = originalImageFrame;
+    }else{
+        CGRect sizebleFrame = originalImageFrame;
+        sizebleFrame.size.height = sizebleFrame.size.width = sizebleFrame.size.width + 10;
+        sizebleFrame.origin.x = sizebleFrame.origin.x - 5;
+        sizebleFrame.origin.y = sizebleFrame.origin.y - 5;
+        typeImageView.frame = sizebleFrame;
+    }
+    
     // Configure the view for the selected state
 }
 
@@ -54,6 +64,7 @@
 -(void)setScheduleModel:(ScheduleModel*)model{
     scheduleModel = model;
     typeImageView.image = [UIImage imageNamed:[self getImageNameByScheduleType:model.type]];
+    originalImageFrame = typeImageView.frame;
     initHourLabel.text = model.start;
     endHourLabel.text = model.end;
     
@@ -67,11 +78,22 @@
 }
 
 -(NSString*)getImageNameByScheduleType:(ScheduleType)type{
-    if (type == ScheduleTypeA) {
-        return @"";
+    if (type == ScheduleTypeStart) {
+        return @"icon_start";
+    }else if (type == ScheduleTypeCoffee) {
+        return @"icon_coffee";
+    }else if (type == ScheduleTypeCoquetel) {
+        return @"icon_coquetel";
+    }else if (type == ScheduleTypeLecture) {
+        return @"icon_palestra";
     }
     //todo: criar os restantes
     return @"";
+}
+
+-(void)setSelectedLayout{
+    [self setAlpha:1];
+    
 }
 
 @end

@@ -36,7 +36,7 @@ SynthensizeSingleTon(FakeModelManager);
 
 -(void)createFakeModelList0{
     ScheduleModel *sm0 = [[ScheduleModel alloc] init];
-    sm0.type = ScheduleTypeA;
+    sm0.type = ScheduleTypeStart;
     sm0.start = @"11h30";
     sm0.end = @"12h30";
     sm0.titles = [[NSArray alloc] initWithObjects:@"titulo0", nil];
@@ -44,7 +44,7 @@ SynthensizeSingleTon(FakeModelManager);
     sm0.dayIndex = 0;
     
     ScheduleModel *sm1 = [[ScheduleModel alloc] init];
-    sm1.type = ScheduleTypeA;
+    sm1.type = ScheduleTypeCoquetel;
     sm1.start = @"11h30";
     sm1.end = @"12h30";
     sm1.titles = [[NSArray alloc] initWithObjects:@"titulo1", nil];
@@ -52,7 +52,7 @@ SynthensizeSingleTon(FakeModelManager);
     sm1.dayIndex = 0;
     
     ScheduleModel *sm2 = [[ScheduleModel alloc] init];
-    sm2.type = ScheduleTypeA;
+    sm2.type = ScheduleTypeLecture;
     sm2.start = @"11h30";
     sm2.end = @"12h30";
     sm2.titles = [[NSArray alloc] initWithObjects:@"titulo2", @"titulo3", nil];
@@ -60,7 +60,7 @@ SynthensizeSingleTon(FakeModelManager);
     sm2.dayIndex = 0;
     
     ScheduleModel *sm3 = [[ScheduleModel alloc] init];
-    sm3.type = ScheduleTypeA;
+    sm3.type = ScheduleTypeStart;
     sm3.start = @"11h30";
     sm3.end = @"12h30";
     sm3.titles = [[NSArray alloc] initWithObjects:@"titulo3", nil];
@@ -68,7 +68,7 @@ SynthensizeSingleTon(FakeModelManager);
     sm3.dayIndex = 0;
     
     ScheduleModel *sm4 = [[ScheduleModel alloc] init];
-    sm4.type = ScheduleTypeA;
+    sm4.type = ScheduleTypeCoffee;
     sm4.start = @"11h30";
     sm4.end = @"12h30";
     sm4.titles = [[NSArray alloc] initWithObjects:@"titulo4", nil];
@@ -76,7 +76,7 @@ SynthensizeSingleTon(FakeModelManager);
     sm4.dayIndex = 0;
     
     ScheduleModel *sm5 = [[ScheduleModel alloc] init];
-    sm5.type = ScheduleTypeA;
+    sm5.type = ScheduleTypeCoquetel;
     sm5.start = @"11h30";
     sm5.end = @"12h30";
     sm5.titles = [[NSArray alloc] initWithObjects:@"titulo5", nil];
@@ -84,7 +84,7 @@ SynthensizeSingleTon(FakeModelManager);
     sm5.dayIndex = 0;
     
     ScheduleModel *sm6 = [[ScheduleModel alloc] init];
-    sm6.type = ScheduleTypeA;
+    sm6.type = ScheduleTypeLecture;
     sm6.start = @"11h30";
     sm6.end = @"12h30";
     sm6.titles = [[NSArray alloc] initWithObjects:@"titulo6", nil];
@@ -96,7 +96,7 @@ SynthensizeSingleTon(FakeModelManager);
 
 -(void)createFakeModelList1{
     ScheduleModel *sm0 = [[ScheduleModel alloc] init];
-    sm0.type = ScheduleTypeA;
+    sm0.type = ScheduleTypeLecture;
     sm0.start = @"11h30";
     sm0.end = @"12h30";
     sm0.titles = [[NSArray alloc] initWithObjects:@"sample0", nil];
@@ -104,7 +104,7 @@ SynthensizeSingleTon(FakeModelManager);
     sm0.dayIndex = 0;
     
     ScheduleModel *sm1 = [[ScheduleModel alloc] init];
-    sm1.type = ScheduleTypeA;
+    sm1.type = ScheduleTypeStart;
     sm1.start = @"11h30";
     sm1.end = @"12h30";
     sm1.titles = [[NSArray alloc] initWithObjects:@"sample1", nil];
@@ -112,7 +112,7 @@ SynthensizeSingleTon(FakeModelManager);
     sm1.dayIndex = 0;
     
     ScheduleModel *sm2 = [[ScheduleModel alloc] init];
-    sm2.type = ScheduleTypeA;
+    sm2.type = ScheduleTypeCoquetel;
     sm2.start = @"11h30";
     sm2.end = @"12h30";
     sm2.titles = [[NSArray alloc] initWithObjects:@"sample0", @"sample0", nil];
@@ -120,7 +120,7 @@ SynthensizeSingleTon(FakeModelManager);
     sm2.dayIndex = 0;
     
     ScheduleModel *sm3 = [[ScheduleModel alloc] init];
-    sm3.type = ScheduleTypeA;
+    sm3.type = ScheduleTypeCoquetel;
     sm3.start = @"11h30";
     sm3.end = @"12h30";
     sm3.titles = [[NSArray alloc] initWithObjects:@"titulo3", nil];
@@ -128,7 +128,7 @@ SynthensizeSingleTon(FakeModelManager);
     sm3.dayIndex = 0;
     
     ScheduleModel *sm4 = [[ScheduleModel alloc] init];
-    sm4.type = ScheduleTypeA;
+    sm4.type = ScheduleTypeCoffee;
     sm4.start = @"11h30";
     sm4.end = @"12h30";
     sm4.titles = [[NSArray alloc] initWithObjects:@"titulo4", nil];
@@ -136,7 +136,7 @@ SynthensizeSingleTon(FakeModelManager);
     sm4.dayIndex = 0;
     
     ScheduleModel *sm5 = [[ScheduleModel alloc] init];
-    sm5.type = ScheduleTypeA;
+    sm5.type = ScheduleTypeStart;
     sm5.start = @"11h30";
     sm5.end = @"12h30";
     sm5.titles = [[NSArray alloc] initWithObjects:@"titulo5", nil];
@@ -144,7 +144,7 @@ SynthensizeSingleTon(FakeModelManager);
     sm5.dayIndex = 0;
     
     ScheduleModel *sm6 = [[ScheduleModel alloc] init];
-    sm6.type = ScheduleTypeA;
+    sm6.type = ScheduleTypeLecture;
     sm6.start = @"11h30";
     sm6.end = @"12h30";
     sm6.titles = [[NSArray alloc] initWithObjects:@"titulo6", nil];

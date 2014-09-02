@@ -53,6 +53,17 @@
         cell = [Utils loadNibForName:cellIdentifier];
     }
     
+    if (indexPath.row == 0) {
+        CGRect columnRect = cell.columnView.frame;
+        columnRect.origin.y = 0;
+        columnRect.size.height = cell.frame.size.height;
+        cell.columnView.frame = columnRect;
+        columnRect = cell.columnView.frame;
+        columnRect.origin.y = columnRect.origin.y + 10;
+        //columnRect.size.height = columnRect.size.height - 10;
+        cell.columnView.frame = columnRect;
+    }
+    
     [cell setScheduleModel:scheduleModel];
     
     return cell;
@@ -72,7 +83,8 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     //todo: clarear celular
     ScheduleCell *cell = (ScheduleCell*)[tableView cellForRowAtIndexPath:indexPath];
-    [cell setAlpha:1];
+    [cell setSelectedLayout];
+    //[cell setAlpha:1];
 }
 
 -(void)viewWillAppear:(BOOL)animated{

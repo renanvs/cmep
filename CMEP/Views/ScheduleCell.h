@@ -19,10 +19,15 @@
     
     ScheduleModel *scheduleModel;
     ScheduleBallonView *scheduleBallonView;
+    CGRect originalImageFrame;
 }
+
+@property (nonatomic) IBOutlet UIView *columnView;
 
 -(float)getCellHeightWithScheduleModel:(ScheduleModel*)model;
 
 -(void)setScheduleModel:(ScheduleModel*)model;
+
+-(void)setSelectedLayout;
 
 @end
