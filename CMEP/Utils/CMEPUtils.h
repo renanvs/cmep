@@ -23,6 +23,8 @@ typedef enum {
 
 @interface CMEPUtils : NSObject
 
++(id)sharedInstance;
+
 +(UIViewController*)getControllerByType:(MenuOption)menuOption;
 
 @end
@@ -32,7 +34,6 @@ typedef enum {
 -(void)setCMEPFont;
 
 @end
-
 
 @interface UIButton (cmep)
 

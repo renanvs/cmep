@@ -10,6 +10,8 @@
 
 @implementation CMEPUtils
 
+SynthensizeSingleTon(CMEPUtils);
+
 +(UIViewController*)getControllerByType:(MenuOption)menuOption{
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
     UIViewController *desireController = nil;
