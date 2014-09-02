@@ -43,6 +43,10 @@
     [menuOptionsTemp addObject:presentation];
     NSDictionary *rating = @{@"name":@"AVALIAÇÃO \nDO EVENTO", @"type": [NSNumber numberWithInt:MenuOptionRating]};
     [menuOptionsTemp addObject:rating];
+    NSDictionary *checkin = @{@"name":@"CHECK-IN", @"type": [NSNumber numberWithInt:MenuOptionCheckin]};
+    [menuOptionsTemp addObject:checkin];
+    NSDictionary *exhibitor = @{@"name":@"EXPOSITORES", @"type": [NSNumber numberWithInt:MenuOptionExhibitor]};
+    [menuOptionsTemp addObject:exhibitor];
     NSDictionary *information = @{@"name":@"INFORMAÇÕES ÚTEIS", @"type": [NSNumber numberWithInt:MenuOptionInformation]};
     [menuOptionsTemp addObject:information];
     NSDictionary *map = @{@"name":@"MAPA DO EVENTO", @"type": [NSNumber numberWithInt:MenuOptionMap]};
@@ -57,6 +61,7 @@
     [menuOptionsTemp addObject:schedule];
     NSDictionary *configuration = @{@"name":@"CONFIGURAÇÃO", @"type": [NSNumber numberWithInt:MenuOptionConfiguration]};
     [menuOptionsTemp addObject:configuration];
+
     
     menuOptions = [[NSArray alloc] initWithArray:menuOptionsTemp];
     
@@ -90,9 +95,11 @@
     if (option == MenuOptionSponsor) {
         return 47;
     }else if (option == MenuOptionSchedule) {
-        return 60;
+        return 56;
+    }else if (option == MenuOptionConfiguration || option == MenuOptionExhibitor) {
+        return 46;
     }else{
-        return 50;
+        return 48;
     }
     
     //return [[sheights objectAtIndex:indexPath.row] floatValue];

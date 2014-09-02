@@ -17,7 +17,9 @@ typedef enum {
     MenuOptionSpeakers,
     MenuOptionNetworking,
     MenuOptionRating,
-    MenuOptionConfiguration
+    MenuOptionConfiguration,
+    MenuOptionCheckin,
+    MenuOptionExhibitor,
     
 } MenuOption;
 
