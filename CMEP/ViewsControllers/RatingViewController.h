@@ -8,13 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "RatingCell.h"
+#import "CMEPButtonCell.h"
 
 @interface RatingViewController : CMEPViewController<UITableViewDataSource, UITableViewDelegate, RatingCellDelegate>{
     __weak IBOutlet UITableView *ratingTableView;
-    __weak IBOutlet UIButton *ratingButton;
     NSArray *ratingList;
+    CMEPButtonCell *buttonCell;
 }
-
-- (IBAction)sendRating:(id)sender;
 
 @end

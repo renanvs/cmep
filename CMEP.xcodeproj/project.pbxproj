@@ -20,6 +20,7 @@
 		720811B519B0C6ED009D91E1 /* UIViewController+TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 720811AC19B0C6ED009D91E1 /* UIViewController+TargetViewController.m */; };
 		720811B819B0CB5A009D91E1 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 720811B719B0CB5A009D91E1 /* MapViewController.m */; };
 		720811BA19B0D6A2009D91E1 /* Files in Resources */ = {isa = PBXBuildFile; fileRef = 720811B919B0D6A2009D91E1 /* Files */; };
+		7221BC7719B686B3002E8F26 /* CMEPButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7221BC7619B686B3002E8F26 /* CMEPButtonCell.m */; };
 		722794AF19B4F266001F1AB5 /* italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 722794A719B4F266001F1AB5 /* italic.otf */; };
 		722794B119B4F267001F1AB5 /* light_italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 722794A919B4F266001F1AB5 /* light_italic.otf */; };
 		722794B319B4F267001F1AB5 /* light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 722794AB19B4F266001F1AB5 /* light.otf */; };
@@ -175,6 +176,8 @@
 		720811B619B0CB5A009D91E1 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = CMEP/ViewsControllers/MapViewController.h; sourceTree = "<group>"; };
 		720811B719B0CB5A009D91E1 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = CMEP/ViewsControllers/MapViewController.m; sourceTree = "<group>"; };
 		720811B919B0D6A2009D91E1 /* Files */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Files; path = CMEP/Files; sourceTree = "<group>"; };
+		7221BC7519B686B3002E8F26 /* CMEPButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CMEPButtonCell.h; path = CMEP/Views/CMEPButtonCell.h; sourceTree = "<group>"; };
+		7221BC7619B686B3002E8F26 /* CMEPButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CMEPButtonCell.m; path = CMEP/Views/CMEPButtonCell.m; sourceTree = "<group>"; };
 		722794A719B4F266001F1AB5 /* italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = italic.otf; sourceTree = "<group>"; };
 		722794A919B4F266001F1AB5 /* light_italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = light_italic.otf; sourceTree = "<group>"; };
 		722794AB19B4F266001F1AB5 /* light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = light.otf; sourceTree = "<group>"; };
@@ -438,6 +441,8 @@
 				72D56D3619B5204200878551 /* TopbarView.h */,
 				72D56D3719B5204200878551 /* TopbarView.m */,
 				72D56D3919B5206600878551 /* TopbarView.xib */,
+				7221BC7519B686B3002E8F26 /* CMEPButtonCell.h */,
+				7221BC7619B686B3002E8F26 /* CMEPButtonCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -931,6 +936,7 @@
 				72B1772519AE41A500F549C5 /* HomeViewController.m in Sources */,
 				72B1772119AE406E00F549C5 /* IIWrapController.m in Sources */,
 				72817A6E19AE52F700446FD9 /* PresentationViewController.m in Sources */,
+				7221BC7719B686B3002E8F26 /* CMEPButtonCell.m in Sources */,
 				72BEE26B19B0B21F0075AE36 /* InformationTableViewCell.m in Sources */,
 				729E852D19AFA7B20057DF1C /* ScheduleViewController.m in Sources */,
 				72D56D3819B5204200878551 /* TopbarView.m in Sources */,

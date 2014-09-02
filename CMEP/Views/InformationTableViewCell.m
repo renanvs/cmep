@@ -28,7 +28,8 @@
 {
     [super setSelected:selected animated:animated];
     [self setSelectionStyle:UITableViewCellSelectionStyleNone];
-
+    [titleLabel setCMEPFont];
+    [timeLabel setCMEPFont];
     // Configure the view for the selected state
 }
 

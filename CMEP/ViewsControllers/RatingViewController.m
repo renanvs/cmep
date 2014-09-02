@@ -28,7 +28,6 @@
     topbarTitle = @"AVALIAÇÃO DO EVENTO";    
     [super viewWillAppear:animated];
     //self.viewDeckController.panningMode = IIViewDeckNoPanning;
-    [ratingButton setCMEPFont];
     
 }
 
@@ -51,31 +50,50 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *cellIdentifier = @"RatingCell";
-    RatingCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    static NSString *cellIdentifier0 = @"RatingCell";
+    static NSString *cellIdentifier1 = @"CMEPButtonCell";
     
-    if (!cell) {
-        cell = (RatingCell*)[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    if (indexPath.row == ratingList.count) {
+        buttonCell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier1];
+        [buttonCell.button setCMEPFont];
+        [buttonCell.button addTarget:self action:@selector(sendRating) forControlEvents:UIControlEventTouchUpInside];
+        return buttonCell;
+    }else{
+        RatingCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier0];
+        
+        if (!cell) {
+            cell = (RatingCell*)[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier0];
+        }
+        
+        cell.delegate = self;
+        [cell setCurrentController:self];
+        NSDictionary *infoDic = [ratingList objectAtIndex:indexPath.row];
+        [cell setRatingDictionary:infoDic];
+        
+        return cell;
     }
     
-    cell.delegate = self;
-    [cell setCurrentController:self];
-    NSDictionary *infoDic = [ratingList objectAtIndex:indexPath.row];
-    [cell setRatingDictionary:infoDic];
-    
-    return cell;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == ratingList.count) {
+        NSLog(@"ta %f", tableView.rowHeight);
+        return 98;
+    }else{
+        return tableView.rowHeight;
+    }
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return ratingList.count;
+    return (ratingList.count + 1);
 }
 
 -(void)ratingCellRating:(float)ratingValue WithDictionary:(NSDictionary *)dictionary{
     NSLog(@"Rating value: %f", ratingValue);
 }
 
-- (IBAction)sendRating:(id)sender{
-    
+- (void)sendRating{
+    NSLog(@"sending rating");
 }
 
 @end
