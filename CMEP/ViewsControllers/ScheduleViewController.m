@@ -27,6 +27,8 @@
     scheduleListDay0 = [[NSArray alloc] initWithArray:[[FakeModelManager sharedInstance] fakeScheduleModelList0]];
     scheduleListDay1 = [[NSArray alloc] initWithArray:[[FakeModelManager sharedInstance] fakeScheduleModelList1]];
     currentScheduleList = scheduleListDay0;
+    
+    //[scheduleTableView registerNib:[UINib nibWithNibName:@"ScheduleCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"ScheduleCell"];
 }
 
 - (IBAction)goToNextPossibleDay:(id)sender {
@@ -47,24 +49,25 @@
     
     ScheduleModel *scheduleModel =  [currentScheduleList objectAtIndex:indexPath.row];
     
-    ScheduleCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    ScheduleCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
-    if (!cell) {
-        cell = [Utils loadNibForName:cellIdentifier];
-    }
+//    if (!cell) {
+//        cell = [Utils loadNibForName:cellIdentifier];
+//    }
     
-    if (indexPath.row == 0) {
-        CGRect columnRect = cell.columnView.frame;
-        columnRect.origin.y = 0;
-        columnRect.size.height = cell.frame.size.height;
-        cell.columnView.frame = columnRect;
-        columnRect = cell.columnView.frame;
-        columnRect.origin.y = columnRect.origin.y + 10;
-        //columnRect.size.height = columnRect.size.height - 10;
-        cell.columnView.frame = columnRect;
-    }
+//    if (indexPath.row == 0) {
+//        CGRect columnRect = cell.columnView.frame;
+//        columnRect.origin.y = 0;
+//        columnRect.size.height = cell.frame.size.height;
+//        cell.columnView.frame = columnRect;
+//        columnRect = cell.columnView.frame;
+//        columnRect.origin.y = columnRect.origin.y + 10;
+//        //columnRect.size.height = columnRect.size.height - 10;
+//        cell.columnView.frame = columnRect;
+//    }
     
     [cell setScheduleModel:scheduleModel];
+    NSLog(@"scheduleModel: %@", scheduleModel.titles);
     
     return cell;
 }
@@ -74,9 +77,11 @@
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    cellSample =  [Utils loadNibForName:@"ScheduleCell"];
+    //cellSample =  [Utils loadNibForName:@"ScheduleCell"];
     ScheduleModel *scheduleModel =  [currentScheduleList objectAtIndex:indexPath.row];
-    CGFloat cellHeight = [cellSample getCellHeightWithScheduleModel:scheduleModel];
+    CGFloat cellHeight = [ScheduleCell getCellHeightWithScheduleModel:scheduleModel];
+    //CGFloat cellHeight = 79;
+    NSLog(@"height: %f",cellHeight);
     return cellHeight;
 }
 
@@ -95,7 +100,7 @@
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     
-    [self scrollToCurrentHour];
+    //[self scrollToCurrentHour];
 }
 
 -(void)scrollToCurrentHour{

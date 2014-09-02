@@ -39,7 +39,9 @@
     [self setSelectionStyle:UITableViewCellSelectionStyleNone];
     [self setAlpha:0.7];
     if (!selected) {
-        typeImageView.frame = originalImageFrame;
+        if (modelIsSet) {
+            typeImageView.frame = originalImageFrame;
+        }
     }else{
         CGRect sizebleFrame = originalImageFrame;
         sizebleFrame.size.height = sizebleFrame.size.width = sizebleFrame.size.width + 10;
@@ -61,10 +63,25 @@
     return cellFrame.size.height;
 }
 
++(float)getCellHeightWithScheduleModel:(ScheduleModel*)model{
+    //CGRect cellFrame = self.frame;
+    CGFloat height = 79;
+    if (model.titles.count > 1) {
+        height = height + (29 * model.titles.count);
+    }
+    //cellFrame.size.height = height;
+    return height;
+}
+
 -(void)setScheduleModel:(ScheduleModel*)model{
     scheduleModel = model;
     typeImageView.image = [UIImage imageNamed:[self getImageNameByScheduleType:model.type]];
-    originalImageFrame = typeImageView.frame;
+    
+    if (!modelIsSet) {
+        originalImageFrame = typeImageView.frame;
+        modelIsSet = YES;
+    }
+    
     initHourLabel.text = model.start;
     endHourLabel.text = model.end;
     

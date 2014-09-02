@@ -29,7 +29,6 @@
 		724E130A19B4B192001CEBCB /* starempty.png in Resources */ = {isa = PBXBuildFile; fileRef = 724E130719B4B192001CEBCB /* starempty.png */; };
 		724E130B19B4B192001CEBCB /* starfull.png in Resources */ = {isa = PBXBuildFile; fileRef = 724E130819B4B192001CEBCB /* starfull.png */; };
 		724E130C19B4B192001CEBCB /* starmiddle.png in Resources */ = {isa = PBXBuildFile; fileRef = 724E130919B4B192001CEBCB /* starmiddle.png */; };
-		725F27EC19B09CE6005FE5BD /* ScheduleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 725F27EB19B09CE6005FE5BD /* ScheduleCell.xib */; };
 		726140BF19B0F9D50062C486 /* SpeakersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 726140BE19B0F9D50062C486 /* SpeakersViewController.m */; };
 		726140C219B0FCC90062C486 /* SpeakersCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 726140C119B0FCC90062C486 /* SpeakersCell.m */; };
 		72817A6E19AE52F700446FD9 /* PresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72817A6D19AE52F700446FD9 /* PresentationViewController.m */; };
@@ -187,7 +186,6 @@
 		724E130719B4B192001CEBCB /* starempty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starempty.png; sourceTree = "<group>"; };
 		724E130819B4B192001CEBCB /* starfull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starfull.png; sourceTree = "<group>"; };
 		724E130919B4B192001CEBCB /* starmiddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starmiddle.png; sourceTree = "<group>"; };
-		725F27EB19B09CE6005FE5BD /* ScheduleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ScheduleCell.xib; path = CMEP/Views/ScheduleCell.xib; sourceTree = "<group>"; };
 		726140BD19B0F9D50062C486 /* SpeakersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpeakersViewController.h; path = CMEP/ViewsControllers/SpeakersViewController.h; sourceTree = "<group>"; };
 		726140BE19B0F9D50062C486 /* SpeakersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpeakersViewController.m; path = CMEP/ViewsControllers/SpeakersViewController.m; sourceTree = "<group>"; };
 		726140C019B0FCC90062C486 /* SpeakersCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpeakersCell.h; path = CMEP/Views/SpeakersCell.h; sourceTree = "<group>"; };
@@ -425,7 +423,6 @@
 				729E851E19AE6E000057DF1C /* HomeTableViewCell.m */,
 				729E853219AFB0BA0057DF1C /* ScheduleCell.h */,
 				729E853319AFB0BA0057DF1C /* ScheduleCell.m */,
-				725F27EB19B09CE6005FE5BD /* ScheduleCell.xib */,
 				729E853519AFB5760057DF1C /* ScheduleBallonView.h */,
 				729E853619AFB5760057DF1C /* ScheduleBallonView.m */,
 				729E853819AFB5890057DF1C /* ScheduleBallonView.xib */,
@@ -800,7 +797,6 @@
 				72D56D8F19B5FB2700878551 /* icon_cmep_networking@2x.png in Resources */,
 				722794B319B4F267001F1AB5 /* light.otf in Resources */,
 				72D56D9E19B5FB2700878551 /* icon_networking@2x.png in Resources */,
-				725F27EC19B09CE6005FE5BD /* ScheduleCell.xib in Resources */,
 				72D56D8E19B5FB2700878551 /* icon_cargo@2x.png in Resources */,
 				72D56D9F19B5FB2700878551 /* icon_palestra_disable@2x.png in Resources */,
 				72D56D8519B5FB2700878551 /* btn_fechar@2x.png in Resources */,

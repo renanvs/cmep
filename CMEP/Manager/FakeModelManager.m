@@ -34,7 +34,7 @@ SynthensizeSingleTon(FakeModelManager);
     [self createFakeModelList1];
 }
 
--(void)createFakeModelList0{
+-(void)createFakeModelList1{
     ScheduleModel *sm0 = [[ScheduleModel alloc] init];
     sm0.type = ScheduleTypeStart;
     sm0.start = @"11h30";
@@ -91,10 +91,10 @@ SynthensizeSingleTon(FakeModelManager);
     sm6.subtitles = [[NSArray alloc] initWithObjects:@"subtitulo6", nil];
     sm6.dayIndex = 0;
     
-    fakeScheduleModelList0 = [[NSArray alloc] initWithObjects:sm0, sm1, sm2, sm3, sm4, sm5, sm6, nil];
+    fakeScheduleModelList1 = [[NSArray alloc] initWithObjects:sm0, sm1, sm2, sm3, sm4, sm5, sm6, nil];
 }
 
--(void)createFakeModelList1{
+-(void)createFakeModelList0{
     ScheduleModel *sm0 = [[ScheduleModel alloc] init];
     sm0.type = ScheduleTypeLecture;
     sm0.start = @"11h30";
@@ -108,15 +108,15 @@ SynthensizeSingleTon(FakeModelManager);
     sm1.start = @"11h30";
     sm1.end = @"12h30";
     sm1.titles = [[NSArray alloc] initWithObjects:@"sample1", nil];
-    sm1.subtitles = [[NSArray alloc] initWithObjects:@"sample0 sample0sample0 sample0sample0sample0 sample0sample0 sample0  sample0sample0", nil];
+    sm1.subtitles = [[NSArray alloc] initWithObjects:@"sample1 sample1sample1 sample1sample1sample1 sample1sample1 sample1  sample1sample1", nil];
     sm1.dayIndex = 0;
     
     ScheduleModel *sm2 = [[ScheduleModel alloc] init];
     sm2.type = ScheduleTypeCoquetel;
     sm2.start = @"11h30";
     sm2.end = @"12h30";
-    sm2.titles = [[NSArray alloc] initWithObjects:@"sample0", @"sample0", nil];
-    sm2.subtitles = [[NSArray alloc] initWithObjects:@"sample0 sample0sample0 sample0", @"sample0sample0 sample0 sample0", nil];
+    sm2.titles = [[NSArray alloc] initWithObjects:@"sample2", @"sample2", nil];
+    sm2.subtitles = [[NSArray alloc] initWithObjects:@"sample2 sample2sample2 sample2", @"sample2sample2 sample2 sample2", nil];
     sm2.dayIndex = 0;
     
     ScheduleModel *sm3 = [[ScheduleModel alloc] init];
@@ -175,7 +175,7 @@ SynthensizeSingleTon(FakeModelManager);
     sm9.subtitles = [[NSArray alloc] initWithObjects:@"subtitulo9", nil];
     sm9.dayIndex = 0;
     
-    fakeScheduleModelList1 = [[NSArray alloc] initWithObjects:sm0, sm1, sm2, sm3, sm4, sm5, sm6, sm7, sm8, sm9, nil];
+    fakeScheduleModelList0 = [[NSArray alloc] initWithObjects:sm0, sm1, sm2, sm3, sm4, sm5, sm6, sm7, sm8, nil];
 }
 
 -(void)createFakeInformation{
