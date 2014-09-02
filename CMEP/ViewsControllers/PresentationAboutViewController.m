@@ -8,10 +8,6 @@
 
 #import "PresentationAboutViewController.h"
 
-@interface PresentationAboutViewController ()
-
-@end
-
 @implementation PresentationAboutViewController
 
 - (void)viewDidLoad
@@ -37,12 +33,9 @@
 
 }
 
-- (IBAction)back:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
-}
-
-- (IBAction)showMenu:(id)sender {
-    [self.viewDeckController openLeftView];
+-(void)viewWillAppear:(BOOL)animated{
+    topbarTitle = @"renan";
+    [super viewWillAppear:animated];
 }
 
 @end

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ScheduleCell.h"
 
-@interface ScheduleViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>{
+@interface ScheduleViewController : CMEPViewController<UITableViewDataSource, UITableViewDelegate>{
     __weak IBOutlet UITableView *scheduleTableView;
     __weak IBOutlet UILabel *dayLabel;
     __weak IBOutlet UILabel *monthYearLabel;
@@ -19,7 +19,6 @@
     NSArray *currentScheduleList;
     ScheduleCell *cellSample;
     int currentDayIndex;
-    __weak IBOutlet UIView *topbarContainer;
 }
 
 - (IBAction)goToNextPossibleDay:(id)sender;

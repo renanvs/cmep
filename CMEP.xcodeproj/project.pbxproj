@@ -97,6 +97,7 @@
 		72E2453E19B10389003A7282 /* sampleSpeakerImage0.png in Resources */ = {isa = PBXBuildFile; fileRef = 72E2453B19B10389003A7282 /* sampleSpeakerImage0.png */; };
 		72E2453F19B10389003A7282 /* sampleSpeakerImage1.png in Resources */ = {isa = PBXBuildFile; fileRef = 72E2453C19B10389003A7282 /* sampleSpeakerImage1.png */; };
 		72E2454019B10389003A7282 /* sampleSpeakerImage2.png in Resources */ = {isa = PBXBuildFile; fileRef = 72E2453D19B10389003A7282 /* sampleSpeakerImage2.png */; };
+		DBF4A29B19B56919003ED435 /* CMEPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF4A29A19B56919003ED435 /* CMEPViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -241,6 +242,8 @@
 		72E2453C19B10389003A7282 /* sampleSpeakerImage1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sampleSpeakerImage1.png; sourceTree = "<group>"; };
 		72E2453D19B10389003A7282 /* sampleSpeakerImage2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sampleSpeakerImage2.png; sourceTree = "<group>"; };
 		BCD35203496A47D9B7EEE6EA /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		DBF4A29919B56919003ED435 /* CMEPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CMEPViewController.h; path = CMEP/ViewsControllers/CMEPViewController.h; sourceTree = "<group>"; };
+		DBF4A29A19B56919003ED435 /* CMEPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CMEPViewController.m; path = CMEP/ViewsControllers/CMEPViewController.m; sourceTree = "<group>"; };
 		F04A8D4A74A74AFA84025C06 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -509,6 +512,8 @@
 				726140BE19B0F9D50062C486 /* SpeakersViewController.m */,
 				724E130119B4A938001CEBCB /* RatingViewController.h */,
 				724E130219B4A938001CEBCB /* RatingViewController.m */,
+				DBF4A29919B56919003ED435 /* CMEPViewController.h */,
+				DBF4A29A19B56919003ED435 /* CMEPViewController.m */,
 			);
 			name = ViewsControllers;
 			sourceTree = "<group>";
@@ -729,6 +734,7 @@
 				729E853719AFB5760057DF1C /* ScheduleBallonView.m in Sources */,
 				720811B019B0C6ED009D91E1 /* MZFormSheetBackgroundWindowViewController.m in Sources */,
 				720811B119B0C6ED009D91E1 /* MZFormSheetController.m in Sources */,
+				DBF4A29B19B56919003ED435 /* CMEPViewController.m in Sources */,
 				72BEE26819B0B0E70075AE36 /* InformationsViewController.m in Sources */,
 				72B1771F19AE406E00F549C5 /* IISideController.m in Sources */,
 				72B176F919AE277700F549C5 /* ViewController.m in Sources */,

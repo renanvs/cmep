@@ -24,10 +24,15 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated{
+    
+    topbarTitle = @"renan";    
+    [super viewWillAppear:animated];
     self.viewDeckController.panningMode = IIViewDeckNoPanning;
+    
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
     self.viewDeckController.panningMode = IIViewDeckFullViewPanning;
 }
 
@@ -42,14 +47,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (IBAction)back:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
-}
-
-- (IBAction)showMenu:(id)sender {
-    [self.viewDeckController openLeftView];
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{

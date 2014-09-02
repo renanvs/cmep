@@ -39,12 +39,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)back:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
-}
-
-- (IBAction)showMenu:(id)sender {
-    [self.viewDeckController openLeftView];
+-(void)viewWillAppear:(BOOL)animated{
+    topbarTitle = @"renan";
+    [super viewWillAppear:animated];
 }
 
 @end

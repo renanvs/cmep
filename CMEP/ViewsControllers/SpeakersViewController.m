@@ -36,14 +36,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)back:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
-}
-
-- (IBAction)showMenu:(id)sender {
-    [self.viewDeckController openLeftView];
-}
-
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *cellIdentifier = @"SpeakersCell";
     SpeakersCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
@@ -64,6 +56,11 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    topbarTitle = @"renan";
+    [super viewWillAppear:animated];
 }
 
 @end

@@ -9,10 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "RatingCell.h"
 
-@interface RatingViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, RatingCellDelegate>{
+@interface RatingViewController : CMEPViewController<UITableViewDataSource, UITableViewDelegate, RatingCellDelegate>{
     __weak IBOutlet UITableView *ratingTableView;
     NSArray *ratingList;
-    __weak IBOutlet UIView *topbarContainer;
 }
 
 - (IBAction)sendRating:(id)sender;

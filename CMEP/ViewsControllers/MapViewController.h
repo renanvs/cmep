@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MapViewController : UIViewController{
+@interface MapViewController : CMEPViewController{
     __weak IBOutlet UIView *mapContainer;
-    __weak IBOutlet UIView *topbarContainer;
 }
 
 @end

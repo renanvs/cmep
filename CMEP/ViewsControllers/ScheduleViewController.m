@@ -9,10 +9,6 @@
 #import "ScheduleViewController.h"
 #import "ScheduleModel.h"
 
-@interface ScheduleViewController ()
-
-@end
-
 @implementation ScheduleViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -31,14 +27,6 @@
     scheduleListDay0 = [[NSArray alloc] initWithArray:[[FakeModelManager sharedInstance] fakeScheduleModelList0]];
     scheduleListDay1 = [[NSArray alloc] initWithArray:[[FakeModelManager sharedInstance] fakeScheduleModelList1]];
     currentScheduleList = scheduleListDay0;
-}
-
-- (IBAction)back:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
-}
-
-- (IBAction)showMenu:(id)sender {
-    [self.viewDeckController openLeftView];
 }
 
 - (IBAction)goToNextPossibleDay:(id)sender {
@@ -85,6 +73,11 @@
     //todo: clarear celular
     ScheduleCell *cell = (ScheduleCell*)[tableView cellForRowAtIndexPath:indexPath];
     [cell setAlpha:1];
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    topbarTitle = @"renan";
+    [super viewWillAppear:animated];
 }
 
 @end

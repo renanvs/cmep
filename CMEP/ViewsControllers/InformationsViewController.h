@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface InformationsViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>{
+@interface InformationsViewController : CMEPViewController<UITableViewDataSource, UITableViewDelegate>{
     __weak IBOutlet UITableView *informationTableView;
     NSArray *informationList;
-    __weak IBOutlet UIView *topbarContainer;
 }
 
 @end

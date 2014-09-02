@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SpeakersViewController : UIViewController{
+@interface SpeakersViewController : CMEPViewController{
     __weak IBOutlet UITableView *speakerTableView;
     NSArray *speakersList;
-    __weak IBOutlet UIView *topbarContainer;
 }
 
 @end

@@ -8,10 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PresentationAboutViewController : UIViewController{
-    
+@interface PresentationAboutViewController : CMEPViewController{
     __weak IBOutlet UIWebView *presentationWebView;
-    __weak IBOutlet UIView *topbarContainer;
 }
 
 @end

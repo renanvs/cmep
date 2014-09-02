@@ -18,12 +18,13 @@
 
 @interface TopbarView : UIView{
     id<TopbarViewDelegate> delegate;
-    __weak IBOutlet UILabel *title;
+    __weak IBOutlet UILabel *titleLabel;
 }
 
 -(IBAction)back:(id)sender;
 -(IBAction)menu:(id)sender;
 
+@property (nonatomic) NSString *topbarTitle;
 @property (nonatomic) id<TopbarViewDelegate> delegate;
 
 @end

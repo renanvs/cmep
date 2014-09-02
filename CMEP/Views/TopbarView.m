@@ -36,4 +36,8 @@
     
 }
 
+-(void)setTopbarTitle:(NSString *)_topbarTitle{
+    titleLabel.text = _topbarTitle;
+}
+
 @end
