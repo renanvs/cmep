@@ -10,6 +10,7 @@
 
 @interface PresentationViewController : CMEPViewController{
     __weak IBOutlet UIWebView *presentationWebView;
+    __weak IBOutlet UIButton *aboutButton;
 }
 
 @end

@@ -150,7 +150,7 @@
                                 <rect key="frame" x="77" y="498" width="166" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="CONHEÇA A ABECS" backgroundImage="btn_verde.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -164,6 +164,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="hDz-il-d6V"/>
                     <connections>
+                        <outlet property="aboutButton" destination="DDZ-FZ-DDy" id="UcN-u8-8an"/>
                         <outlet property="presentationWebView" destination="zU8-bs-rs9" id="Bjz-Ka-TsR"/>
                         <outlet property="topbarContainer" destination="39G-Pm-ybx" id="SpS-8k-ue1"/>
                     </connections>
@@ -533,7 +534,7 @@
                                 <rect key="frame" x="77" y="486" width="166" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="ENVIAR AVALIAÇÃO" backgroundImage="btn_verde.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -547,6 +548,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="fd9-RF-R4f"/>
                     <connections>
+                        <outlet property="ratingButton" destination="aLF-9l-lFT" id="wSE-bF-Lbp"/>
                         <outlet property="ratingTableView" destination="Eff-BJ-P8f" id="kfy-wB-LIz"/>
                         <outlet property="topbarContainer" destination="OjZ-GZ-TXJ" id="YP6-Px-Gi8"/>
                     </connections>

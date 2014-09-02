@@ -57,13 +57,7 @@
         return;
     }
     
-    [self setStarStatus:drawPoint.x];
-    
-    CGRect writingStartPoint = CGRectMake(90, 800, 30, 30);
-    if (CGRectContainsPoint(writingStartPoint, drawPoint))
-    {
-        //something
-    }
+    //[self setStarStatus:drawPoint.x];
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -72,12 +66,7 @@
     if (drawPoint.x < 0 || drawPoint.y < 0) {
         return;
     }
-    [self setStarStatus:drawPoint.x];
-    CGRect writingEndPoint = CGRectMake(390, 800, 30, 30);
-    if (CGRectContainsPoint(writingEndPoint, drawPoint))
-    {
-        //change background if you want user see change without lift finger up
-    }
+    //[self setStarStatus:drawPoint.x];
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -91,11 +80,6 @@
         return;
     }
     [self setStarStatus:drawPoint.x];
-    CGRect writingEndPoint = CGRectMake(390, 800, 30, 30);
-    if (CGRectContainsPoint(writingEndPoint, drawPoint))
-    {
-        //change background when user lift finger up
-    }
 }
 
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -104,12 +88,7 @@
     if (drawPoint.x < 0 || drawPoint.y < 0) {
         return;
     }
-    [self setStarStatus:drawPoint.x];
-    CGRect writingEndPoint = CGRectMake(390, 800, 30, 30);
-    if (CGRectContainsPoint(writingEndPoint, drawPoint))
-    {
-        //change background when user lift finger up
-    }
+    //[self setStarStatus:drawPoint.x];
 }
 
 -(void)clearStars{
@@ -123,13 +102,6 @@
     [self clearStars];
     
     for (UIImageView *starImage in starsContainer.subviews) {
-//        if (position < (starImage.frame.origin.x + (starImage.frame.size.width/2)) &&
-//            position > (starImage.frame.origin.x)) {
-//            starImage.image = [UIImage imageNamed:@"starmiddle"];
-//            starImage.accessibilityIdentifier = @"starmiddle";
-//            //return;
-//        }
-        
         if (position > starImage.frame.origin.x ||
             position >= (starImage.frame.origin.x + starImage.frame.size.width)) {
             starImage.image = [UIImage imageNamed:@"starfull"];

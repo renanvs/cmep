@@ -31,6 +31,8 @@
 -(void)viewWillAppear:(BOOL)animated{
     topbarTitle = @"APRESENTAÇÃO";
     [super viewWillAppear:animated];
+    
+    [aboutButton setCMEPFont];
 }
 
 -(void)setupWebView{

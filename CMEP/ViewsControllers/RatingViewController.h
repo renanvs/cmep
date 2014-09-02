@@ -11,6 +11,7 @@
 
 @interface RatingViewController : CMEPViewController<UITableViewDataSource, UITableViewDelegate, RatingCellDelegate>{
     __weak IBOutlet UITableView *ratingTableView;
+    __weak IBOutlet UIButton *ratingButton;
     NSArray *ratingList;
 }
 

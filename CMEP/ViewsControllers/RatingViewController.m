@@ -27,13 +27,14 @@
     
     topbarTitle = @"AVALIAÇÃO DO EVENTO";    
     [super viewWillAppear:animated];
-    self.viewDeckController.panningMode = IIViewDeckNoPanning;
+    //self.viewDeckController.panningMode = IIViewDeckNoPanning;
+    [ratingButton setCMEPFont];
     
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    self.viewDeckController.panningMode = IIViewDeckFullViewPanning;
+    //self.viewDeckController.panningMode = IIViewDeckFullViewPanning;
 }
 
 - (void)viewDidLoad
