@@ -9,7 +9,7 @@
 #import "CMEPViewController.h"
 
 @implementation CMEPViewController
-@synthesize topbarTitle;
+@synthesize topbarTitle, backToPreviosController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,8 +28,6 @@
         topbar = [Utils loadNibForName:@"TopbarView"];
         topbar.delegate = self;
     }
-    
-    
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -37,6 +35,15 @@
         [topbarContainer addSubview:topbar];
     }
     topbar.topbarTitle = topbarTitle;
+    
+    UIImage *btBackImage = nil;
+    if (backToPreviosController) {
+         btBackImage = [UIImage imageNamed:@"icon_voltar"];
+    }else{
+        btBackImage = [UIImage imageNamed:@"icon_house"];
+    }
+    
+    [topbar setBackButtonImage:btBackImage];
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,7 +53,11 @@
 }
 
 -(void)topbarViewBackPressed{
-    [self.navigationController popViewControllerAnimated:YES];
+    if (backToPreviosController) {
+        [self.navigationController popViewControllerAnimated:YES];
+    }else{
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    }
 }
 
 -(void)topbarViewMenuPressed{

@@ -36,8 +36,16 @@
     
 }
 
--(void)setTopbarTitle:(NSString *)_topbarTitle{
-    titleLabel.text = _topbarTitle;
+-(void)setTopbarTitle:(NSString *)__topbarTitle{
+    titleLabel.text = __topbarTitle;
+}
+
+-(void)willMoveToSuperview:(UIView *)newSuperview{
+    [titleLabel setCMEPFont];
+}
+
+-(void)setBackButtonImage:(UIImage*)image{
+    [backButton setImage:image forState:UIControlStateNormal];
 }
 
 @end

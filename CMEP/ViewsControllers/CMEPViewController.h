@@ -13,8 +13,10 @@
     __weak IBOutlet UIView *topbarContainer;
     TopbarView *topbar;
     NSString *topbarTitle;
+    BOOL backToPreviosController;
 }
 
 @property (nonatomic) NSString *topbarTitle;
+@property (nonatomic) BOOL backToPreviosController;
 
 @end

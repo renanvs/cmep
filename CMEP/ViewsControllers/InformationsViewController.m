@@ -52,7 +52,7 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated{
-    topbarTitle = @"renan";
+    topbarTitle = @"INFORMAÇÕES UTEIS";
     [super viewWillAppear:animated];
 }
 

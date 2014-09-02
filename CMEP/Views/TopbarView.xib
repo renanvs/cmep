@@ -16,18 +16,18 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="APRESENTAÇÃO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6r-OL-hvQ">
-                    <rect key="frame" x="80" y="17" width="161" height="21"/>
+                    <rect key="frame" x="38" y="28" width="244" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTH-cV-cNO">
-                    <rect key="frame" x="-15" y="11" width="57" height="44"/>
+                    <rect key="frame" x="-17" y="6" width="69" height="55"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <state key="normal" image="icon_voltar.png">
+                    <state key="normal" image="icon_house.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -35,7 +35,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9b-vR-hpx">
-                    <rect key="frame" x="274" y="12" width="51" height="42"/>
+                    <rect key="frame" x="276" y="13" width="54" height="45"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -49,13 +49,15 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <connections>
+                <outlet property="backButton" destination="HTH-cV-cNO" id="VUC-WG-lfp"/>
+                <outlet property="menuButton" destination="E9b-vR-hpx" id="mwt-Aj-lEx"/>
                 <outlet property="titleLabel" destination="c6r-OL-hvQ" id="dki-pr-EAJ"/>
             </connections>
         </view>
     </objects>
     <resources>
         <image name="bg_topo_pag_conteudo.png" width="320" height="55"/>
+        <image name="icon_house.png" width="22" height="23"/>
         <image name="icon_menu_white.png" width="23" height="20"/>
-        <image name="icon_voltar.png" width="13" height="20"/>
     </resources>
 </document>

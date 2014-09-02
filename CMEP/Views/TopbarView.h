@@ -18,11 +18,14 @@
 
 @interface TopbarView : UIView{
     id<TopbarViewDelegate> delegate;
+    __weak IBOutlet UIButton *backButton;
     __weak IBOutlet UILabel *titleLabel;
+    __weak IBOutlet UIButton *menuButton;
 }
 
 -(IBAction)back:(id)sender;
 -(IBAction)menu:(id)sender;
+-(void)setBackButtonImage:(UIImage*)image;
 
 @property (nonatomic) NSString *topbarTitle;
 @property (nonatomic) id<TopbarViewDelegate> delegate;

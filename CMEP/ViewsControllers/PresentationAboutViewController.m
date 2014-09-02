@@ -34,7 +34,8 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated{
-    topbarTitle = @"renan";
+    topbarTitle = @"APRESENTAÇÃO";
+    backToPreviosController = YES;
     [super viewWillAppear:animated];
 }
 

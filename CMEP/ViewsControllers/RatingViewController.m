@@ -25,7 +25,7 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     
-    topbarTitle = @"renan";    
+    topbarTitle = @"AVALIAÇÃO DO EVENTO";    
     [super viewWillAppear:animated];
     self.viewDeckController.panningMode = IIViewDeckNoPanning;
     

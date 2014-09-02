@@ -40,7 +40,7 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated{
-    topbarTitle = @"renan";
+    topbarTitle = @"MAPA DO EVENTO";
     [super viewWillAppear:animated];
 }
 
