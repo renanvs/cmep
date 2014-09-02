@@ -92,4 +92,15 @@
     [super viewWillAppear:animated];
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    [self scrollToCurrentHour];
+}
+
+-(void)scrollToCurrentHour{
+    NSIndexPath *i = [NSIndexPath indexPathForItem:5 inSection:0];
+    [scheduleTableView scrollToRowAtIndexPath:i atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
+}
+
 @end
