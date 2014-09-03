@@ -14,6 +14,8 @@
     NSArray *fakeInformationList;
     NSArray *fakeSpeakersList;
     NSArray *fakeRatingList;
+    NSMutableDictionary *fakeSponsorDic;
+    NSArray *fakeSponsorOrderList;
 }
 
 @property (nonatomic) NSArray *fakeScheduleModelList0;
@@ -21,6 +23,8 @@
 @property (nonatomic) NSArray *fakeInformationList;
 @property (nonatomic) NSArray *fakeSpeakersList;
 @property (nonatomic) NSArray *fakeRatingList;
+@property (nonatomic) NSMutableDictionary *fakeSponsorDic;
+@property (nonatomic) NSArray *fakeSponsorOrderList;
 
 +(id)sharedInstance;
 

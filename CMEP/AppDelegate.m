@@ -31,7 +31,7 @@
     [self.window makeKeyAndVisible];
     
     
-    [[[UIAlertView alloc] initWithTitle:@"ATENÇÃO" message:@"Este app esta em fase de desenvolvimento, suas funcionalidades em sua maioria estão em desenvolvimento. v_beta_1.1" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil]show];
+    //[[[UIAlertView alloc] initWithTitle:@"ATENÇÃO" message:@"Este app esta em fase de desenvolvimento, suas funcionalidades em sua maioria estão em desenvolvimento. v_beta_1.1" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil]show];
     
     //[Utils showFonts];
     

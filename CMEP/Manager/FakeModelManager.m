@@ -10,7 +10,7 @@
 #import "Schedulemodel.h"
 
 @implementation FakeModelManager
-@synthesize fakeScheduleModelList0, fakeScheduleModelList1, fakeInformationList, fakeSpeakersList, fakeRatingList;
+@synthesize fakeScheduleModelList0, fakeScheduleModelList1, fakeInformationList, fakeSpeakersList, fakeRatingList, fakeSponsorDic, fakeSponsorOrderList;
 SynthensizeSingleTon(FakeModelManager);
 
 -(id)init{
@@ -20,6 +20,7 @@ SynthensizeSingleTon(FakeModelManager);
         [self createFakeInformation];
         [self createFakeSpeakers];
         [self createFakeRating];
+        [self createFakeSponsors];
     }
     return self;
 }
@@ -243,6 +244,33 @@ SynthensizeSingleTon(FakeModelManager);
     [dic2 setObject:@"Lorem ipsum dolor sit er elit lamet, consectetaur cilli" forKey:@"description"];
     
     fakeRatingList = [[NSArray alloc] initWithObjects:dic0, dic1, dic2, nil];
+}
+
+-(void)createFakeSponsors{
+    NSMutableDictionary *bradesco = [[NSMutableDictionary alloc] init];
+    [bradesco setObject:@"http://www.bradesco.com.br" forKey:@"url"];
+    [bradesco setObject:@"bradesco.png" forKey:@"imagePath"];
+    
+    NSMutableDictionary *aci = [[NSMutableDictionary alloc] init];
+    [aci setObject:@"http://www.aciworldwide.com/" forKey:@"url"];
+    [aci setObject:@"aci.png" forKey:@"imagePath"];
+    
+    NSMutableDictionary *cielo = [[NSMutableDictionary alloc] init];
+    [cielo setObject:@"http://www.cielo.com.br" forKey:@"url"];
+    [cielo setObject:@"cielo.png" forKey:@"imagePath"];
+    
+    NSMutableDictionary *elo = [[NSMutableDictionary alloc] init];
+    [elo setObject:@"http://www.elo.com.br" forKey:@"url"];
+    [elo setObject:@"elo.png" forKey:@"imagePath"];
+    
+    NSArray *ar0 = [[NSArray alloc] initWithObjects:bradesco, nil];
+    NSArray *ar1 = [[NSArray alloc] initWithObjects:aci, cielo, elo, nil];
+    
+    fakeSponsorDic = [[NSMutableDictionary alloc] init];
+    [fakeSponsorDic setObject:ar0 forKey:@"DIAMANTE"];
+    [fakeSponsorDic setObject:ar1 forKey:@"PRATA"];
+    
+    fakeSponsorOrderList = [[NSArray alloc] initWithObjects:@"DIAMANTE", @"PRATA", nil];
 }
 
 @end

@@ -12,6 +12,12 @@
 		7202775219B75B9400E2D245 /* tempTopBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7202775019B75B9400E2D245 /* tempTopBar.png */; };
 		7202775619B7717200E2D245 /* close_x@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7202775519B7717200E2D245 /* close_x@2x.png */; };
 		7202775819B7764D00E2D245 /* row_schedule@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7202775719B7764D00E2D245 /* row_schedule@2x.png */; };
+		7202775B19B7977300E2D245 /* SponsorHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7202775A19B7977300E2D245 /* SponsorHeaderView.m */; };
+		7202775D19B7978B00E2D245 /* SponsorHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7202775C19B7978B00E2D245 /* SponsorHeaderView.xib */; };
+		7202776219B7A2D800E2D245 /* aci.png in Resources */ = {isa = PBXBuildFile; fileRef = 7202775E19B7A2D800E2D245 /* aci.png */; };
+		7202776319B7A2D800E2D245 /* bradesco.png in Resources */ = {isa = PBXBuildFile; fileRef = 7202775F19B7A2D800E2D245 /* bradesco.png */; };
+		7202776419B7A2D800E2D245 /* cielo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7202776019B7A2D800E2D245 /* cielo.png */; };
+		7202776519B7A2D800E2D245 /* elo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7202776119B7A2D800E2D245 /* elo.png */; };
 		7208119619B0C5C6009D91E1 /* SponsorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7208119519B0C5C6009D91E1 /* SponsorViewController.m */; };
 		720811AD19B0C6ED009D91E1 /* MZAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 7208119C19B0C6ED009D91E1 /* MZAppearance.m */; };
 		720811AE19B0C6ED009D91E1 /* NSInvocation+Copy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7208119E19B0C6ED009D91E1 /* NSInvocation+Copy.m */; };
@@ -166,6 +172,13 @@
 		7202775019B75B9400E2D245 /* tempTopBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tempTopBar.png; sourceTree = "<group>"; };
 		7202775519B7717200E2D245 /* close_x@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close_x@2x.png"; sourceTree = "<group>"; };
 		7202775719B7764D00E2D245 /* row_schedule@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "row_schedule@2x.png"; sourceTree = "<group>"; };
+		7202775919B7977300E2D245 /* SponsorHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SponsorHeaderView.h; path = CMEP/Views/SponsorHeaderView.h; sourceTree = "<group>"; };
+		7202775A19B7977300E2D245 /* SponsorHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SponsorHeaderView.m; path = CMEP/Views/SponsorHeaderView.m; sourceTree = "<group>"; };
+		7202775C19B7978B00E2D245 /* SponsorHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SponsorHeaderView.xib; path = CMEP/Views/SponsorHeaderView.xib; sourceTree = "<group>"; };
+		7202775E19B7A2D800E2D245 /* aci.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aci.png; sourceTree = "<group>"; };
+		7202775F19B7A2D800E2D245 /* bradesco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bradesco.png; sourceTree = "<group>"; };
+		7202776019B7A2D800E2D245 /* cielo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cielo.png; sourceTree = "<group>"; };
+		7202776119B7A2D800E2D245 /* elo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = elo.png; sourceTree = "<group>"; };
 		7208119419B0C5C6009D91E1 /* SponsorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SponsorViewController.h; path = CMEP/ViewsControllers/SponsorViewController.h; sourceTree = "<group>"; };
 		7208119519B0C5C6009D91E1 /* SponsorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SponsorViewController.m; path = CMEP/ViewsControllers/SponsorViewController.m; sourceTree = "<group>"; };
 		7208119B19B0C6ED009D91E1 /* MZAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZAppearance.h; sourceTree = "<group>"; };
@@ -463,6 +476,9 @@
 				72D56D3919B5206600878551 /* TopbarView.xib */,
 				7221BC7519B686B3002E8F26 /* CMEPButtonCell.h */,
 				7221BC7619B686B3002E8F26 /* CMEPButtonCell.m */,
+				7202775919B7977300E2D245 /* SponsorHeaderView.h */,
+				7202775A19B7977300E2D245 /* SponsorHeaderView.m */,
+				7202775C19B7978B00E2D245 /* SponsorHeaderView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -708,6 +724,10 @@
 		72E2453A19B10389003A7282 /* samples */ = {
 			isa = PBXGroup;
 			children = (
+				7202775E19B7A2D800E2D245 /* aci.png */,
+				7202775F19B7A2D800E2D245 /* bradesco.png */,
+				7202776019B7A2D800E2D245 /* cielo.png */,
+				7202776119B7A2D800E2D245 /* elo.png */,
 				7202774F19B75B9400E2D245 /* tempBottonBar.png */,
 				7202775019B75B9400E2D245 /* tempTopBar.png */,
 				724E130719B4B192001CEBCB /* starempty.png */,
@@ -800,6 +820,7 @@
 			files = (
 				72BEE26219B0A2780075AE36 /* BallonTextContainer.xib in Resources */,
 				72D56D8C19B5FB2700878551 /* foto_palestrantes@2x.png in Resources */,
+				7202776519B7A2D800E2D245 /* elo.png in Resources */,
 				724E130B19B4B192001CEBCB /* starfull.png in Resources */,
 				72D56D8D19B5FB2700878551 /* icon_avaliacao@2x.png in Resources */,
 				724E130C19B4B192001CEBCB /* starmiddle.png in Resources */,
@@ -812,6 +833,7 @@
 				72D56DAC19B5FB2700878551 /* logo_cmep@2x.png in Resources */,
 				72D56D7D19B5FB2700878551 /* base_ballon.png in Resources */,
 				72D56DB719B5FB2700878551 /* top_ballon.png in Resources */,
+				7202776219B7A2D800E2D245 /* aci.png in Resources */,
 				72D56D9319B5FB2700878551 /* icon_contato@2x.png in Resources */,
 				72D56D9D19B5FB2700878551 /* icon_menu@2x.png in Resources */,
 				72D56DAA19B5FB2700878551 /* logo_abecs@2x.png in Resources */,
@@ -842,6 +864,8 @@
 				72D56D8519B5FB2700878551 /* btn_fechar@2x.png in Resources */,
 				72D56D8119B5FB2700878551 /* bg_topo_home@2x.png in Resources */,
 				72D56DB919B5FB2700878551 /* trilha2_fundo@2x.png in Resources */,
+				7202775D19B7978B00E2D245 /* SponsorHeaderView.xib in Resources */,
+				7202776319B7A2D800E2D245 /* bradesco.png in Resources */,
 				72D56DA619B5FB2700878551 /* icon_telefone@2x.png in Resources */,
 				72D56D9419B5FB2700878551 /* icon_contatos_notificacao@2x.png in Resources */,
 				72D56D9719B5FB2700878551 /* icon_descricao@2x.png in Resources */,
@@ -861,6 +885,7 @@
 				729E853919AFB5890057DF1C /* ScheduleBallonView.xib in Resources */,
 				7202775219B75B9400E2D245 /* tempTopBar.png in Resources */,
 				724E130A19B4B192001CEBCB /* starempty.png in Resources */,
+				7202776419B7A2D800E2D245 /* cielo.png in Resources */,
 				72D56D7F19B5FB2700878551 /* bg_menu@2x.png in Resources */,
 				72D56D8719B5FB2700878551 /* btn_vermelho@2x.png in Resources */,
 				72D56DB419B5FB2700878551 /* sombra@2x.png in Resources */,
@@ -968,6 +993,7 @@
 				720811B219B0C6ED009D91E1 /* MZFormSheetSegue.m in Sources */,
 				DB8D493E19B6A6240027755D /* CheckinViewController.m in Sources */,
 				72B176F019AE277700F549C5 /* AppDelegate.m in Sources */,
+				7202775B19B7977300E2D245 /* SponsorHeaderView.m in Sources */,
 				72817A8519AE6A1500446FD9 /* Defines.m in Sources */,
 				72B176EC19AE277700F549C5 /* main.m in Sources */,
 				724E130619B4A9F1001CEBCB /* RatingCell.m in Sources */,
