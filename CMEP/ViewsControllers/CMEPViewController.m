@@ -9,7 +9,7 @@
 #import "CMEPViewController.h"
 
 @implementation CMEPViewController
-@synthesize topbarTitle, backToPreviosController;
+@synthesize topbarTitle, backToPreviosController, dismissControllerOnBack;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -39,6 +39,8 @@
     UIImage *btBackImage = nil;
     if (backToPreviosController) {
          btBackImage = [UIImage imageNamed:@"icon_voltar"];
+    }else if(dismissControllerOnBack){
+         btBackImage = [UIImage imageNamed:@"close_x"];
     }else{
         btBackImage = [UIImage imageNamed:@"icon_house"];
     }
@@ -55,6 +57,8 @@
 -(void)topbarViewBackPressed{
     if (backToPreviosController) {
         [self.navigationController popViewControllerAnimated:YES];
+    }else if(dismissControllerOnBack){
+        [self dismissViewControllerAnimated:YES completion:nil];
     }else{
         [self.navigationController popToRootViewControllerAnimated:YES];
     }

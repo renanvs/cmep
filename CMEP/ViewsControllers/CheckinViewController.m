@@ -13,63 +13,139 @@
 
 - (void)viewDidLoad
 {
-    
-//    CMEPNavigationController *cmepnc = (CMEPNavigationController*)self.navigationController;
-//    cmepnc.justLandscape = YES;
-//    [cmepnc reloadAppDelegateRootViewControllerLandscape];
-//    
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    capture = [[ZXCapture alloc] init];
+    capture.camera = capture.back;
+    capture.focusMode = AVCaptureFocusModeContinuousAutoFocus;
+    capture.rotation = 90.0f;
+    
+    capture.layer.frame = self.view.bounds;
+    [self.view.layer addSublayer:capture.layer];
+    [self addObservers];
+    
+    [self.view bringSubviewToFront:topbarContainer];
+    [self.view bringSubviewToFront:bottonBar];
+    [self.view bringSubviewToFront:targetContainer];
 }
 
--(IBAction)close:(id)sender{
-    ready = YES;
-    CMEPNavigationController *cmepnc = (CMEPNavigationController*)self.navigationController;
-    //cmepnc.justLandscape = NO;
-    [self.view setAlpha:0];
-    
-    [cmepnc reloadAppDelegateRootViewController];
-    //[self back];
-    [NSTimer scheduledTimerWithTimeInterval:5.0f target:self selector:@selector(back) userInfo:nil repeats:NO];
-    
-    
+-(void)addObservers{
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(deviceOrientationDidChange:) name:UIDeviceOrientationDidChangeNotification object:nil];
 }
 
--(void)back{
-    [self.navigationController popToRootViewControllerAnimated:YES];
+- (void)deviceOrientationDidChange:(NSNotification *)notification {
+    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+    if (orientation == UIInterfaceOrientationLandscapeLeft) {
+        capture.rotation = 0.0f;
+    }else if (orientation == UIInterfaceOrientationLandscapeRight) {
+        capture.rotation = 0.0f;
+    }else{
+        capture.rotation = 90.0f;
+    }
 }
 
 -(void)viewWillAppear:(BOOL)animated{
-    [self.view setAlpha:0];
-    CMEPNavigationController *cmepnc = (CMEPNavigationController*)self.navigationController;
-    //cmepnc.justLandscape = YES;
-    [cmepnc shouldAutorotate];
-    [titleLabel setCMEPFont];
-    [descriptionLabel setCMEPFont];
-    self.viewDeckController.panningMode = IIViewDeckNoPanning;
-}
-
--(void)viewWillDisappear:(BOOL)animated{
-    self.viewDeckController.panningMode = IIViewDeckFullViewPanning;
-}
-
--(void)viewDidAppear:(BOOL)animated{
-    if (!ready) {
-        CMEPNavigationController *cmepnc = (CMEPNavigationController*)self.navigationController;
-        [cmepnc reloadAppDelegateRootViewControllerLandscape];
-        [self.view setAlpha:1];
-    }
+    topbarTitle = @"CÓDIGO DE BARRAS";
+    dismissControllerOnBack = YES;
+    [super viewWillAppear:animated];
     
+    [descriptionLabel setCMEPFont];
+    
+    capture.delegate = self;
+    capture.layer.frame = self.view.bounds;
+    //capture.layer.frame = CGRectMake(20, 20, 200, 200);
+    
+    CGAffineTransform captureSizeTransform = CGAffineTransformMakeScale(320 / self.view.frame.size.width, 480 / self.view.frame.size.height);
+    capture.scanRect = CGRectApplyAffineTransform(self.view.frame, captureSizeTransform);
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation{
-    return (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft);
+    return (toInterfaceOrientation == UIInterfaceOrientationPortrait);
 }
 -(BOOL)shouldAutorotate {
     return YES;
 }
 - (NSUInteger)supportedInterfaceOrientations {
-    return UIInterfaceOrientationMaskLandscapeLeft;
+    return UIInterfaceOrientationMaskPortrait;
 }
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    [self.view bringSubviewToFront:topbarContainer];
+    [self.view bringSubviewToFront:bottonBar];
+}
+
+
+- (NSString *)barcodeFormatToString:(ZXBarcodeFormat)format {
+    switch (format) {
+        case kBarcodeFormatAztec:
+            return @"Aztec";
+            
+        case kBarcodeFormatCodabar:
+            return @"CODABAR";
+            
+        case kBarcodeFormatCode39:
+            return @"Code 39";
+            
+        case kBarcodeFormatCode93:
+            return @"Code 93";
+            
+        case kBarcodeFormatCode128:
+            return @"Code 128";
+            
+        case kBarcodeFormatDataMatrix:
+            return @"Data Matrix";
+            
+        case kBarcodeFormatEan8:
+            return @"EAN-8";
+            
+        case kBarcodeFormatEan13:
+            return @"EAN-13";
+            
+        case kBarcodeFormatITF:
+            return @"ITF";
+            
+        case kBarcodeFormatPDF417:
+            return @"PDF417";
+            
+        case kBarcodeFormatQRCode:
+            return @"QR Code";
+            
+        case kBarcodeFormatRSS14:
+            return @"RSS 14";
+            
+        case kBarcodeFormatRSSExpanded:
+            return @"RSS Expanded";
+            
+        case kBarcodeFormatUPCA:
+            return @"UPCA";
+            
+        case kBarcodeFormatUPCE:
+            return @"UPCE";
+            
+        case kBarcodeFormatUPCEANExtension:
+            return @"UPC/EAN extension";
+            
+        default:
+            return @"Unknown";
+    }
+}
+
+#pragma mark - ZXCaptureDelegate Methods
+
+- (void)captureResult:(ZXCapture *)capture result:(ZXResult *)result {
+    if (!result) return;
+    
+    // We got a result. Display information about the result onscreen.
+    NSString *formatString = [self barcodeFormatToString:result.barcodeFormat];
+    NSString *display = [NSString stringWithFormat:@"Code: %@. Formato: %@", result.text, formatString];
+    codeTextField.text = display;
+    //[[[UIAlertView alloc] initWithTitle:@"codigo" message:display delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+    //[self.decodedLabel performSelectorOnMainThread:@selector(setText:) withObject:display waitUntilDone:YES];
+    
+    // Vibrate
+    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+}
+
 
 @end

@@ -39,69 +39,18 @@
 
 
 -(BOOL)shouldAutorotate{
-    if (justLandscape) {
-        return YES;
-    }else {
-        return YES;
-    }
+    return YES;
 }
 
 -(NSUInteger)supportedInterfaceOrientations{
-//    if (self.justLandscape) {
-    if (!justLandscape) {
-        NSLog(@"portrait0");
-        return UIInterfaceOrientationMaskPortrait;
-        
-    }else{
-        NSLog(@"landscape0");
-        return UIInterfaceOrientationMaskLandscape;
-    }
-    
-//    }
-//    return UIInterfaceOrientationMaskPortrait;
-    return self.supportedInterfaceOrientatoinR;
+    return UIInterfaceOrientationMaskPortrait;
 }
 
 -(UIInterfaceOrientation)preferredInterfaceOrientationForPresentation{
-    if (!justLandscape) {
-        NSLog(@"portrait1");
-        return UIInterfaceOrientationPortrait;
-    }else{
-        NSLog(@"landscape1");
-        return UIInterfaceOrientationLandscapeLeft;
-    }
-//    if (self.justLandscape) {
-        return UIInterfaceOrientationLandscapeLeft;
-//    }
-//    return UIInterfaceOrientationPortrait;
-    return self.orientationR;
-}
-
-- (void) reloadAppDelegateRootViewController{
-    justLandscape = NO;
-    [[[UIApplication sharedApplication].delegate window] setRootViewController:nil];
-    
-    [(CMEPNavigationController *)self setOrientationR:UIInterfaceOrientationPortrait];
-    [(CMEPNavigationController *)self setSupportedInterfaceOrientatoinR:UIInterfaceOrientationMaskPortrait];
-    self.viewDeckController.centerController = self;
-    
-    [[[UIApplication sharedApplication].delegate window] setRootViewController:self.viewDeckController];
-}
-
-- (void) reloadAppDelegateRootViewControllerLandscape{
-    justLandscape = YES;
-    [[[UIApplication sharedApplication].delegate window] setRootViewController:nil];
-    
-    [(CMEPNavigationController *)self setOrientationR:UIInterfaceOrientationLandscapeLeft];
-    [(CMEPNavigationController *)self setSupportedInterfaceOrientatoinR:UIInterfaceOrientationMaskLandscape];
-    
-    [[[UIApplication sharedApplication].delegate window] setRootViewController:self.viewDeckController];
+    return UIInterfaceOrientationPortrait;
 }
 
 -(NSArray *)popToRootViewControllerAnimated:(BOOL)animated{
-    
-//    CMEPNavigationController *cmepnc = (CMEPNavigationController*)self;
-//    [cmepnc reloadAppDelegateRootViewController];
     
     return [super popToRootViewControllerAnimated:animated];
 }

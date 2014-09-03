@@ -55,16 +55,24 @@
 //        cell = [Utils loadNibForName:cellIdentifier];
 //    }
     
-    if (indexPath.row == 0) {
-        CGRect columnRect = cell.columnView.frame;
-        columnRect.origin.y = 0;
-        columnRect.size.height = cell.frame.size.height;
-        cell.columnView.frame = columnRect;
-        columnRect = cell.columnView.frame;
-        columnRect.origin.y = columnRect.origin.y + 10;
-        //columnRect.size.height = columnRect.size.height - 10;
-        cell.columnView.frame = columnRect;
-    }
+//    if (indexPath.row == 0) {
+//        CGRect columnRect = cell.columnView.frame;
+//        columnRect.origin.y = 0;
+//        columnRect.size.height = cell.frame.size.height;
+//        cell.columnView.frame = columnRect;
+//        columnRect = cell.columnView.frame;
+//        columnRect.origin.y = columnRect.origin.y + 10;
+//        columnRect.size.height = columnRect.size.height - 10;
+//        cell.columnView.frame = columnRect;
+//    }
+    
+//    if ((int)indexPath.row % 2 == 0) {
+//        [[cell columnView] setBackgroundColor:[UIColor redColor]];
+//        [cell setBackgroundColor:[UIColor yellowColor]];
+//    }else{
+//        [[cell columnView] setBackgroundColor:[UIColor blueColor]];
+//        [cell setBackgroundColor:[UIColor greenColor]];
+//    }
     
     [cell setScheduleModel:scheduleModel];
     NSLog(@"scheduleModel: %@", scheduleModel.titles);

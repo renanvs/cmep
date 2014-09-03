@@ -116,6 +116,10 @@ static id _instance;
     return nil;
 }
 
++(float)systemVersion{
+    return [[[UIDevice currentDevice] systemVersion] floatValue];
+}
+
 //-(void)keepAnimationState:(UIView*)view{
 //    CGRect rect = [self getBlankRect];
 //    

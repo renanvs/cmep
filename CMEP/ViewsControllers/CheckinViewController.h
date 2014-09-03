@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ZXingObjC/ZXingObjC.h>
 
-@interface CheckinViewController : UIViewController{
-    __weak IBOutlet UILabel *titleLabel;
+@interface CheckinViewController : CMEPViewController<ZXCaptureDelegate>{
     __weak IBOutlet UILabel *descriptionLabel;
-    BOOL ready;
+    ZXCapture *capture;
+    __weak IBOutlet UIView *bottonBar;
+    __weak IBOutlet UIView *targetContainer;
+    __weak IBOutlet UILabel *codeTextField;
 }
-
--(IBAction)close:(id)sender;
 
 @end

@@ -48,6 +48,7 @@
         sizebleFrame.origin.x = sizebleFrame.origin.x - 5;
         sizebleFrame.origin.y = sizebleFrame.origin.y - 5;
         typeImageView.frame = sizebleFrame;
+        [self bringSubviewToFront:typeImageView];
     }
     
     // Configure the view for the selected state
@@ -95,6 +96,11 @@
 }
 
 -(void)clean{
+//    CGRect columnHeight = self.columnView.frame;
+//    columnHeight.size.height = self.frame.size.height;
+//    columnHeight.origin.y = 0;
+//    self.columnView.frame = columnHeight;
+//    NSLog(@"height: %f",columnHeight.size.height);
     [scheduleBallonView removeFromSuperview];
     scheduleBallonView = nil;
 }

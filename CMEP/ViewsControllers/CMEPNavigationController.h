@@ -8,14 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CMEPNavigationController : UINavigationController<UINavigationControllerDelegate>{
-    BOOL justLandscape;
-}
-
-@property(nonatomic, assign) UIInterfaceOrientation orientationR;
-@property(nonatomic, assign) NSUInteger supportedInterfaceOrientatoinR;
-
-- (void) reloadAppDelegateRootViewControllerLandscape;
-- (void) reloadAppDelegateRootViewController;
+@interface CMEPNavigationController : UINavigationController<UINavigationControllerDelegate>
 
 @end

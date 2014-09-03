@@ -14,9 +14,11 @@
     TopbarView *topbar;
     NSString *topbarTitle;
     BOOL backToPreviosController;
+    BOOL dismissControllerOnBack;
 }
 
 @property (nonatomic) NSString *topbarTitle;
 @property (nonatomic) BOOL backToPreviosController;
+@property (nonatomic) BOOL dismissControllerOnBack;
 
 @end

@@ -33,6 +33,10 @@
     [self addOptionItens];
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    
+}
+
 -(void)setupLayout{
     [sponsorButton setCMEPFont];
 }
