@@ -118,8 +118,7 @@
             mzc.transitionStyle = MZFormSheetTransitionStyleSlideFromLeft;
             [mzc presentAnimated:YES completionHandler:nil];
         }];
-    }else if (opt == MenuOptionNetworking || opt == MenuOptionConfiguration ||
-              opt == MenuOptionExhibitor || opt == MenuOptionMap) {
+    }else if (opt == MenuOptionNetworking || opt == MenuOptionConfiguration) {
          [[[UIAlertView alloc] initWithTitle:@"ATENÇÃO" message:@"Em desenvolvimento" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil]show];
     }else if(opt == MenuOptionCheckin){
         CheckinViewController *checkinViewController = (CheckinViewController*)[CMEPUtils getControllerByType:opt];

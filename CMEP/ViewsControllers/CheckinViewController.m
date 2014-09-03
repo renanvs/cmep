@@ -34,14 +34,14 @@
 }
 
 - (void)deviceOrientationDidChange:(NSNotification *)notification {
-    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
-    if (orientation == UIInterfaceOrientationLandscapeLeft) {
-        capture.rotation = 0.0f;
-    }else if (orientation == UIInterfaceOrientationLandscapeRight) {
-        capture.rotation = 0.0f;
-    }else{
-        capture.rotation = 90.0f;
-    }
+//    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+//    if (orientation == UIInterfaceOrientationLandscapeLeft) {
+//        capture.rotation = 0.0f;
+//    }else if (orientation == UIInterfaceOrientationLandscapeRight) {
+//        capture.rotation = 0.0f;
+//    }else{
+//        capture.rotation = 90.0f;
+//    }
 }
 
 -(void)viewWillAppear:(BOOL)animated{

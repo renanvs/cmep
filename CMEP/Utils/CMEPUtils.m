@@ -37,7 +37,7 @@ SynthensizeSingleTon(CMEPUtils);
     }else if (menuOption == MenuOptionCheckin) {
         desireController = [sb instantiateViewControllerWithIdentifier:@"CheckinViewController"];
     }else if (menuOption == MenuOptionExhibitor) {
-        desireController = [sb instantiateViewControllerWithIdentifier:@""];
+        desireController = [sb instantiateViewControllerWithIdentifier:@"ExhibitorViewController"];
     }
     
     return desireController;

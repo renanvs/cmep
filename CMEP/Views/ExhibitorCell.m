@@ -1,14 +1,14 @@
 //
-//  SpeakersCell.m
+//  ExhibitorCell.m
 //  CMEP
 //
-//  Created by renanvs on 8/29/14.
+//  Created by renanvs on 9/3/14.
 //  Copyright (c) 2014 renanvs. All rights reserved.
 //
 
-#import "SpeakersCell.h"
+#import "ExhibitorCell.h"
 
-@implementation SpeakersCell
+@implementation ExhibitorCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -31,11 +31,13 @@
     // Configure the view for the selected state
 }
 
--(void)setSpeakerDictionary:(NSDictionary*)dic{
-    profileImage.image = [UIImage imageNamed:[dic objectForKey:@"image"]];
+-(void)setExhibitorDictionary:(NSDictionary*)dic{
+    exhibitorImage.image = [UIImage imageNamed:[dic objectForKey:@"image"]];
     nameLabel.text = [dic objectForKey:@"name"];
+    addressLabel.text = [dic objectForKey:@"address"];
     descriptionText = [dic objectForKey:@"description"];
     [nameLabel setCMEPFont];
+    [addressLabel setCMEPFont];
     [self setupWebView];
 }
 

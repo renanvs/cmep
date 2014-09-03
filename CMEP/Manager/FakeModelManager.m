@@ -10,7 +10,7 @@
 #import "Schedulemodel.h"
 
 @implementation FakeModelManager
-@synthesize fakeScheduleModelList0, fakeScheduleModelList1, fakeInformationList, fakeSpeakersList, fakeRatingList, fakeSponsorDic, fakeSponsorOrderList;
+@synthesize fakeScheduleModelList0, fakeScheduleModelList1, fakeInformationList, fakeSpeakersList, fakeRatingList, fakeSponsorDic, fakeSponsorOrderList, fakeExhibitorListList;
 SynthensizeSingleTon(FakeModelManager);
 
 -(id)init{
@@ -21,6 +21,7 @@ SynthensizeSingleTon(FakeModelManager);
         [self createFakeSpeakers];
         [self createFakeRating];
         [self createFakeSponsors];
+        [self createFakeExhibitors];
     }
     return self;
 }
@@ -210,21 +211,26 @@ SynthensizeSingleTon(FakeModelManager);
 
 -(void)createFakeSpeakers{
     NSMutableDictionary *dic0 = [[NSMutableDictionary alloc] init];
-    [dic0 setObject:@"Name0" forKey:@"name"];
+    [dic0 setObject:@"ANDERSON GOLVEIA" forKey:@"name"];
     [dic0 setObject:@"Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex " forKey:@"description"];
     [dic0 setObject:@"sampleSpeakerImage0" forKey:@"image"];
     
     NSMutableDictionary *dic1 = [[NSMutableDictionary alloc] init];
-    [dic1 setObject:@"Name1" forKey:@"name"];
+    [dic1 setObject:@"DENISE LOPES" forKey:@"name"];
     [dic1 setObject:@"Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex " forKey:@"description"];
     [dic1 setObject:@"sampleSpeakerImage1" forKey:@"image"];
     
     NSMutableDictionary *dic2 = [[NSMutableDictionary alloc] init];
-    [dic2 setObject:@"Name2" forKey:@"name"];
+    [dic2 setObject:@"FERNANDO SANTOS" forKey:@"name"];
     [dic2 setObject:@"Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex " forKey:@"description"];
     [dic2 setObject:@"sampleSpeakerImage2" forKey:@"image"];
     
-    fakeSpeakersList = [[NSArray alloc] initWithObjects:dic0, dic1, dic2, nil];
+    NSMutableDictionary *dic3 = [[NSMutableDictionary alloc] init];
+    [dic3 setObject:@"FERNANDO GIMENEZ" forKey:@"name"];
+    [dic3 setObject:@"Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex " forKey:@"description"];
+    [dic3 setObject:@"sampleSpeakerImage0" forKey:@"image"];
+    
+    fakeSpeakersList = [[NSArray alloc] initWithObjects:dic0, dic1, dic2, dic3, nil];
 }
 
 -(void)createFakeRating{
@@ -271,6 +277,28 @@ SynthensizeSingleTon(FakeModelManager);
     [fakeSponsorDic setObject:ar1 forKey:@"PRATA"];
     
     fakeSponsorOrderList = [[NSArray alloc] initWithObjects:@"DIAMANTE", @"PRATA", nil];
+}
+
+-(void)createFakeExhibitors{
+    NSMutableDictionary *dic0 = [[NSMutableDictionary alloc] init];
+    [dic0 setObject:@"ITAUCARD" forKey:@"name"];
+    [dic0 setObject:@"RUA A - 01" forKey:@"address"];
+    [dic0 setObject:@"Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex " forKey:@"description"];
+    [dic0 setObject:@"itaucardLogo" forKey:@"image"];
+    
+    NSMutableDictionary *dic1 = [[NSMutableDictionary alloc] init];
+    [dic1 setObject:@"MASTERCARD" forKey:@"name"];
+    [dic1 setObject:@"RUA A - 01" forKey:@"address"];
+    [dic1 setObject:@"Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex " forKey:@"description"];
+    [dic1 setObject:@"mastercardLogo" forKey:@"image"];
+    
+    NSMutableDictionary *dic2 = [[NSMutableDictionary alloc] init];
+    [dic2 setObject:@"VISA" forKey:@"name"];
+    [dic2 setObject:@"RUA A - 01" forKey:@"address"];
+    [dic2 setObject:@"Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex " forKey:@"description"];
+    [dic2 setObject:@"visaLogo" forKey:@"image"];
+    
+    fakeExhibitorListList = [[NSArray alloc] initWithObjects:dic0, dic1, dic2, nil];
 }
 
 @end

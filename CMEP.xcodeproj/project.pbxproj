@@ -18,6 +18,11 @@
 		7202776319B7A2D800E2D245 /* bradesco.png in Resources */ = {isa = PBXBuildFile; fileRef = 7202775F19B7A2D800E2D245 /* bradesco.png */; };
 		7202776419B7A2D800E2D245 /* cielo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7202776019B7A2D800E2D245 /* cielo.png */; };
 		7202776519B7A2D800E2D245 /* elo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7202776119B7A2D800E2D245 /* elo.png */; };
+		7202776819B7BEB900E2D245 /* ExhibitorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7202776719B7BEB900E2D245 /* ExhibitorViewController.m */; };
+		7202776B19B7BF6700E2D245 /* ExhibitorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7202776A19B7BF6700E2D245 /* ExhibitorCell.m */; };
+		7202776F19B7C29500E2D245 /* itaucardLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7202776C19B7C29500E2D245 /* itaucardLogo@2x.png */; };
+		7202777019B7C29500E2D245 /* mastercardLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7202776D19B7C29500E2D245 /* mastercardLogo@2x.png */; };
+		7202777119B7C29500E2D245 /* visaLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7202776E19B7C29500E2D245 /* visaLogo@2x.png */; };
 		7208119619B0C5C6009D91E1 /* SponsorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7208119519B0C5C6009D91E1 /* SponsorViewController.m */; };
 		720811AD19B0C6ED009D91E1 /* MZAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 7208119C19B0C6ED009D91E1 /* MZAppearance.m */; };
 		720811AE19B0C6ED009D91E1 /* NSInvocation+Copy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7208119E19B0C6ED009D91E1 /* NSInvocation+Copy.m */; };
@@ -179,6 +184,13 @@
 		7202775F19B7A2D800E2D245 /* bradesco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bradesco.png; sourceTree = "<group>"; };
 		7202776019B7A2D800E2D245 /* cielo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cielo.png; sourceTree = "<group>"; };
 		7202776119B7A2D800E2D245 /* elo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = elo.png; sourceTree = "<group>"; };
+		7202776619B7BEB900E2D245 /* ExhibitorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExhibitorViewController.h; path = CMEP/ViewsControllers/ExhibitorViewController.h; sourceTree = "<group>"; };
+		7202776719B7BEB900E2D245 /* ExhibitorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExhibitorViewController.m; path = CMEP/ViewsControllers/ExhibitorViewController.m; sourceTree = "<group>"; };
+		7202776919B7BF6700E2D245 /* ExhibitorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExhibitorCell.h; path = CMEP/Views/ExhibitorCell.h; sourceTree = "<group>"; };
+		7202776A19B7BF6700E2D245 /* ExhibitorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExhibitorCell.m; path = CMEP/Views/ExhibitorCell.m; sourceTree = "<group>"; };
+		7202776C19B7C29500E2D245 /* itaucardLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "itaucardLogo@2x.png"; sourceTree = "<group>"; };
+		7202776D19B7C29500E2D245 /* mastercardLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mastercardLogo@2x.png"; sourceTree = "<group>"; };
+		7202776E19B7C29500E2D245 /* visaLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "visaLogo@2x.png"; sourceTree = "<group>"; };
 		7208119419B0C5C6009D91E1 /* SponsorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SponsorViewController.h; path = CMEP/ViewsControllers/SponsorViewController.h; sourceTree = "<group>"; };
 		7208119519B0C5C6009D91E1 /* SponsorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SponsorViewController.m; path = CMEP/ViewsControllers/SponsorViewController.m; sourceTree = "<group>"; };
 		7208119B19B0C6ED009D91E1 /* MZAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZAppearance.h; sourceTree = "<group>"; };
@@ -479,6 +491,8 @@
 				7202775919B7977300E2D245 /* SponsorHeaderView.h */,
 				7202775A19B7977300E2D245 /* SponsorHeaderView.m */,
 				7202775C19B7978B00E2D245 /* SponsorHeaderView.xib */,
+				7202776919B7BF6700E2D245 /* ExhibitorCell.h */,
+				7202776A19B7BF6700E2D245 /* ExhibitorCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -640,6 +654,8 @@
 				DBF4A29A19B56919003ED435 /* CMEPViewController.m */,
 				DB8D493F19B6A9EE0027755D /* CMEPNavigationController.h */,
 				DB8D494019B6A9EE0027755D /* CMEPNavigationController.m */,
+				7202776619B7BEB900E2D245 /* ExhibitorViewController.h */,
+				7202776719B7BEB900E2D245 /* ExhibitorViewController.m */,
 			);
 			name = ViewsControllers;
 			sourceTree = "<group>";
@@ -724,6 +740,9 @@
 		72E2453A19B10389003A7282 /* samples */ = {
 			isa = PBXGroup;
 			children = (
+				7202776C19B7C29500E2D245 /* itaucardLogo@2x.png */,
+				7202776D19B7C29500E2D245 /* mastercardLogo@2x.png */,
+				7202776E19B7C29500E2D245 /* visaLogo@2x.png */,
 				7202775E19B7A2D800E2D245 /* aci.png */,
 				7202775F19B7A2D800E2D245 /* bradesco.png */,
 				7202776019B7A2D800E2D245 /* cielo.png */,
@@ -866,6 +885,7 @@
 				72D56DB919B5FB2700878551 /* trilha2_fundo@2x.png in Resources */,
 				7202775D19B7978B00E2D245 /* SponsorHeaderView.xib in Resources */,
 				7202776319B7A2D800E2D245 /* bradesco.png in Resources */,
+				7202777119B7C29500E2D245 /* visaLogo@2x.png in Resources */,
 				72D56DA619B5FB2700878551 /* icon_telefone@2x.png in Resources */,
 				72D56D9419B5FB2700878551 /* icon_contatos_notificacao@2x.png in Resources */,
 				72D56D9719B5FB2700878551 /* icon_descricao@2x.png in Resources */,
@@ -890,6 +910,7 @@
 				72D56D8719B5FB2700878551 /* btn_vermelho@2x.png in Resources */,
 				72D56DB419B5FB2700878551 /* sombra@2x.png in Resources */,
 				72D56D8419B5FB2700878551 /* btn_buscar@2x.png in Resources */,
+				7202776F19B7C29500E2D245 /* itaucardLogo@2x.png in Resources */,
 				72B176F319AE277700F549C5 /* Main_iPhone.storyboard in Resources */,
 				72D56DB519B5FB2700878551 /* toggle_off@2x.png in Resources */,
 				72D56DB019B5FB2700878551 /* patrocinador_prata_cielo@2x.png in Resources */,
@@ -909,6 +930,7 @@
 				72D56D7C19B5FB2700878551 /* arrow.png in Resources */,
 				72D56D8819B5FB2700878551 /* btn_zoom_in@2x.png in Resources */,
 				72D56D9119B5FB2700878551 /* icon_coffee@2x.png in Resources */,
+				7202777019B7C29500E2D245 /* mastercardLogo@2x.png in Resources */,
 				72D56DB219B5FB2700878551 /* seta_balloon@2x.png in Resources */,
 				729E852419AF72910057DF1C /* WebPages in Resources */,
 				72D56D8319B5FB2700878551 /* btn_azul@2x.png in Resources */,
@@ -973,11 +995,13 @@
 				720811B319B0C6ED009D91E1 /* MZTransition.m in Sources */,
 				729E851F19AE6E000057DF1C /* HomeTableViewCell.m in Sources */,
 				726140BF19B0F9D50062C486 /* SpeakersViewController.m in Sources */,
+				7202776819B7BEB900E2D245 /* ExhibitorViewController.m in Sources */,
 				7208119619B0C5C6009D91E1 /* SponsorViewController.m in Sources */,
 				729E854319AFC80A0057DF1C /* FakeModelManager.m in Sources */,
 				72B1772019AE406E00F549C5 /* IIViewDeckController.m in Sources */,
 				72BEE26519B0A30D0075AE36 /* BallonTextContainer.m in Sources */,
 				72817A8719AE6A1500446FD9 /* Utils.m in Sources */,
+				7202776B19B7BF6700E2D245 /* ExhibitorCell.m in Sources */,
 				729E852A19AF89AB0057DF1C /* PresentationAboutViewController.m in Sources */,
 				72817A8619AE6A1500446FD9 /* Extensions.m in Sources */,
 				720811B819B0CB5A009D91E1 /* MapViewController.m in Sources */,
