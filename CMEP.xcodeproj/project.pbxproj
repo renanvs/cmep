@@ -139,6 +139,11 @@
 		72E2453E19B10389003A7282 /* sampleSpeakerImage0.png in Resources */ = {isa = PBXBuildFile; fileRef = 72E2453B19B10389003A7282 /* sampleSpeakerImage0.png */; };
 		72E2453F19B10389003A7282 /* sampleSpeakerImage1.png in Resources */ = {isa = PBXBuildFile; fileRef = 72E2453C19B10389003A7282 /* sampleSpeakerImage1.png */; };
 		72E2454019B10389003A7282 /* sampleSpeakerImage2.png in Resources */ = {isa = PBXBuildFile; fileRef = 72E2453D19B10389003A7282 /* sampleSpeakerImage2.png */; };
+		DB8D493919B6A3E00027755D /* topbarLeftBg.png in Resources */ = {isa = PBXBuildFile; fileRef = DB8D493619B6A3E00027755D /* topbarLeftBg.png */; };
+		DB8D493A19B6A3E00027755D /* topbarMiddleBg.png in Resources */ = {isa = PBXBuildFile; fileRef = DB8D493719B6A3E00027755D /* topbarMiddleBg.png */; };
+		DB8D493B19B6A3E00027755D /* topbarRightBg.png in Resources */ = {isa = PBXBuildFile; fileRef = DB8D493819B6A3E00027755D /* topbarRightBg.png */; };
+		DB8D493E19B6A6240027755D /* CheckinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8D493D19B6A6240027755D /* CheckinViewController.m */; };
+		DB8D494119B6A9EE0027755D /* CMEPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8D494019B6A9EE0027755D /* CMEPNavigationController.m */; };
 		DBF4A29B19B56919003ED435 /* CMEPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF4A29A19B56919003ED435 /* CMEPViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -327,6 +332,13 @@
 		72E2453C19B10389003A7282 /* sampleSpeakerImage1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sampleSpeakerImage1.png; sourceTree = "<group>"; };
 		72E2453D19B10389003A7282 /* sampleSpeakerImage2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sampleSpeakerImage2.png; sourceTree = "<group>"; };
 		BCD35203496A47D9B7EEE6EA /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		DB8D493619B6A3E00027755D /* topbarLeftBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topbarLeftBg.png; sourceTree = "<group>"; };
+		DB8D493719B6A3E00027755D /* topbarMiddleBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topbarMiddleBg.png; sourceTree = "<group>"; };
+		DB8D493819B6A3E00027755D /* topbarRightBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topbarRightBg.png; sourceTree = "<group>"; };
+		DB8D493C19B6A6240027755D /* CheckinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CheckinViewController.h; path = CMEP/ViewsControllers/CheckinViewController.h; sourceTree = "<group>"; };
+		DB8D493D19B6A6240027755D /* CheckinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CheckinViewController.m; path = CMEP/ViewsControllers/CheckinViewController.m; sourceTree = "<group>"; };
+		DB8D493F19B6A9EE0027755D /* CMEPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CMEPNavigationController.h; path = CMEP/ViewsControllers/CMEPNavigationController.h; sourceTree = "<group>"; };
+		DB8D494019B6A9EE0027755D /* CMEPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CMEPNavigationController.m; path = CMEP/ViewsControllers/CMEPNavigationController.m; sourceTree = "<group>"; };
 		DBF4A29919B56919003ED435 /* CMEPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CMEPViewController.h; path = CMEP/ViewsControllers/CMEPViewController.h; sourceTree = "<group>"; };
 		DBF4A29A19B56919003ED435 /* CMEPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CMEPViewController.m; path = CMEP/ViewsControllers/CMEPViewController.m; sourceTree = "<group>"; };
 		F04A8D4A74A74AFA84025C06 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -587,6 +599,8 @@
 				729E852819AF89AB0057DF1C /* PresentationAboutViewController.h */,
 				729E852919AF89AB0057DF1C /* PresentationAboutViewController.m */,
 				729E852B19AFA7B20057DF1C /* ScheduleViewController.h */,
+				DB8D493C19B6A6240027755D /* CheckinViewController.h */,
+				DB8D493D19B6A6240027755D /* CheckinViewController.m */,
 				729E852C19AFA7B20057DF1C /* ScheduleViewController.m */,
 				72BEE26619B0B0E70075AE36 /* InformationsViewController.h */,
 				72BEE26719B0B0E70075AE36 /* InformationsViewController.m */,
@@ -600,6 +614,8 @@
 				724E130219B4A938001CEBCB /* RatingViewController.m */,
 				DBF4A29919B56919003ED435 /* CMEPViewController.h */,
 				DBF4A29A19B56919003ED435 /* CMEPViewController.m */,
+				DB8D493F19B6A9EE0027755D /* CMEPNavigationController.h */,
+				DB8D494019B6A9EE0027755D /* CMEPNavigationController.m */,
 			);
 			name = ViewsControllers;
 			sourceTree = "<group>";
@@ -607,6 +623,9 @@
 		72B1772919AE467D00F549C5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				DB8D493619B6A3E00027755D /* topbarLeftBg.png */,
+				DB8D493719B6A3E00027755D /* topbarMiddleBg.png */,
+				DB8D493819B6A3E00027755D /* topbarRightBg.png */,
 				72D56DBA19B62BDE00878551 /* bg_detalhe_menu1@2x.png */,
 				72D56D3E19B5FB2700878551 /* arrow.png */,
 				72D56D3F19B5FB2700878551 /* base_ballon.png */,
@@ -800,6 +819,7 @@
 				72D56DA919B5FB2700878551 /* logo_abecs_pag_conteudo@2x.png in Resources */,
 				72D56D9819B5FB2700878551 /* icon_empresa@2x.png in Resources */,
 				72D56D8F19B5FB2700878551 /* icon_cmep_networking@2x.png in Resources */,
+				DB8D493A19B6A3E00027755D /* topbarMiddleBg.png in Resources */,
 				722794B319B4F267001F1AB5 /* light.otf in Resources */,
 				72D56D9E19B5FB2700878551 /* icon_networking@2x.png in Resources */,
 				72D56D8E19B5FB2700878551 /* icon_cargo@2x.png in Resources */,
@@ -842,7 +862,9 @@
 				72D56DB319B5FB2700878551 /* seta_menu@2x.png in Resources */,
 				72D56D3A19B5206600878551 /* TopbarView.xib in Resources */,
 				72B176EA19AE277700F549C5 /* InfoPlist.strings in Resources */,
+				DB8D493B19B6A3E00027755D /* topbarRightBg.png in Resources */,
 				72D56DAE19B5FB2700878551 /* patrocinador_diamante_bradesco@2x.png in Resources */,
+				DB8D493919B6A3E00027755D /* topbarLeftBg.png in Resources */,
 				72D56D7C19B5FB2700878551 /* arrow.png in Resources */,
 				72D56D8819B5FB2700878551 /* btn_zoom_in@2x.png in Resources */,
 				72D56D9119B5FB2700878551 /* icon_coffee@2x.png in Resources */,
@@ -928,6 +950,7 @@
 				720811B419B0C6ED009D91E1 /* UIImage+Additional.m in Sources */,
 				720811AF19B0C6ED009D91E1 /* MZFormSheetBackgroundWindow.m in Sources */,
 				720811B219B0C6ED009D91E1 /* MZFormSheetSegue.m in Sources */,
+				DB8D493E19B6A6240027755D /* CheckinViewController.m in Sources */,
 				72B176F019AE277700F549C5 /* AppDelegate.m in Sources */,
 				72817A8519AE6A1500446FD9 /* Defines.m in Sources */,
 				72B176EC19AE277700F549C5 /* main.m in Sources */,
@@ -936,6 +959,7 @@
 				72B1772519AE41A500F549C5 /* HomeViewController.m in Sources */,
 				72B1772119AE406E00F549C5 /* IIWrapController.m in Sources */,
 				72817A6E19AE52F700446FD9 /* PresentationViewController.m in Sources */,
+				DB8D494119B6A9EE0027755D /* CMEPNavigationController.m in Sources */,
 				7221BC7719B686B3002E8F26 /* CMEPButtonCell.m in Sources */,
 				72BEE26B19B0B21F0075AE36 /* InformationTableViewCell.m in Sources */,
 				729E852D19AFA7B20057DF1C /* ScheduleViewController.m in Sources */,

@@ -34,6 +34,10 @@ SynthensizeSingleTon(CMEPUtils);
         desireController = [sb instantiateViewControllerWithIdentifier:@"RatingViewController"];
     }else if (menuOption == MenuOptionConfiguration) {
         desireController = [sb instantiateViewControllerWithIdentifier:@""];
+    }else if (menuOption == MenuOptionCheckin) {
+        desireController = [sb instantiateViewControllerWithIdentifier:@"CheckinViewController"];
+    }else if (menuOption == MenuOptionExhibitor) {
+        desireController = [sb instantiateViewControllerWithIdentifier:@""];
     }
     
     return desireController;

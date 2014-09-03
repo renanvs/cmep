@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[CMEPNavigationController shouldAutorotate]:CMEPNavigationController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.interfaceOrientation">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CheckinViewController close:]:CheckinViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CMEPNavigationController supportedInterfaceOrientations]:CMEPNavigationController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.interfaceOrientation">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
