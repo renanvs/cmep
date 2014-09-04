@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "HomeViewController.h"
 #import "MenuViewController.h"
+#import "CMEPNavigationController.h"
 
 @implementation AppDelegate
 
@@ -18,10 +19,10 @@
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
     
     HomeViewController *homevc = [sb instantiateViewControllerWithIdentifier:@"HomeViewController"];
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:homevc];
+    CMEPNavigationController *navController = [[CMEPNavigationController alloc] initWithRootViewController:homevc];
     MenuViewController *menuvc = [sb instantiateViewControllerWithIdentifier:@"MenuViewController"];
     
-    IIViewDeckController *deckController = [[IIViewDeckController alloc] initWithCenterViewController:navController leftViewController:menuvc];
+    deckController = [[IIViewDeckController alloc] initWithCenterViewController:navController leftViewController:menuvc];
     deckController.leftSize = 110;
     deckController.centerhiddenInteractivity = IIViewDeckCenterHiddenNotUserInteractiveWithTapToClose;
     deckController.panningMode = IIViewDeckFullViewPanning;
@@ -30,9 +31,9 @@
     [self.window makeKeyAndVisible];
     
     
-    //[[[UIAlertView alloc] initWithTitle:@"ATENÇÃO" message:@"Este app esta em fase de desenvolvimento, suas funcionalidades em sua maioria estão em desenvolvimento. v_beta_1.0" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil]show];
+    //[[[UIAlertView alloc] initWithTitle:@"ATENÇÃO" message:@"Este app esta em fase de desenvolvimento, suas funcionalidades em sua maioria estão em desenvolvimento. v_beta_1.1" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil]show];
     
-    [Utils showFonts];
+    //[Utils showFonts];
     
     return YES;
 }

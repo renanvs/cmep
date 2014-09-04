@@ -35,6 +35,7 @@
     profileImage.image = [UIImage imageNamed:[dic objectForKey:@"image"]];
     nameLabel.text = [dic objectForKey:@"name"];
     descriptionText = [dic objectForKey:@"description"];
+    [nameLabel setCMEPFont];
     [self setupWebView];
 }
 

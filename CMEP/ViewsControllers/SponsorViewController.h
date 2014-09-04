@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SponsorViewController : UIViewController{
-    
+@interface SponsorViewController : UIViewController<UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate>{
+    NSDictionary *sponsorDic;
+    NSArray *sponsorOrder;
+    __weak IBOutlet UITableView *sponsorTableView;
 }
 
 -(IBAction)close:(id)sender;

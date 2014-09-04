@@ -10,12 +10,24 @@
 #import "ScheduleModel.h"
 #import "ScheduleBallonView.h"
 
+@protocol ScheduleCellDelegate <NSObject>
+
+@optional
+-(void)scheduleCellRatingLectureWithModel:(ScheduleModel*)scheduleM;
+
+@end
+
 @interface ScheduleCell : UITableViewCell{
 
     __weak IBOutlet UIImageView *typeImageView;
     __weak IBOutlet UILabel *initHourLabel;
     __weak IBOutlet UILabel *endHourLabel;
     __weak IBOutlet UIView *ballonContainer;
+    
+    __weak IBOutlet UILabel *ratingLectureLabel;
+    __weak IBOutlet UIButton *ratingLectureButton;
+    
+    id<ScheduleCellDelegate> delegate;
     
     ScheduleModel *scheduleModel;
     ScheduleBallonView *scheduleBallonView;
@@ -24,6 +36,7 @@
 }
 
 @property (nonatomic) IBOutlet UIView *columnView;
+@property (nonatomic) id<ScheduleCellDelegate> delegate;
 
 -(float)getCellHeightWithScheduleModel:(ScheduleModel*)model;
 
@@ -34,5 +47,7 @@
 +(float)getCellHeightWithScheduleModel:(ScheduleModel*)model;
 
 -(void)clean;
+
+-(IBAction)ratingLecture:(id)sender;
 
 @end

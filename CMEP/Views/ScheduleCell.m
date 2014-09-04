@@ -10,6 +10,7 @@
 #import "ScheduleCell.h"
 
 @implementation ScheduleCell
+@synthesize delegate;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -48,6 +49,7 @@
         sizebleFrame.origin.x = sizebleFrame.origin.x - 5;
         sizebleFrame.origin.y = sizebleFrame.origin.y - 5;
         typeImageView.frame = sizebleFrame;
+        [self bringSubviewToFront:typeImageView];
     }
     
     // Configure the view for the selected state
@@ -82,6 +84,11 @@
         modelIsSet = YES;
     }
     
+    if (scheduleModel.type != ScheduleTypeLecture) {
+        [ratingLectureLabel setAlpha:0];
+        [ratingLectureButton setEnabled:NO];
+    }
+    
     initHourLabel.text = model.start;
     endHourLabel.text = model.end;
     
@@ -92,9 +99,26 @@
     scheduleBallonView = [Utils loadNibForName:@"ScheduleBallonView"];
     [scheduleBallonView setScheduleModel:model];
     [ballonContainer addSubview:scheduleBallonView];
+    
+    [ratingLectureButton bringSubviewToFront:self];
+    [ratingLectureLabel bringSubviewToFront:self];
+}
+
+-(IBAction)ratingLecture:(id)sender{
+    if ([delegate respondsToSelector:@selector(scheduleCellRatingLectureWithModel:)]) {
+        [delegate scheduleCellRatingLectureWithModel:scheduleModel];
+    }
+    NSLog(@"rating this lecture: %@",scheduleModel.titles);
 }
 
 -(void)clean{
+//    CGRect columnHeight = self.columnView.frame;
+//    columnHeight.size.height = self.frame.size.height;
+//    columnHeight.origin.y = 0;
+//    self.columnView.frame = columnHeight;
+//    NSLog(@"height: %f",columnHeight.size.height);
+    [ratingLectureLabel setAlpha:1];
+    [ratingLectureButton setEnabled:YES];
     [scheduleBallonView removeFromSuperview];
     scheduleBallonView = nil;
 }

@@ -8,6 +8,7 @@
 
 #import "SponsorViewController.h"
 #import "MZFormSheetController.h"
+#import "SponsorHeaderView.h"
 
 @interface SponsorViewController ()
 
@@ -27,36 +28,84 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    sponsorDic = [[FakeModelManager sharedInstance] fakeSponsorDic];
+    sponsorOrder = [[FakeModelManager sharedInstance] fakeSponsorOrderList];
 }
 
--(void)viewDidAppear:(BOOL)animated{
-    [[[UIAlertView alloc] initWithTitle:@"ATENÇÃO" message:@"Em desenvolvimento" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil]show];
-}
 
 -(void)viewWillAppear:(BOOL)animated{
     [self.view setBackgroundColor:[UIColor clearColor]];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 -(IBAction)close:(id)sender{
     [self mz_dismissFormSheetControllerAnimated:YES completionHandler:nil];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SponsorCell" forIndexPath:indexPath];
+    
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"SponsorCell"];
+    }
+    
+    NSDictionary *dic = [self objectWithIndex:indexPath];
+    
+    UIImageView *sponsorImage = (UIImageView*)[cell viewWithTag:2];
+    
+    sponsorImage.image = [UIImage imageNamed:[dic objectForKey:@"imagePath"]];
+    
+    return cell;
 }
-*/
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return sponsorDic.count;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    NSString *desireKey = [sponsorOrder objectAtIndex:section];
+    NSArray *desireList = [sponsorDic objectForKey:desireKey];
+    return desireList.count;
+}
+
+-(NSDictionary*)objectWithIndex:(NSIndexPath *)indexPath{
+    NSString *desireKey = [sponsorOrder objectAtIndex:indexPath.section];
+    NSArray *desireList = [sponsorDic objectForKey:desireKey];
+    NSDictionary *dic = [desireList objectAtIndex:indexPath.row];
+    return dic;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSDictionary *dic = [self objectWithIndex:indexPath];
+    NSString *sponsorUrl = [dic objectForKey:@"url"];
+    NSLog(@"%@",sponsorUrl);
+    NSURL *url = [NSURL URLWithString:sponsorUrl];
+    [[UIApplication sharedApplication] openURL:url];
+}
+
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    SponsorHeaderView *shv = [Utils loadNibForName:@"SponsorHeaderView"];
+    shv.sectionTitle.text = [self getIndexName:section];
+    [shv.sectionTitle setCMEPFont];
+    return shv;
+}
+
+-(NSString*)getIndexName:(NSInteger)section{
+    //NSArray *allKeys = [sponsorDic allKeys];
+    NSString *desireKey = [sponsorOrder objectAtIndex:section];
+    return desireKey;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 45;
+}
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    CGFloat sectionHeaderHeight = 45;
+    if (scrollView.contentOffset.y<=sectionHeaderHeight&&scrollView.contentOffset.y>=0) {
+        scrollView.contentInset = UIEdgeInsetsMake(-scrollView.contentOffset.y, 0, 0, 0);
+    } else if (scrollView.contentOffset.y>=sectionHeaderHeight) {
+        scrollView.contentInset = UIEdgeInsetsMake(-sectionHeaderHeight, 0, 0, 0);
+    }
+}
 
 @end

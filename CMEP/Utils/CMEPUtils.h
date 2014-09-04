@@ -20,6 +20,8 @@ typedef enum {
     MenuOptionConfiguration,
     MenuOptionCheckin,
     MenuOptionExhibitor,
+    MenuOptionLectureRating,
+    MenuOptionScheduleNotification
     
 } MenuOption;
 

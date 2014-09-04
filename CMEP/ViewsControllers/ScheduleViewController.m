@@ -8,6 +8,7 @@
 
 #import "ScheduleViewController.h"
 #import "ScheduleModel.h"
+#import "LectureRatingViewController.h"
 
 @implementation ScheduleViewController
 
@@ -55,19 +56,28 @@
 //        cell = [Utils loadNibForName:cellIdentifier];
 //    }
     
-    if (indexPath.row == 0) {
-        CGRect columnRect = cell.columnView.frame;
-        columnRect.origin.y = 0;
-        columnRect.size.height = cell.frame.size.height;
-        cell.columnView.frame = columnRect;
-        columnRect = cell.columnView.frame;
-        columnRect.origin.y = columnRect.origin.y + 10;
-        //columnRect.size.height = columnRect.size.height - 10;
-        cell.columnView.frame = columnRect;
-    }
+//    if (indexPath.row == 0) {
+//        CGRect columnRect = cell.columnView.frame;
+//        columnRect.origin.y = 0;
+//        columnRect.size.height = cell.frame.size.height;
+//        cell.columnView.frame = columnRect;
+//        columnRect = cell.columnView.frame;
+//        columnRect.origin.y = columnRect.origin.y + 10;
+//        columnRect.size.height = columnRect.size.height - 10;
+//        cell.columnView.frame = columnRect;
+//    }
+    
+//    if ((int)indexPath.row % 2 == 0) {
+//        [[cell columnView] setBackgroundColor:[UIColor redColor]];
+//        [cell setBackgroundColor:[UIColor yellowColor]];
+//    }else{
+//        [[cell columnView] setBackgroundColor:[UIColor blueColor]];
+//        [cell setBackgroundColor:[UIColor greenColor]];
+//    }
     
     [cell setScheduleModel:scheduleModel];
-    NSLog(@"scheduleModel: %@", scheduleModel.titles);
+    
+    cell.delegate = self;
     
     return cell;
 }
@@ -99,13 +109,29 @@
 
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    
+    [self presentNotificationIfNecessaty];
     //[self scrollToCurrentHour];
+}
+
+-(void)presentNotificationIfNecessaty{
+    //todo: fazer validação se ja foi visualizado ao menos uma vez
+    UIViewController *snvc = [CMEPUtils getControllerByType:MenuOptionScheduleNotification];
+    CGSize viewSize = self.view.frame.size;
+    MZFormSheetController *mzc = [[MZFormSheetController alloc] initWithSize:viewSize viewController:snvc];
+    mzc.shouldCenterVertically = YES;
+    mzc.transitionStyle = MZFormSheetTransitionStyleSlideFromLeft;
+    [mzc presentAnimated:YES completionHandler:nil];
 }
 
 -(void)scrollToCurrentHour{
     NSIndexPath *i = [NSIndexPath indexPathForItem:5 inSection:0];
     [scheduleTableView scrollToRowAtIndexPath:i atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
+}
+
+-(void)scheduleCellRatingLectureWithModel:(ScheduleModel *)scheduleM{
+    LectureRatingViewController *lectureRatingViewController = (LectureRatingViewController*)[CMEPUtils getControllerByType:MenuOptionLectureRating];
+    lectureRatingViewController.currentScheduleModel = scheduleM;   
+    [self.navigationController pushViewController:lectureRatingViewController animated:YES];
 }
 
 @end

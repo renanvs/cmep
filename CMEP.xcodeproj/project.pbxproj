@@ -8,6 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		4E908AEEACDF49E28B3408C4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F04A8D4A74A74AFA84025C06 /* libPods.a */; };
+		7202775119B75B9400E2D245 /* tempBottonBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7202774F19B75B9400E2D245 /* tempBottonBar.png */; };
+		7202775219B75B9400E2D245 /* tempTopBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7202775019B75B9400E2D245 /* tempTopBar.png */; };
+		7202775619B7717200E2D245 /* close_x@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7202775519B7717200E2D245 /* close_x@2x.png */; };
+		7202775819B7764D00E2D245 /* row_schedule@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7202775719B7764D00E2D245 /* row_schedule@2x.png */; };
+		7202775B19B7977300E2D245 /* SponsorHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7202775A19B7977300E2D245 /* SponsorHeaderView.m */; };
+		7202775D19B7978B00E2D245 /* SponsorHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7202775C19B7978B00E2D245 /* SponsorHeaderView.xib */; };
+		7202776219B7A2D800E2D245 /* aci.png in Resources */ = {isa = PBXBuildFile; fileRef = 7202775E19B7A2D800E2D245 /* aci.png */; };
+		7202776319B7A2D800E2D245 /* bradesco.png in Resources */ = {isa = PBXBuildFile; fileRef = 7202775F19B7A2D800E2D245 /* bradesco.png */; };
+		7202776419B7A2D800E2D245 /* cielo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7202776019B7A2D800E2D245 /* cielo.png */; };
+		7202776519B7A2D800E2D245 /* elo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7202776119B7A2D800E2D245 /* elo.png */; };
+		7202776819B7BEB900E2D245 /* ExhibitorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7202776719B7BEB900E2D245 /* ExhibitorViewController.m */; };
+		7202776B19B7BF6700E2D245 /* ExhibitorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7202776A19B7BF6700E2D245 /* ExhibitorCell.m */; };
+		7202776F19B7C29500E2D245 /* itaucardLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7202776C19B7C29500E2D245 /* itaucardLogo@2x.png */; };
+		7202777019B7C29500E2D245 /* mastercardLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7202776D19B7C29500E2D245 /* mastercardLogo@2x.png */; };
+		7202777119B7C29500E2D245 /* visaLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7202776E19B7C29500E2D245 /* visaLogo@2x.png */; };
 		7208119619B0C5C6009D91E1 /* SponsorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7208119519B0C5C6009D91E1 /* SponsorViewController.m */; };
 		720811AD19B0C6ED009D91E1 /* MZAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 7208119C19B0C6ED009D91E1 /* MZAppearance.m */; };
 		720811AE19B0C6ED009D91E1 /* NSInvocation+Copy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7208119E19B0C6ED009D91E1 /* NSInvocation+Copy.m */; };
@@ -139,6 +154,13 @@
 		72E2453E19B10389003A7282 /* sampleSpeakerImage0.png in Resources */ = {isa = PBXBuildFile; fileRef = 72E2453B19B10389003A7282 /* sampleSpeakerImage0.png */; };
 		72E2453F19B10389003A7282 /* sampleSpeakerImage1.png in Resources */ = {isa = PBXBuildFile; fileRef = 72E2453C19B10389003A7282 /* sampleSpeakerImage1.png */; };
 		72E2454019B10389003A7282 /* sampleSpeakerImage2.png in Resources */ = {isa = PBXBuildFile; fileRef = 72E2453D19B10389003A7282 /* sampleSpeakerImage2.png */; };
+		DB60080619B7F46700D3D2C2 /* LectureRatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB60080519B7F46700D3D2C2 /* LectureRatingViewController.m */; };
+		DB60080919B8025400D3D2C2 /* ScheduleNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB60080819B8025400D3D2C2 /* ScheduleNotificationViewController.m */; };
+		DB8D493919B6A3E00027755D /* topbarLeftBg.png in Resources */ = {isa = PBXBuildFile; fileRef = DB8D493619B6A3E00027755D /* topbarLeftBg.png */; };
+		DB8D493A19B6A3E00027755D /* topbarMiddleBg.png in Resources */ = {isa = PBXBuildFile; fileRef = DB8D493719B6A3E00027755D /* topbarMiddleBg.png */; };
+		DB8D493B19B6A3E00027755D /* topbarRightBg.png in Resources */ = {isa = PBXBuildFile; fileRef = DB8D493819B6A3E00027755D /* topbarRightBg.png */; };
+		DB8D493E19B6A6240027755D /* CheckinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8D493D19B6A6240027755D /* CheckinViewController.m */; };
+		DB8D494119B6A9EE0027755D /* CMEPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8D494019B6A9EE0027755D /* CMEPNavigationController.m */; };
 		DBF4A29B19B56919003ED435 /* CMEPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF4A29A19B56919003ED435 /* CMEPViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -153,6 +175,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7202774F19B75B9400E2D245 /* tempBottonBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tempBottonBar.png; sourceTree = "<group>"; };
+		7202775019B75B9400E2D245 /* tempTopBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tempTopBar.png; sourceTree = "<group>"; };
+		7202775519B7717200E2D245 /* close_x@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close_x@2x.png"; sourceTree = "<group>"; };
+		7202775719B7764D00E2D245 /* row_schedule@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "row_schedule@2x.png"; sourceTree = "<group>"; };
+		7202775919B7977300E2D245 /* SponsorHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SponsorHeaderView.h; path = CMEP/Views/SponsorHeaderView.h; sourceTree = "<group>"; };
+		7202775A19B7977300E2D245 /* SponsorHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SponsorHeaderView.m; path = CMEP/Views/SponsorHeaderView.m; sourceTree = "<group>"; };
+		7202775C19B7978B00E2D245 /* SponsorHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SponsorHeaderView.xib; path = CMEP/Views/SponsorHeaderView.xib; sourceTree = "<group>"; };
+		7202775E19B7A2D800E2D245 /* aci.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aci.png; sourceTree = "<group>"; };
+		7202775F19B7A2D800E2D245 /* bradesco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bradesco.png; sourceTree = "<group>"; };
+		7202776019B7A2D800E2D245 /* cielo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cielo.png; sourceTree = "<group>"; };
+		7202776119B7A2D800E2D245 /* elo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = elo.png; sourceTree = "<group>"; };
+		7202776619B7BEB900E2D245 /* ExhibitorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExhibitorViewController.h; path = CMEP/ViewsControllers/ExhibitorViewController.h; sourceTree = "<group>"; };
+		7202776719B7BEB900E2D245 /* ExhibitorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExhibitorViewController.m; path = CMEP/ViewsControllers/ExhibitorViewController.m; sourceTree = "<group>"; };
+		7202776919B7BF6700E2D245 /* ExhibitorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExhibitorCell.h; path = CMEP/Views/ExhibitorCell.h; sourceTree = "<group>"; };
+		7202776A19B7BF6700E2D245 /* ExhibitorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExhibitorCell.m; path = CMEP/Views/ExhibitorCell.m; sourceTree = "<group>"; };
+		7202776C19B7C29500E2D245 /* itaucardLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "itaucardLogo@2x.png"; sourceTree = "<group>"; };
+		7202776D19B7C29500E2D245 /* mastercardLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mastercardLogo@2x.png"; sourceTree = "<group>"; };
+		7202776E19B7C29500E2D245 /* visaLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "visaLogo@2x.png"; sourceTree = "<group>"; };
 		7208119419B0C5C6009D91E1 /* SponsorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SponsorViewController.h; path = CMEP/ViewsControllers/SponsorViewController.h; sourceTree = "<group>"; };
 		7208119519B0C5C6009D91E1 /* SponsorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SponsorViewController.m; path = CMEP/ViewsControllers/SponsorViewController.m; sourceTree = "<group>"; };
 		7208119B19B0C6ED009D91E1 /* MZAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZAppearance.h; sourceTree = "<group>"; };
@@ -327,6 +367,17 @@
 		72E2453C19B10389003A7282 /* sampleSpeakerImage1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sampleSpeakerImage1.png; sourceTree = "<group>"; };
 		72E2453D19B10389003A7282 /* sampleSpeakerImage2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sampleSpeakerImage2.png; sourceTree = "<group>"; };
 		BCD35203496A47D9B7EEE6EA /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		DB60080419B7F46700D3D2C2 /* LectureRatingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LectureRatingViewController.h; path = CMEP/ViewsControllers/LectureRatingViewController.h; sourceTree = "<group>"; };
+		DB60080519B7F46700D3D2C2 /* LectureRatingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LectureRatingViewController.m; path = CMEP/ViewsControllers/LectureRatingViewController.m; sourceTree = "<group>"; };
+		DB60080719B8025400D3D2C2 /* ScheduleNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScheduleNotificationViewController.h; path = CMEP/ViewsControllers/ScheduleNotificationViewController.h; sourceTree = "<group>"; };
+		DB60080819B8025400D3D2C2 /* ScheduleNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScheduleNotificationViewController.m; path = CMEP/ViewsControllers/ScheduleNotificationViewController.m; sourceTree = "<group>"; };
+		DB8D493619B6A3E00027755D /* topbarLeftBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topbarLeftBg.png; sourceTree = "<group>"; };
+		DB8D493719B6A3E00027755D /* topbarMiddleBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topbarMiddleBg.png; sourceTree = "<group>"; };
+		DB8D493819B6A3E00027755D /* topbarRightBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topbarRightBg.png; sourceTree = "<group>"; };
+		DB8D493C19B6A6240027755D /* CheckinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CheckinViewController.h; path = CMEP/ViewsControllers/CheckinViewController.h; sourceTree = "<group>"; };
+		DB8D493D19B6A6240027755D /* CheckinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CheckinViewController.m; path = CMEP/ViewsControllers/CheckinViewController.m; sourceTree = "<group>"; };
+		DB8D493F19B6A9EE0027755D /* CMEPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CMEPNavigationController.h; path = CMEP/ViewsControllers/CMEPNavigationController.h; sourceTree = "<group>"; };
+		DB8D494019B6A9EE0027755D /* CMEPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CMEPNavigationController.m; path = CMEP/ViewsControllers/CMEPNavigationController.m; sourceTree = "<group>"; };
 		DBF4A29919B56919003ED435 /* CMEPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CMEPViewController.h; path = CMEP/ViewsControllers/CMEPViewController.h; sourceTree = "<group>"; };
 		DBF4A29A19B56919003ED435 /* CMEPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CMEPViewController.m; path = CMEP/ViewsControllers/CMEPViewController.m; sourceTree = "<group>"; };
 		F04A8D4A74A74AFA84025C06 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -443,6 +494,11 @@
 				72D56D3919B5206600878551 /* TopbarView.xib */,
 				7221BC7519B686B3002E8F26 /* CMEPButtonCell.h */,
 				7221BC7619B686B3002E8F26 /* CMEPButtonCell.m */,
+				7202775919B7977300E2D245 /* SponsorHeaderView.h */,
+				7202775A19B7977300E2D245 /* SponsorHeaderView.m */,
+				7202775C19B7978B00E2D245 /* SponsorHeaderView.xib */,
+				7202776919B7BF6700E2D245 /* ExhibitorCell.h */,
+				7202776A19B7BF6700E2D245 /* ExhibitorCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -588,6 +644,8 @@
 				729E852919AF89AB0057DF1C /* PresentationAboutViewController.m */,
 				729E852B19AFA7B20057DF1C /* ScheduleViewController.h */,
 				729E852C19AFA7B20057DF1C /* ScheduleViewController.m */,
+				DB8D493C19B6A6240027755D /* CheckinViewController.h */,
+				DB8D493D19B6A6240027755D /* CheckinViewController.m */,
 				72BEE26619B0B0E70075AE36 /* InformationsViewController.h */,
 				72BEE26719B0B0E70075AE36 /* InformationsViewController.m */,
 				7208119419B0C5C6009D91E1 /* SponsorViewController.h */,
@@ -600,6 +658,14 @@
 				724E130219B4A938001CEBCB /* RatingViewController.m */,
 				DBF4A29919B56919003ED435 /* CMEPViewController.h */,
 				DBF4A29A19B56919003ED435 /* CMEPViewController.m */,
+				DB8D493F19B6A9EE0027755D /* CMEPNavigationController.h */,
+				DB8D494019B6A9EE0027755D /* CMEPNavigationController.m */,
+				7202776619B7BEB900E2D245 /* ExhibitorViewController.h */,
+				7202776719B7BEB900E2D245 /* ExhibitorViewController.m */,
+				DB60080419B7F46700D3D2C2 /* LectureRatingViewController.h */,
+				DB60080519B7F46700D3D2C2 /* LectureRatingViewController.m */,
+				DB60080719B8025400D3D2C2 /* ScheduleNotificationViewController.h */,
+				DB60080819B8025400D3D2C2 /* ScheduleNotificationViewController.m */,
 			);
 			name = ViewsControllers;
 			sourceTree = "<group>";
@@ -607,6 +673,10 @@
 		72B1772919AE467D00F549C5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				7202775719B7764D00E2D245 /* row_schedule@2x.png */,
+				DB8D493619B6A3E00027755D /* topbarLeftBg.png */,
+				DB8D493719B6A3E00027755D /* topbarMiddleBg.png */,
+				DB8D493819B6A3E00027755D /* topbarRightBg.png */,
 				72D56DBA19B62BDE00878551 /* bg_detalhe_menu1@2x.png */,
 				72D56D3E19B5FB2700878551 /* arrow.png */,
 				72D56D3F19B5FB2700878551 /* base_ballon.png */,
@@ -616,6 +686,7 @@
 				72D56D4319B5FB2700878551 /* bg_topo_home@2x.png */,
 				72D56D4419B5FB2700878551 /* bg_topo_pag_conteudo@2x.png */,
 				72D56D4519B5FB2700878551 /* btn_azul@2x.png */,
+				7202775519B7717200E2D245 /* close_x@2x.png */,
 				72D56D4619B5FB2700878551 /* btn_buscar@2x.png */,
 				72D56D4719B5FB2700878551 /* btn_fechar@2x.png */,
 				72D56D4819B5FB2700878551 /* btn_verde@2x.png */,
@@ -679,6 +750,15 @@
 		72E2453A19B10389003A7282 /* samples */ = {
 			isa = PBXGroup;
 			children = (
+				7202776C19B7C29500E2D245 /* itaucardLogo@2x.png */,
+				7202776D19B7C29500E2D245 /* mastercardLogo@2x.png */,
+				7202776E19B7C29500E2D245 /* visaLogo@2x.png */,
+				7202775E19B7A2D800E2D245 /* aci.png */,
+				7202775F19B7A2D800E2D245 /* bradesco.png */,
+				7202776019B7A2D800E2D245 /* cielo.png */,
+				7202776119B7A2D800E2D245 /* elo.png */,
+				7202774F19B75B9400E2D245 /* tempBottonBar.png */,
+				7202775019B75B9400E2D245 /* tempTopBar.png */,
 				724E130719B4B192001CEBCB /* starempty.png */,
 				724E130819B4B192001CEBCB /* starfull.png */,
 				724E130919B4B192001CEBCB /* starmiddle.png */,
@@ -769,9 +849,11 @@
 			files = (
 				72BEE26219B0A2780075AE36 /* BallonTextContainer.xib in Resources */,
 				72D56D8C19B5FB2700878551 /* foto_palestrantes@2x.png in Resources */,
+				7202776519B7A2D800E2D245 /* elo.png in Resources */,
 				724E130B19B4B192001CEBCB /* starfull.png in Resources */,
 				72D56D8D19B5FB2700878551 /* icon_avaliacao@2x.png in Resources */,
 				724E130C19B4B192001CEBCB /* starmiddle.png in Resources */,
+				7202775819B7764D00E2D245 /* row_schedule@2x.png in Resources */,
 				72D56D9219B5FB2700878551 /* icon_contato_green@2x.png in Resources */,
 				72D56DB819B5FB2700878551 /* trilha_fundo@2x.png in Resources */,
 				72D56DA219B5FB2700878551 /* icon_programacao@2x.png in Resources */,
@@ -780,6 +862,7 @@
 				72D56DAC19B5FB2700878551 /* logo_cmep@2x.png in Resources */,
 				72D56D7D19B5FB2700878551 /* base_ballon.png in Resources */,
 				72D56DB719B5FB2700878551 /* top_ballon.png in Resources */,
+				7202776219B7A2D800E2D245 /* aci.png in Resources */,
 				72D56D9319B5FB2700878551 /* icon_contato@2x.png in Resources */,
 				72D56D9D19B5FB2700878551 /* icon_menu@2x.png in Resources */,
 				72D56DAA19B5FB2700878551 /* logo_abecs@2x.png in Resources */,
@@ -794,12 +877,15 @@
 				72D56D9919B5FB2700878551 /* icon_house@2x.png in Resources */,
 				72D56DAB19B5FB2700878551 /* logo_cmep_pag_apresentacao@2x.png in Resources */,
 				72B176F619AE277700F549C5 /* Main_iPad.storyboard in Resources */,
+				7202775119B75B9400E2D245 /* tempBottonBar.png in Resources */,
 				722794AF19B4F266001F1AB5 /* italic.otf in Resources */,
 				72D56DA319B5FB2700878551 /* icon_smartphone@2x.png in Resources */,
 				72D56DA019B5FB2700878551 /* icon_palestra@2x.png in Resources */,
 				72D56DA919B5FB2700878551 /* logo_abecs_pag_conteudo@2x.png in Resources */,
+				7202775619B7717200E2D245 /* close_x@2x.png in Resources */,
 				72D56D9819B5FB2700878551 /* icon_empresa@2x.png in Resources */,
 				72D56D8F19B5FB2700878551 /* icon_cmep_networking@2x.png in Resources */,
+				DB8D493A19B6A3E00027755D /* topbarMiddleBg.png in Resources */,
 				722794B319B4F267001F1AB5 /* light.otf in Resources */,
 				72D56D9E19B5FB2700878551 /* icon_networking@2x.png in Resources */,
 				72D56D8E19B5FB2700878551 /* icon_cargo@2x.png in Resources */,
@@ -807,6 +893,9 @@
 				72D56D8519B5FB2700878551 /* btn_fechar@2x.png in Resources */,
 				72D56D8119B5FB2700878551 /* bg_topo_home@2x.png in Resources */,
 				72D56DB919B5FB2700878551 /* trilha2_fundo@2x.png in Resources */,
+				7202775D19B7978B00E2D245 /* SponsorHeaderView.xib in Resources */,
+				7202776319B7A2D800E2D245 /* bradesco.png in Resources */,
+				7202777119B7C29500E2D245 /* visaLogo@2x.png in Resources */,
 				72D56DA619B5FB2700878551 /* icon_telefone@2x.png in Resources */,
 				72D56D9419B5FB2700878551 /* icon_contatos_notificacao@2x.png in Resources */,
 				72D56D9719B5FB2700878551 /* icon_descricao@2x.png in Resources */,
@@ -824,11 +913,14 @@
 				72D56D9C19B5FB2700878551 /* icon_menu_white@2x.png in Resources */,
 				72D56D8219B5FB2700878551 /* bg_topo_pag_conteudo@2x.png in Resources */,
 				729E853919AFB5890057DF1C /* ScheduleBallonView.xib in Resources */,
+				7202775219B75B9400E2D245 /* tempTopBar.png in Resources */,
 				724E130A19B4B192001CEBCB /* starempty.png in Resources */,
+				7202776419B7A2D800E2D245 /* cielo.png in Resources */,
 				72D56D7F19B5FB2700878551 /* bg_menu@2x.png in Resources */,
 				72D56D8719B5FB2700878551 /* btn_vermelho@2x.png in Resources */,
 				72D56DB419B5FB2700878551 /* sombra@2x.png in Resources */,
 				72D56D8419B5FB2700878551 /* btn_buscar@2x.png in Resources */,
+				7202776F19B7C29500E2D245 /* itaucardLogo@2x.png in Resources */,
 				72B176F319AE277700F549C5 /* Main_iPhone.storyboard in Resources */,
 				72D56DB519B5FB2700878551 /* toggle_off@2x.png in Resources */,
 				72D56DB019B5FB2700878551 /* patrocinador_prata_cielo@2x.png in Resources */,
@@ -842,10 +934,13 @@
 				72D56DB319B5FB2700878551 /* seta_menu@2x.png in Resources */,
 				72D56D3A19B5206600878551 /* TopbarView.xib in Resources */,
 				72B176EA19AE277700F549C5 /* InfoPlist.strings in Resources */,
+				DB8D493B19B6A3E00027755D /* topbarRightBg.png in Resources */,
 				72D56DAE19B5FB2700878551 /* patrocinador_diamante_bradesco@2x.png in Resources */,
+				DB8D493919B6A3E00027755D /* topbarLeftBg.png in Resources */,
 				72D56D7C19B5FB2700878551 /* arrow.png in Resources */,
 				72D56D8819B5FB2700878551 /* btn_zoom_in@2x.png in Resources */,
 				72D56D9119B5FB2700878551 /* icon_coffee@2x.png in Resources */,
+				7202777019B7C29500E2D245 /* mastercardLogo@2x.png in Resources */,
 				72D56DB219B5FB2700878551 /* seta_balloon@2x.png in Resources */,
 				729E852419AF72910057DF1C /* WebPages in Resources */,
 				72D56D8319B5FB2700878551 /* btn_azul@2x.png in Resources */,
@@ -910,12 +1005,15 @@
 				720811B319B0C6ED009D91E1 /* MZTransition.m in Sources */,
 				729E851F19AE6E000057DF1C /* HomeTableViewCell.m in Sources */,
 				726140BF19B0F9D50062C486 /* SpeakersViewController.m in Sources */,
+				7202776819B7BEB900E2D245 /* ExhibitorViewController.m in Sources */,
 				7208119619B0C5C6009D91E1 /* SponsorViewController.m in Sources */,
 				729E854319AFC80A0057DF1C /* FakeModelManager.m in Sources */,
 				72B1772019AE406E00F549C5 /* IIViewDeckController.m in Sources */,
 				72BEE26519B0A30D0075AE36 /* BallonTextContainer.m in Sources */,
 				72817A8719AE6A1500446FD9 /* Utils.m in Sources */,
+				7202776B19B7BF6700E2D245 /* ExhibitorCell.m in Sources */,
 				729E852A19AF89AB0057DF1C /* PresentationAboutViewController.m in Sources */,
+				DB60080919B8025400D3D2C2 /* ScheduleNotificationViewController.m in Sources */,
 				72817A8619AE6A1500446FD9 /* Extensions.m in Sources */,
 				720811B819B0CB5A009D91E1 /* MapViewController.m in Sources */,
 				72B1772819AE426F00F549C5 /* MenuViewController.m in Sources */,
@@ -928,7 +1026,9 @@
 				720811B419B0C6ED009D91E1 /* UIImage+Additional.m in Sources */,
 				720811AF19B0C6ED009D91E1 /* MZFormSheetBackgroundWindow.m in Sources */,
 				720811B219B0C6ED009D91E1 /* MZFormSheetSegue.m in Sources */,
+				DB8D493E19B6A6240027755D /* CheckinViewController.m in Sources */,
 				72B176F019AE277700F549C5 /* AppDelegate.m in Sources */,
+				7202775B19B7977300E2D245 /* SponsorHeaderView.m in Sources */,
 				72817A8519AE6A1500446FD9 /* Defines.m in Sources */,
 				72B176EC19AE277700F549C5 /* main.m in Sources */,
 				724E130619B4A9F1001CEBCB /* RatingCell.m in Sources */,
@@ -936,6 +1036,8 @@
 				72B1772519AE41A500F549C5 /* HomeViewController.m in Sources */,
 				72B1772119AE406E00F549C5 /* IIWrapController.m in Sources */,
 				72817A6E19AE52F700446FD9 /* PresentationViewController.m in Sources */,
+				DB60080619B7F46700D3D2C2 /* LectureRatingViewController.m in Sources */,
+				DB8D494119B6A9EE0027755D /* CMEPNavigationController.m in Sources */,
 				7221BC7719B686B3002E8F26 /* CMEPButtonCell.m in Sources */,
 				72BEE26B19B0B21F0075AE36 /* InformationTableViewCell.m in Sources */,
 				729E852D19AFA7B20057DF1C /* ScheduleViewController.m in Sources */,
@@ -1076,13 +1178,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: MACWINGO ltda (99PGLV2Z48)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: renan veloso (FFY2P6K5FU)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CMEP/CMEP-Prefix.pch";
 				INFOPLIST_FILE = "CMEP/CMEP-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "D84D08E9-7A14-42FB-B644-4F5E3B7F0AB2";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1099,7 +1201,7 @@
 				INFOPLIST_FILE = "CMEP/CMEP-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "D84D08E9-7A14-42FB-B644-4F5E3B7F0AB2";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

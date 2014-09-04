@@ -2,11 +2,16 @@ PODS:
   - MagicalRecord (2.2):
     - MagicalRecord/Core
   - MagicalRecord/Core (2.2)
+  - ZXingObjC (3.0.2):
+    - ZXingObjC/All
+  - ZXingObjC/All (3.0.2)
 
 DEPENDENCIES:
   - MagicalRecord
+  - ZXingObjC (~> 3.0)
 
 SPEC CHECKSUMS:
   MagicalRecord: 2b471584fc9e3137f3d0a56967917baa4979e224
+  ZXingObjC: ee1b5ade3c030d1ca4dc9012af358a80a6b96e24
 
 COCOAPODS: 0.33.1

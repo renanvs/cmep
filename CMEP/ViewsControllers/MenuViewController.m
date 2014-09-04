@@ -10,6 +10,7 @@
 #import "PresentationViewController.h"
 #import "HomeViewController.h"
 #import "MZFormSheetController.h"
+#import "CheckinViewController.h"
 
 @interface MenuViewController ()
 
@@ -119,9 +120,15 @@
         }];
     }else if (opt == MenuOptionNetworking || opt == MenuOptionConfiguration) {
          [[[UIAlertView alloc] initWithTitle:@"ATENÇÃO" message:@"Em desenvolvimento" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil]show];
+    }else if(opt == MenuOptionCheckin){
+        CheckinViewController *checkinViewController = (CheckinViewController*)[CMEPUtils getControllerByType:opt];
+        [self.viewDeckController presentViewController:checkinViewController animated:YES completion:nil];
     }else{
         UIViewController *desireController = [CMEPUtils getControllerByType:opt];
-        [self pushCenterController:desireController];
+        [self.viewDeckController closeOpenViewAnimated:YES completion:^(IIViewDeckController *controller, BOOL success) {
+            [self pushCenterController:desireController];
+        }];
+        
     }
 }
 

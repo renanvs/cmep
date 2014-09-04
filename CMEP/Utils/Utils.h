@@ -35,6 +35,9 @@ return shared##classname; \
 #define screenBounds() \
 [Utils screenBoundsOnCurrentOrientation]
 
+#define SystemVersion() \
+[Utils systemVersion]
+
 #define PI 3.14159265358979 /* pi */
 #define Degrees_To_Radians(angle) (angle / 180.0 * PI)
 
@@ -60,6 +63,8 @@ return shared##classname; \
 +(CGRect)getKeyboardRectWithNotification:(NSNotification*)notification;
 
 +(id)loadNibForName:(NSString*)nibName;
+
++(float)systemVersion;
 
 @end
 

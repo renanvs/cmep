@@ -33,6 +33,10 @@
     [self addOptionItens];
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    
+}
+
 -(void)setupLayout{
     [sponsorButton setCMEPFont];
 }
@@ -114,6 +118,16 @@
     mzc.transitionStyle = MZFormSheetTransitionStyleSlideFromLeft;
     [mzc presentAnimated:YES completionHandler:nil];
     //[self.navigationController pushViewController:nil animated:YES];
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation{
+    return (toInterfaceOrientation == UIInterfaceOrientationPortrait);
+}
+-(BOOL)shouldAutorotate {
+    return YES;
+}
+- (NSUInteger)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskPortrait;
 }
 
 @end
