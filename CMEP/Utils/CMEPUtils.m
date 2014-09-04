@@ -38,6 +38,10 @@ SynthensizeSingleTon(CMEPUtils);
         desireController = [sb instantiateViewControllerWithIdentifier:@"CheckinViewController"];
     }else if (menuOption == MenuOptionExhibitor) {
         desireController = [sb instantiateViewControllerWithIdentifier:@"ExhibitorViewController"];
+    }else if (menuOption == MenuOptionLectureRating) {
+        desireController = [sb instantiateViewControllerWithIdentifier:@"LectureRatingViewController"];
+    }else if (menuOption == MenuOptionScheduleNotification) {
+        desireController = [sb instantiateViewControllerWithIdentifier:@"ScheduleNotificationViewController"];
     }
     
     return desireController;

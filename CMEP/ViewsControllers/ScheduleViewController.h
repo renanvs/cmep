@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "ScheduleCell.h"
+#import "ScheduleNotificationViewController.h"
+#import "MZFormSheetController.h"
 
-@interface ScheduleViewController : CMEPViewController<UITableViewDataSource, UITableViewDelegate>{
+@interface ScheduleViewController : CMEPViewController<UITableViewDataSource, UITableViewDelegate, ScheduleCellDelegate>{
     __weak IBOutlet UITableView *scheduleTableView;
     __weak IBOutlet UILabel *dayLabel;
     __weak IBOutlet UILabel *monthYearLabel;

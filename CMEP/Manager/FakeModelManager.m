@@ -46,18 +46,18 @@ SynthensizeSingleTon(FakeModelManager);
     sm0.dayIndex = 0;
     
     ScheduleModel *sm1 = [[ScheduleModel alloc] init];
-    sm1.type = ScheduleTypeCoquetel;
+    sm1.type = ScheduleTypeLecture;
     sm1.start = @"11h30";
     sm1.end = @"12h30";
-    sm1.titles = [[NSArray alloc] initWithObjects:@"titulo1", nil];
-    sm1.subtitles = [[NSArray alloc] initWithObjects:@"subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1 subtitulo1subtitulo1subtitulo1subtitulo1 subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1 subtitulo1", nil];
+    sm1.titles = [[NSArray alloc] initWithObjects:@"Debate", @"Descrição", @"Debatedores", @"Moderador", nil];
+    sm1.subtitles = [[NSArray alloc] initWithObjects:@"subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1 subtitulo1subtitulo1subtitulo1subtitulo1 subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1 subtitulo1", @"subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1 subtitulo1subtitulo1subtitulo1subtitulo1 subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1 subtitulo1", @"subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1 subtitulo1subtitulo1subtitulo1subtitulo1 subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1 subtitulo1", @"subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1 subtitulo1subtitulo1subtitulo1subtitulo1 subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1subtitulo1 subtitulo1", nil];
     sm1.dayIndex = 0;
     
     ScheduleModel *sm2 = [[ScheduleModel alloc] init];
     sm2.type = ScheduleTypeLecture;
     sm2.start = @"11h30";
     sm2.end = @"12h30";
-    sm2.titles = [[NSArray alloc] initWithObjects:@"titulo2", @"titulo3", nil];
+    sm2.titles = [[NSArray alloc] initWithObjects:@"Debate", @"Descrição", nil];
     sm2.subtitles = [[NSArray alloc] initWithObjects:@"subtitulo2", @"subtitulo3", nil];
     sm2.dayIndex = 0;
     
@@ -89,7 +89,7 @@ SynthensizeSingleTon(FakeModelManager);
     sm6.type = ScheduleTypeLecture;
     sm6.start = @"11h30";
     sm6.end = @"12h30";
-    sm6.titles = [[NSArray alloc] initWithObjects:@"titulo6", nil];
+    sm6.titles = [[NSArray alloc] initWithObjects:@"Debate", nil];
     sm6.subtitles = [[NSArray alloc] initWithObjects:@"subtitulo6", nil];
     sm6.dayIndex = 0;
     
@@ -101,7 +101,7 @@ SynthensizeSingleTon(FakeModelManager);
     sm0.type = ScheduleTypeLecture;
     sm0.start = @"11h30";
     sm0.end = @"12h30";
-    sm0.titles = [[NSArray alloc] initWithObjects:@"sample0", nil];
+    sm0.titles = [[NSArray alloc] initWithObjects:@"Debate", nil];
     sm0.subtitles = [[NSArray alloc] initWithObjects:@"sample0", nil];
     sm0.dayIndex = 0;
     
@@ -149,7 +149,7 @@ SynthensizeSingleTon(FakeModelManager);
     sm6.type = ScheduleTypeLecture;
     sm6.start = @"11h30";
     sm6.end = @"12h30";
-    sm6.titles = [[NSArray alloc] initWithObjects:@"titulo6", nil];
+    sm6.titles = [[NSArray alloc] initWithObjects:@"Debate", nil];
     sm6.subtitles = [[NSArray alloc] initWithObjects:@"subtitulo6", nil];
     sm6.dayIndex = 0;
     
@@ -157,7 +157,7 @@ SynthensizeSingleTon(FakeModelManager);
     sm7.type = ScheduleTypeLecture;
     sm7.start = @"11h30";
     sm7.end = @"12h30";
-    sm7.titles = [[NSArray alloc] initWithObjects:@"titulo7", nil];
+    sm7.titles = [[NSArray alloc] initWithObjects:@"Debate", nil];
     sm7.subtitles = [[NSArray alloc] initWithObjects:@"subtitulo7", nil];
     sm7.dayIndex = 0;
     
@@ -173,7 +173,7 @@ SynthensizeSingleTon(FakeModelManager);
     sm9.type = ScheduleTypeLecture;
     sm9.start = @"11h30";
     sm9.end = @"12h30";
-    sm9.titles = [[NSArray alloc] initWithObjects:@"titulo9", nil];
+    sm9.titles = [[NSArray alloc] initWithObjects:@"Debate", nil];
     sm9.subtitles = [[NSArray alloc] initWithObjects:@"subtitulo9", nil];
     sm9.dayIndex = 0;
     

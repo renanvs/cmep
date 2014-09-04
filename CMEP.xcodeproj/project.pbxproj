@@ -154,6 +154,8 @@
 		72E2453E19B10389003A7282 /* sampleSpeakerImage0.png in Resources */ = {isa = PBXBuildFile; fileRef = 72E2453B19B10389003A7282 /* sampleSpeakerImage0.png */; };
 		72E2453F19B10389003A7282 /* sampleSpeakerImage1.png in Resources */ = {isa = PBXBuildFile; fileRef = 72E2453C19B10389003A7282 /* sampleSpeakerImage1.png */; };
 		72E2454019B10389003A7282 /* sampleSpeakerImage2.png in Resources */ = {isa = PBXBuildFile; fileRef = 72E2453D19B10389003A7282 /* sampleSpeakerImage2.png */; };
+		DB60080619B7F46700D3D2C2 /* LectureRatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB60080519B7F46700D3D2C2 /* LectureRatingViewController.m */; };
+		DB60080919B8025400D3D2C2 /* ScheduleNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB60080819B8025400D3D2C2 /* ScheduleNotificationViewController.m */; };
 		DB8D493919B6A3E00027755D /* topbarLeftBg.png in Resources */ = {isa = PBXBuildFile; fileRef = DB8D493619B6A3E00027755D /* topbarLeftBg.png */; };
 		DB8D493A19B6A3E00027755D /* topbarMiddleBg.png in Resources */ = {isa = PBXBuildFile; fileRef = DB8D493719B6A3E00027755D /* topbarMiddleBg.png */; };
 		DB8D493B19B6A3E00027755D /* topbarRightBg.png in Resources */ = {isa = PBXBuildFile; fileRef = DB8D493819B6A3E00027755D /* topbarRightBg.png */; };
@@ -365,6 +367,10 @@
 		72E2453C19B10389003A7282 /* sampleSpeakerImage1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sampleSpeakerImage1.png; sourceTree = "<group>"; };
 		72E2453D19B10389003A7282 /* sampleSpeakerImage2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sampleSpeakerImage2.png; sourceTree = "<group>"; };
 		BCD35203496A47D9B7EEE6EA /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		DB60080419B7F46700D3D2C2 /* LectureRatingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LectureRatingViewController.h; path = CMEP/ViewsControllers/LectureRatingViewController.h; sourceTree = "<group>"; };
+		DB60080519B7F46700D3D2C2 /* LectureRatingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LectureRatingViewController.m; path = CMEP/ViewsControllers/LectureRatingViewController.m; sourceTree = "<group>"; };
+		DB60080719B8025400D3D2C2 /* ScheduleNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScheduleNotificationViewController.h; path = CMEP/ViewsControllers/ScheduleNotificationViewController.h; sourceTree = "<group>"; };
+		DB60080819B8025400D3D2C2 /* ScheduleNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScheduleNotificationViewController.m; path = CMEP/ViewsControllers/ScheduleNotificationViewController.m; sourceTree = "<group>"; };
 		DB8D493619B6A3E00027755D /* topbarLeftBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topbarLeftBg.png; sourceTree = "<group>"; };
 		DB8D493719B6A3E00027755D /* topbarMiddleBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topbarMiddleBg.png; sourceTree = "<group>"; };
 		DB8D493819B6A3E00027755D /* topbarRightBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topbarRightBg.png; sourceTree = "<group>"; };
@@ -637,9 +643,9 @@
 				729E852819AF89AB0057DF1C /* PresentationAboutViewController.h */,
 				729E852919AF89AB0057DF1C /* PresentationAboutViewController.m */,
 				729E852B19AFA7B20057DF1C /* ScheduleViewController.h */,
+				729E852C19AFA7B20057DF1C /* ScheduleViewController.m */,
 				DB8D493C19B6A6240027755D /* CheckinViewController.h */,
 				DB8D493D19B6A6240027755D /* CheckinViewController.m */,
-				729E852C19AFA7B20057DF1C /* ScheduleViewController.m */,
 				72BEE26619B0B0E70075AE36 /* InformationsViewController.h */,
 				72BEE26719B0B0E70075AE36 /* InformationsViewController.m */,
 				7208119419B0C5C6009D91E1 /* SponsorViewController.h */,
@@ -656,6 +662,10 @@
 				DB8D494019B6A9EE0027755D /* CMEPNavigationController.m */,
 				7202776619B7BEB900E2D245 /* ExhibitorViewController.h */,
 				7202776719B7BEB900E2D245 /* ExhibitorViewController.m */,
+				DB60080419B7F46700D3D2C2 /* LectureRatingViewController.h */,
+				DB60080519B7F46700D3D2C2 /* LectureRatingViewController.m */,
+				DB60080719B8025400D3D2C2 /* ScheduleNotificationViewController.h */,
+				DB60080819B8025400D3D2C2 /* ScheduleNotificationViewController.m */,
 			);
 			name = ViewsControllers;
 			sourceTree = "<group>";
@@ -1003,6 +1013,7 @@
 				72817A8719AE6A1500446FD9 /* Utils.m in Sources */,
 				7202776B19B7BF6700E2D245 /* ExhibitorCell.m in Sources */,
 				729E852A19AF89AB0057DF1C /* PresentationAboutViewController.m in Sources */,
+				DB60080919B8025400D3D2C2 /* ScheduleNotificationViewController.m in Sources */,
 				72817A8619AE6A1500446FD9 /* Extensions.m in Sources */,
 				720811B819B0CB5A009D91E1 /* MapViewController.m in Sources */,
 				72B1772819AE426F00F549C5 /* MenuViewController.m in Sources */,
@@ -1025,6 +1036,7 @@
 				72B1772519AE41A500F549C5 /* HomeViewController.m in Sources */,
 				72B1772119AE406E00F549C5 /* IIWrapController.m in Sources */,
 				72817A6E19AE52F700446FD9 /* PresentationViewController.m in Sources */,
+				DB60080619B7F46700D3D2C2 /* LectureRatingViewController.m in Sources */,
 				DB8D494119B6A9EE0027755D /* CMEPNavigationController.m in Sources */,
 				7221BC7719B686B3002E8F26 /* CMEPButtonCell.m in Sources */,
 				72BEE26B19B0B21F0075AE36 /* InformationTableViewCell.m in Sources */,

@@ -8,6 +8,7 @@
 
 #import "ScheduleViewController.h"
 #import "ScheduleModel.h"
+#import "LectureRatingViewController.h"
 
 @implementation ScheduleViewController
 
@@ -75,7 +76,8 @@
 //    }
     
     [cell setScheduleModel:scheduleModel];
-    NSLog(@"scheduleModel: %@", scheduleModel.titles);
+    
+    cell.delegate = self;
     
     return cell;
 }
@@ -107,13 +109,29 @@
 
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    
+    [self presentNotificationIfNecessaty];
     //[self scrollToCurrentHour];
+}
+
+-(void)presentNotificationIfNecessaty{
+    //todo: fazer validação se ja foi visualizado ao menos uma vez
+    UIViewController *snvc = [CMEPUtils getControllerByType:MenuOptionScheduleNotification];
+    CGSize viewSize = self.view.frame.size;
+    MZFormSheetController *mzc = [[MZFormSheetController alloc] initWithSize:viewSize viewController:snvc];
+    mzc.shouldCenterVertically = YES;
+    mzc.transitionStyle = MZFormSheetTransitionStyleSlideFromLeft;
+    [mzc presentAnimated:YES completionHandler:nil];
 }
 
 -(void)scrollToCurrentHour{
     NSIndexPath *i = [NSIndexPath indexPathForItem:5 inSection:0];
     [scheduleTableView scrollToRowAtIndexPath:i atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
+}
+
+-(void)scheduleCellRatingLectureWithModel:(ScheduleModel *)scheduleM{
+    LectureRatingViewController *lectureRatingViewController = (LectureRatingViewController*)[CMEPUtils getControllerByType:MenuOptionLectureRating];
+    lectureRatingViewController.currentScheduleModel = scheduleM;   
+    [self.navigationController pushViewController:lectureRatingViewController animated:YES];
 }
 
 @end
